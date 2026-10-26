@@ -12,9 +12,9 @@
 
 1. [Objective, Scope and Context](#1-objective-scope-and-context)
 2. [Methodology / Concept Development](#2-methodology--concept-development)
-3. [Fabrication of Specimens or Prototypes](#3-fabrication-of-specimens-or-prototypes)
-4. [Testing](#4-testing)
-5. [Analysis](#5-analysis)
+3. [Detail Design and Prototype Fabrication](#3-detail-design-and-prototype-fabrication)
+4. [Formative Testing](#4-formative-testing)
+5. [Analysis of Findings](#5-analysis-of-findings)
 6. [Discussion of Problems and Project Plan](#6-discussion-of-problems-and-project-plan)
 7. [Individual Contributions](#7-individual-contributions)
 8. [References](#references)
@@ -24,89 +24,148 @@
 
 What problem are you trying to address? What are you trying to achieve? How is your project different from existing or past work? What is the setting of the problem, and where is your project situated within the bigger scheme of things?
 
+### 1.1 Problem, users and context
+
 [Address these points briefly:
 - Define the problem, users, setting and wider context.
 - State a clear, feasible objective and scope.
-- Explain the project’s value or novelty compared with existing work.
-- Summarise the needs identified through your research and translate them into design requirements.
-- These requirements should lead directly to the ideas discussed in Section 2.]
+- Explain the project's value or novelty compared with existing work.
+- Summarise the needs identified through completed research or preliminary inquiry.
+- Distinguish what is known from what still needs to be investigated.]
+
+### 1.2 Existing solutions
+
+[Compare existing rehab adherence tools, apps, home exercise programmes and clinical practice. Show the gap your project fills.]
+
+| Existing solution | What it does well | Gap relevant to our users | Source |
+|---|---|---|---|
+| [Solution 1] | [Strength] | [Gap] | [Citation] |
+| [Solution 2] | [Strength] | [Gap] | [Citation] |
+
+### 1.3 Design specifications
+
+[Translate user needs into measurable specifications. Each should have a target value and a justification from literature, clinician input or user research.]
+
+| User need | Design specification | Target / acceptance criterion | Justification (source) | Verified by |
+|---|---|---|---|---|
+| [Need] | [Specification] | [e.g. patient logs a session in < 30 s] | [Citation or interview] | [Test in Section 4] |
+| [Need] | [Specification] | [Target] | [Citation or interview] | [Test in Section 4] |
 
 ## 2. Methodology / Concept Development
 
 How do you intend to achieve the intended deliverables? How do you know that your approach is suitable?
 
-[Answer briefly:
-- How did you generate the ideas?
-- What criteria did you use to compare them?
-- Which concept did you select, and why?
-- Why is this approach suitable for the project?]
+### 2.1 Design process
 
-| Concept | Strength | Limitation | Decision |
+[Explain the design process used (e.g. double diamond, human-centred design) and why it suits this problem. Include a figure of the process showing where the project is now.]
+
+### 2.2 Concept generation and selection
+
+[Explain how ideas were generated, the criteria used to compare them (linked to Section 1.3), and why the selected concept was chosen.]
+
+| Criterion (weight) | Concept A | Concept B | Concept C |
 |---|---|---|---|
-| [Idea 1] | [Strength] | [Limitation] | Selected / not selected |
-| [Idea 2] | [Strength] | [Limitation] | Selected / not selected |
+| [Criterion 1] ([w]) | [Score] | [Score] | [Score] |
+| [Criterion 2] ([w]) | [Score] | [Score] | [Score] |
+| **Weighted total** | | | |
 
 **Selected concept:** [Name]  
-**Reason for selection:** [Link to the requirements in Section 1.]
+**Reason for selection:** [Link to the specifications in Section 1.3 and note remaining uncertainty.]
 
-## 3. Fabrication of Specimens or Prototypes
+## 3. Detail Design and Prototype Fabrication
 
-What have you created to achieve the intended deliverables? What are the purposes of these specimens or prototypes? How did you create them?
+What have you created to achieve the intended deliverables, what is it for, and how did you create it?
 
-[Create a simple prototype of the selected concept. Use a paper sketch, storyboard, wireframe, mock-up or simulated workflow.]
+### 3.1 Detail design
 
-**Prototype name/version:** [Name]  
-**Purpose:** [What it explores]  
-**User journey shown:** [Start -> main steps -> end]  
-**Main components:** [List]  
-**Changes made:** [What changed and why]
+[Describe the selected concept in detail: user flow, key screens or components, and the design decisions behind them. Reference the principles or theories applied (e.g. behaviour change models, usability heuristics, clinical rehab protocols).]
 
-![Figure 1: [Prototype]](assets/[prototype-filename])
+![Figure 1: User flow of the selected concept](assets/[user-flow-filename])
 
-## 4. Testing
+### 3.2 Prototype v1
 
-What tests have you performed to investigate the key questions in your project? What are the purposes of these tests? How did you conduct these tests?
+**Format:** [Paper prototype / wireframes / clickable mock-up / storyboard]  
+**Purpose:** [What questions it was built to answer]  
+**How it was made:** [Tools, materials, fidelity choices and why]  
+**Specifications addressed:** [Link to Section 1.3]
 
-[Conduct a short formative review. This is not clinical efficacy testing.]
+![Figure 2: Prototype v1](assets/[prototype-v1-filename])
 
-**Review question:** [What do you want to find out?]  
-**Reviewers:** [Who and how many]  
-**Procedure:** [Show prototype -> give scenario -> ask reviewer to talk through it -> record feedback]  
-**Feedback collected:** [What was clear, confusing, useful or missing?]
+### 3.3 Prototype v2 (if iterated)
 
-| Requirement tested | Feedback or observation |
-|---|---|
-| [Requirement 1] | [Feedback] |
-| [Requirement 2] | [Feedback] |
+[What changed from v1 and why, linked to findings in Section 5.]
 
-## 5. Analysis
+## 4. Formative Testing
 
-What have you found through the specimens or prototypes you have created and/or tests you have conducted? How do you know that your findings are valid?
+What tests did you perform, what was their purpose, and how did you conduct them?
 
-[Compare the review feedback with the requirements in Section 1.]
+### 4.1 Test objectives
 
-| Requirement | Evidence | Status | Change for next version |
-|---|---|---|---|
-| [Requirement 1] | [Observation] | Met / partly met / unmet | [Change] |
-| [Requirement 2] | [Observation] | Met / partly met / unmet | [Change] |
+| Test question | Specification tested | Measure |
+|---|---|---|
+| [e.g. Can patients understand the daily exercise plan?] | [Spec from 1.3] | [Task success, time, errors, rating] |
+| [Question] | [Spec] | [Measure] |
 
-[Summarise the main finding, limitations and next change. Report preliminary clarity, relevance, usability or feasibility only—not clinical effectiveness.]
+### 4.2 Participants and procedure
+
+**Participants:** [Who, how many, how recruited, why suitable (e.g. physiotherapists, post-op patients, proxy users)]  
+**Procedure:** [Scenario given -> tasks attempted -> think-aloud -> short interview / questionnaire]  
+**Data collected:** [Task completion, points of confusion, quotes, ratings]  
+**Date(s):** [Week]  
+**Scope:** Formative review of clarity, relevance and usability, not clinical efficacy testing.
+
+## 5. Analysis of Findings
+
+What did you find out, and how do you know your findings are valid?
+
+### 5.1 Results
+
+| Specification | Target | Result | Met? | Key observation |
+|---|---|---|---|---|
+| [Spec 1] | [Target] | [e.g. 4/5 participants completed] | Yes / Partly / No | [Observation] |
+| [Spec 2] | [Target] | [Result] | Yes / Partly / No | [Observation] |
+
+[Include a chart or affinity map of qualitative feedback where helpful.]
+
+### 5.2 Interpretation and design implications
+
+[Explain the main patterns, why they occurred (linking to theory or literature), and what will change in the next iteration.]
+
+### 5.3 Validity and limitations
+
+[Discuss sample size, proxy vs real users, prototype fidelity and other threats to validity. State which claims cannot yet be made.]
 
 ## 6. Discussion of Problems and Project Plan
 
 What problems have you faced or current shortcomings identified in your work? How do you plan to resolve them?
 
-[Address these points briefly:
-- Identify problems faced and shortcomings in the work completed, including limitations revealed by the analysis in Section 5.
-- Explain their effects on the project.
-- Give a specific and feasible resolution for each major issue.
-- Include the next prototype iteration or further testing required by the analysis.
-- List the remaining tasks needed to complete the intended deliverables.
-- Include responsibilities and milestones.]
+### 6.1 Problems faced and how they were resolved
+
+| Problem | Effect on project | How it was resolved |
+|---|---|---|
+| [Problem] | [Effect] | [Resolution] |
+
+### 6.2 Current shortcomings and proposed solutions
+
+| Shortcoming | Effect on project | Proposed solution and justification | Owner | Milestone |
+|---|---|---|---|---|
+| [e.g. Tested with proxy users only] | [Effect] | [Solution] | [Name] | [Week] |
+| [Shortcoming] | [Effect] | [Solution] | [Name] | [Week] |
+
+### 6.3 Semester 2 plan
+
+[Include a Gantt chart with clearly marked milestones.]
+
+| Milestone | Task | Responsible member | Target date | Deliverable/evidence |
+|---|---|---|---|---|
+| M1 | [Revise prototype from interim findings] | [Name] | [Week] | [Prototype v3] |
+| M2 | [Test with target users] | [Name] | [Week] | [Test report] |
+| M3 | [Final iteration] | [Name] | [Week] | [Final prototype] |
+| M4 | [Final report and presentation] | [Names] | [Week] | [Final submission] |
 
 ## 7. Individual Contributions
 
-[State each team member’s individual areas of work across needs research, idea generation, concept selection, prototyping, testing and analysis.]
+[State each team member's specific completed and planned work across needs research, idea generation, concept selection, prototyping, testing and analysis.]
 
 | Team member | Contribution |
 |---|---|
@@ -119,4 +178,4 @@ What problems have you faced or current shortcomings identified in your work? Ho
 
 ## Appendices
 
-[Include supporting material such as interview instruments, protocols, additional results or prototype evidence.]
+[Include supporting material such as interview instruments, research notes, concept sketches, test scripts, raw test data and supplementary evidence.]
