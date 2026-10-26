@@ -6,15 +6,15 @@
 **Semester:** Semester 1, AY2026/27  
 **Supervisor(s):** [Name(s)]
 
-> For a two-person group, keep the report within **4,000 words excluding appendices**.
+> Word limit: 4,000 words excluding appendices. Delete all blockquotes before submission.
 
 ## Table of Contents
 
 1. [Objective, Scope and Context](#1-objective-scope-and-context)
 2. [Methodology / Concept Development](#2-methodology--concept-development)
-3. [Detail Design and Prototype Fabrication](#3-detail-design-and-prototype-fabrication)
-4. [Formative Testing](#4-formative-testing)
-5. [Analysis of Findings](#5-analysis-of-findings)
+3. [Fabrication of Prototypes](#3-fabrication-of-prototypes)
+4. [Testing](#4-testing)
+5. [Analysis](#5-analysis)
 6. [Discussion of Problems and Project Plan](#6-discussion-of-problems-and-project-plan)
 7. [Individual Contributions](#7-individual-contributions)
 8. [References](#references)
@@ -22,160 +22,144 @@
 
 ## 1. Objective, Scope and Context
 
-What problem are you trying to address? What are you trying to achieve? How is your project different from existing or past work? What is the setting of the problem, and where is your project situated within the bigger scheme of things?
+> **~900 words.** What problem are you trying to address in your project? What are you trying to achieve? How is your project different from existing or past work? What is the setting of the problem you are trying to address? Where is your project situated within the bigger scheme of things?
 
-### 1.1 Problem, users and context
+### 1.1 Objective and scope
 
-[Address these points briefly:
-- Define the problem, users, setting and wider context.
-- State a clear, feasible objective and scope.
-- Explain the project's value or novelty compared with existing work.
-- Summarise the needs identified through completed research or preliminary inquiry.
-- Distinguish what is known from what still needs to be investigated.]
+> Clearly defined and feasible.
 
-### 1.2 Existing solutions
+[Content]
 
-[Compare existing rehab adherence tools, apps, home exercise programmes and clinical practice. Show the gap your project fills.]
+### 1.2 Context
 
-| Existing solution | What it does well | Gap relevant to our users | Source |
+> Comprehensive and detailed, using an extensive range of relevant, authoritative and up-to-date sources.
+
+[Content]
+
+### 1.3 Novelty and value proposition
+
+> Compelling articulation.
+
+[Content]
+
+### 1.4 Design specifications
+
+> Clearly presented, well justified, and coherent with the intended deliverables.
+
+| ID | Specification | Measurable target | Justification |
 |---|---|---|---|
-| [Solution 1] | [Strength] | [Gap] | [Citation] |
-| [Solution 2] | [Strength] | [Gap] | [Citation] |
-
-### 1.3 Design specifications
-
-[Translate user needs into measurable specifications. Each should have a target value and a justification from literature, clinician input or user research.]
-
-| User need | Design specification | Target / acceptance criterion | Justification (source) | Verified by |
-|---|---|---|---|---|
-| [Need] | [Specification] | [e.g. patient logs a session in < 30 s] | [Citation or interview] | [Test in Section 4] |
-| [Need] | [Specification] | [Target] | [Citation or interview] | [Test in Section 4] |
+| S1 | [Specification] | [Target] | [Source or finding] |
+| S2 | [Specification] | [Target] | [Source or finding] |
 
 ## 2. Methodology / Concept Development
 
-How do you intend to achieve the intended deliverables? How do you know that your approach is suitable?
+> **~700 words.** How do you intend to achieve the intended deliverables of your project? How do you know that your approach is suitable?
 
-### 2.1 Design process
+### 2.1 Chosen methodology / concept
 
-[Explain the design process used (e.g. double diamond, human-centred design) and why it suits this problem. Include a figure of the process showing where the project is now.]
+[Content]
 
-### 2.2 Concept generation and selection
+### 2.2 Evaluation against alternatives
 
-[Explain how ideas were generated, the criteria used to compare them (linked to Section 1.3), and why the selected concept was chosen.]
+> Evaluated in a systematic and comprehensive manner.
 
-| Criterion (weight) | Concept A | Concept B | Concept C |
-|---|---|---|---|
-| [Criterion 1] ([w]) | [Score] | [Score] | [Score] |
-| [Criterion 2] ([w]) | [Score] | [Score] | [Score] |
-| **Weighted total** | | | |
-
-**Selected concept:** [Name]  
-**Reason for selection:** [Link to the specifications in Section 1.3 and note remaining uncertainty.]
-
-## 3. Detail Design and Prototype Fabrication
-
-What have you created to achieve the intended deliverables, what is it for, and how did you create it?
-
-### 3.1 Detail design
-
-[Describe the selected concept in detail: user flow, key screens or components, and the design decisions behind them. Reference the principles or theories applied (e.g. behaviour change models, usability heuristics, clinical rehab protocols).]
-
-![Figure 1: User flow of the selected concept](assets/[user-flow-filename])
-
-### 3.2 Prototype v1
-
-**Format:** [Paper prototype / wireframes / clickable mock-up / storyboard]  
-**Purpose:** [What questions it was built to answer]  
-**How it was made:** [Tools, materials, fidelity choices and why]  
-**Specifications addressed:** [Link to Section 1.3]
-
-![Figure 2: Prototype v1](assets/[prototype-v1-filename])
-
-### 3.3 Prototype v2 (if iterated)
-
-[What changed from v1 and why, linked to findings in Section 5.]
-
-## 4. Formative Testing
-
-What tests did you perform, what was their purpose, and how did you conduct them?
-
-### 4.1 Test objectives
-
-| Test question | Specification tested | Measure |
-|---|---|---|
-| [e.g. Can patients understand the daily exercise plan?] | [Spec from 1.3] | [Task success, time, errors, rating] |
-| [Question] | [Spec] | [Measure] |
-
-### 4.2 Participants and procedure
-
-**Participants:** [Who, how many, how recruited, why suitable (e.g. physiotherapists, post-op patients, proxy users)]  
-**Procedure:** [Scenario given -> tasks attempted -> think-aloud -> short interview / questionnaire]  
-**Data collected:** [Task completion, points of confusion, quotes, ratings]  
-**Date(s):** [Week]  
-**Scope:** Formative review of clarity, relevance and usability, not clinical efficacy testing.
-
-## 5. Analysis of Findings
-
-What did you find out, and how do you know your findings are valid?
-
-### 5.1 Results
-
-| Specification | Target | Result | Met? | Key observation |
+| Criterion (spec) | Weight | Concept A | Concept B | Concept C |
 |---|---|---|---|---|
-| [Spec 1] | [Target] | [e.g. 4/5 participants completed] | Yes / Partly / No | [Observation] |
-| [Spec 2] | [Target] | [Result] | Yes / Partly / No | [Observation] |
+| [Criterion] (S1) | [w] | [Score] | [Score] | [Score] |
+| [Criterion] (S2) | [w] | [Score] | [Score] | [Score] |
+| **Weighted total** | | | | |
 
-[Include a chart or affinity map of qualitative feedback where helpful.]
+[Content]
 
-### 5.2 Interpretation and design implications
+## 3. Fabrication of Prototypes
 
-[Explain the main patterns, why they occurred (linking to theory or literature), and what will change in the next iteration.]
+> **~600 words.** What have you created to achieve the intended deliverables of your project? What are the purposes of these specimens or prototypes? How did you create these specimens or prototypes?
 
-### 5.3 Validity and limitations
+### 3.1 Detail design and low-fidelity prototype
 
-[Discuss sample size, proxy vs real users, prototype fidelity and other threats to validity. State which claims cannot yet be made.]
+> Multiple prototypes, thoughtfully created, with fine workmanship. Detail design, sketches and wireframes all count; state the purpose of each.
+
+[Content]
+
+### 3.2 How they were created
+
+> Extensive references to and sound application of knowledge, principles and theories in relevant fields.
+
+[Content]
+
+## 4. Testing
+
+> **~400 words.** What tests have you performed to investigate the key questions in your project? What are the purposes of these tests? How did you conduct these tests?
+
+### 4.1 Purpose and scope of testing
+
+> Clearly defined.
+
+[Content]
+
+### 4.2 Test approach
+
+> Conducted conscientiously using the best possible approaches for the intended purposes. Walkthroughs of the low-fidelity prototype (3–5 participants, same task script) are suitable at the interim stage.
+
+[Content]
+
+## 5. Analysis
+
+> **~650 words.** What have you found out through the specimens or prototypes which you have created and/or tests which you have conducted in your project? How do you know that your findings are valid?
+
+### 5.1 Findings
+
+> In-depth analysis and explanation of data and observations. Use the walkthrough observations and your needs research data.
+
+| Finding | Evidence | Design implication |
+|---|---|---|
+| [Finding] | [Data / quotes / citation] | [Implication → spec] |
+
+### 5.2 Methods and validity
+
+> Precise use of appropriate methods, techniques, theories and/or concepts to explain key behaviour/trends.
+
+[Content]
 
 ## 6. Discussion of Problems and Project Plan
 
-What problems have you faced or current shortcomings identified in your work? How do you plan to resolve them?
+> **~400 words.** What are the problems you faced or current shortcomings identified in your work? How do you plan to resolve them?
 
 ### 6.1 Problems faced and how they were resolved
 
-| Problem | Effect on project | How it was resolved |
-|---|---|---|
-| [Problem] | [Effect] | [Resolution] |
+> Detailed discussion.
 
-### 6.2 Current shortcomings and proposed solutions
+[Content]
 
-| Shortcoming | Effect on project | Proposed solution and justification | Owner | Milestone |
+### 6.2 Shortcomings and proposed solutions
+
+> Clearly identified, with sound and well-justified proposals.
+
+[Content]
+
+### 6.3 Project plan
+
+> Detailed and viable, with well-articulated steps and clearly identified milestones.
+
+| Milestone | Steps | Deliverable | Owner | Week |
 |---|---|---|---|---|
-| [e.g. Tested with proxy users only] | [Effect] | [Solution] | [Name] | [Week] |
-| [Shortcoming] | [Effect] | [Solution] | [Name] | [Week] |
-
-### 6.3 Semester 2 plan
-
-[Include a Gantt chart with clearly marked milestones.]
-
-| Milestone | Task | Responsible member | Target date | Deliverable/evidence |
-|---|---|---|---|---|
-| M1 | [Revise prototype from interim findings] | [Name] | [Week] | [Prototype v3] |
-| M2 | [Test with target users] | [Name] | [Week] | [Test report] |
-| M3 | [Final iteration] | [Name] | [Week] | [Final prototype] |
-| M4 | [Final report and presentation] | [Names] | [Week] | [Final submission] |
+| M1 | [Steps] | [Deliverable] | [Name] | [Week] |
+| M2 | [Steps] | [Deliverable] | [Name] | [Week] |
+| M3 | [Steps] | [Deliverable] | [Name] | [Week] |
 
 ## 7. Individual Contributions
 
-[State each team member's specific completed and planned work across needs research, idea generation, concept selection, prototyping, testing and analysis.]
+> **~100 words.** Indicate individual areas of work clearly.
 
 | Team member | Contribution |
 |---|---|
-| Raghavi | [Work completed and planned] |
-| Phyllis | [Work completed and planned] |
+| Raghavi | [Content] |
+| Phyllis | [Content] |
 
 ## References
 
-[List all cited sources using one consistent referencing style.]
+[References]
 
 ## Appendices
 
-[Include supporting material such as interview instruments, research notes, concept sketches, test scripts, raw test data and supplementary evidence.]
+[Appendices]
