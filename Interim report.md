@@ -63,6 +63,77 @@ For patients recovering from RCR who struggle to keep up their home exercises, R
 ## 2. Methodology / Concept Development
 
 > **~700 words.** How do you intend to achieve the intended deliverables of your project? How do you know that your approach is suitable?
+> Considering our design specifications and taking the ACE framework as a guide, we ideated on the potential solutions we can develop to address them. The use of thinking tools such as ‘SCAMPER’ (Substitute, Combine, Adapt, Modify, Purpose, Eliminate, Reverse), ‘BruteThink’ and doing an ‘Idea Box’ enabled us to brainstorm ideas at the start. Afterwards, we review them against our Needs Criteria and organised them accordingly in the tables below.
+> 
+<table>
+  <thead>
+    <tr>
+      <th>PROBLEM</th>
+      <th>APPROACH</th>
+      <th>CONCEPT</th>
+      <th>IDEATION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="10"><b>(1) Patients can't tell if they are doing the exercises correctly</b></td>
+      <td rowspan="5"><b>APPROACH 1</b><br>Movement tracking and feedback</td>
+      <td rowspan="2"><b>Concept 1A</b><br>Movement tracking</td>
+      <td>Camera and screen or VR and sensors to track movement</td>
+    </tr>
+    <tr>
+      <td>Wearable sensors: EMG or gyroscope or accelerometer</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><b>Concept 1B</b><br>Real-time feedback</td>
+      <td>Pain detection: facial expression, jerking movement, patient input (verbal or haptic)</td>
+    </tr>
+    <tr>
+      <td>Visual or auditory or haptic feedback on what's wrong and how to adjust</td>
+    </tr>
+    <tr>
+      <td>AI-related companion (like Alexa or Google Home)</td>
+    </tr>
+    <tr>
+      <td rowspan="5"><b>APPROACH 2</b><br>Assisted Movement</td>
+      <td rowspan="2"><b>Concept 2A</b><br>Physical constraint</td>
+      <td>Machine to isolate the muscle</td>
+    </tr>
+    <tr>
+      <td>Device to limit bending angle or ROM (physical restraint)</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><b>Concept 2B</b><br>Physical aid</td>
+      <td>Pneumatic or hydraulics driven exoskeleton for controlled movement</td>
+    </tr>
+    <tr>
+      <td>Pulley system to utilize unaffected hand to assist movement</td>
+    </tr>
+    <tr>
+      <td>Automatic adjustable thermal sleeve to aid with cold therapy</td>
+    </tr>
+    <tr>
+      <td rowspan="5"></td>
+      <td rowspan="5"><b>APPROACH 3</b><br>Self-guided Learning</td>
+      <td rowspan="2"><b>Concept 3A</b><br>Video Instruction recordings</td>
+      <td>Auto-recorded PT session and creation of video library for the patients to refer to</td>
+    </tr>
+    <tr>
+      <td>Creation of pre-recorded video exercise by the PT or other professionals</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><b>Concept 3B</b><br>Community Based</td>
+      <td>Recruit personal trainer, yoga instructor, etc. as trusted source of advice at local level</td>
+    </tr>
+    <tr>
+      <td>Community based-forum with PT and doctors as verified professionals to answer question</td>
+    </tr>
+    <tr>
+      <td>Local PT walk-in 5 minute clinic for quick questions</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### 2.1 Chosen methodology / concept
 
