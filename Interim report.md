@@ -118,6 +118,7 @@ Considering our design specifications and taking the ACE framework as a guide, w
 </table>
 
 
+
 <table>
   <thead>
     <tr>
@@ -129,7 +130,7 @@ Considering our design specifications and taking the ACE framework as a guide, w
   </thead>
   <tbody>
     <tr>
-      <td rowspan="13"><b>(2) Patients don't know if they are progressing</b></td>
+      <td rowspan="14"><b>(2) Patients don't know if they are progressing</b></td>
       <td rowspan="5"><b>APPROACH 1</b><br>Visualization</td>
       <td rowspan="2"><b>Concept 1A</b><br>Diagram</td>
       <td>Diagram to show animated visualization of the actual repair</td>
@@ -166,7 +167,6 @@ Considering our design specifications and taking the ACE framework as a guide, w
     <tr><td>Feedback from PT to assess the reviews and get back to patient (online)</td></tr>
   </tbody>
 </table>
-
 
 <table>
   <thead>
@@ -221,26 +221,26 @@ Considering our design specifications and taking the ACE framework as a guide, w
   <tbody>
     <tr>
       <td rowspan="13"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
-      <td rowspan="5"><b>APPROACH 3</b><br>Gamification</td>
-      <td rowspan="2"><b>Concept 3A</b><br>Gamified rewards</td>
+      <td rowspan="5"><b>APPROACH 1</b><br>Gamification</td>
+      <td rowspan="2"><b>Concept 1A</b><br>Gamified rewards</td>
       <td>Unlocking certain in-app rewards when milestones are reached</td>
     </tr>
     <tr><td>Tie in with incentives to received (similar to Healthy 365 10K steps challenge etc)</td></tr>
     <tr>
-      <td rowspan="3"><b>Concept 3B</b><br>Rehab as games</td>
+      <td rowspan="3"><b>Concept 1B</b><br>Rehab as games</td>
       <td>Turn rehab exercises into mini-games with progress levels with in-game competition</td>
     </tr>
     <tr><td>Adaptive exercise difficulty "just within reach" level based on user's recent performance</td></tr>
     <tr><td>Exercises unlockable as patient reaches milestone</td></tr>
     <tr>
-      <td rowspan="8"><b>APPROACH 4</b><br>Integration with daily routine</td>
-      <td rowspan="3"><b>Concept 4A</b><br>Part of activities done at home/work</td>
+      <td rowspan="8"><b>APPROACH 2</b><br>Integration with daily routine</td>
+      <td rowspan="3"><b>Concept 2A</b><br>Part of activities done at home/work</td>
       <td>AI to suggest how to incorporate exercises with everyday tasks, e.g. lifting and reaching for cabinet, ironing shirt, wiping table</td>
     </tr>
     <tr><td>Fidget toys but for shoulder rehab</td></tr>
     <tr><td>Using MRT or public transport handle for exercise</td></tr>
     <tr>
-      <td rowspan="5"><b>Concept 4B</b><br>A way to fit into their daily schedule</td>
+      <td rowspan="5"><b>Concept 2B</b><br>A way to fit into their daily schedule</td>
       <td>Camera based scanning device that tracks ROM while PT can immediately read measurements while talking with patient</td>
     </tr>
     <tr><td>Turn off alarm by doing exercise and Desktop widget reminders</td></tr>
@@ -262,31 +262,36 @@ Considering our design specifications and taking the ACE framework as a guide, w
   </thead>
   <tbody>
     <tr>
-      <td rowspan="6"><b>(4) PT spending more time reviewing notes &amp; performing documentation</b></td>
+      <td rowspan="7"><b>(4) PT spending more time reviewing notes &amp; performing documentation</b></td>
       <td rowspan="4"><b>APPROACH 1</b><br>Automated documentation for patients ROM</td>
       <td rowspan="2"><b>Concept 1A</b><br>Device that can automatically assess patient's ROM</td>
       <td>A type of scanning device that can assess ROM in 3D</td>
     </tr>
-    <tr><td>Home rehab sensors and patient scoring</td></tr>
+    <tr>
+      <td>Home rehab sensors and patient scoring</td>
+    </tr>
     <tr>
       <td rowspan="2"><b>Concept 1B</b><br>Visual assessment</td>
       <td>Camera based scanning device that tracks ROM while PT can immediately read measurements while talking with patient</td>
     </tr>
-    <tr><td>Audio + vision ambient scribe - PT taps to capture key measurements (e.g. ROM), auto-documented with conversation context</td></tr>
     <tr>
-      <td rowspan="2"><b>APPROACH 2</b><br>Recording of patients' notes</td>
-      <td><b>Concept 2A</b><br>A way to prescribe notes for each session</td>
+      <td>Audio + vision ambient scribe - PT taps to capture key measurements (e.g. ROM), auto-documented with conversation context</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><b>APPROACH 2</b><br>Recording of patients' notes</td>
+      <td rowspan="2"><b>Concept 2A</b><br>A way to prescribe notes for each session</td>
       <td>AI-enabled prescriber that records details discussed in each session</td>
     </tr>
-    <tr><td>Assess multi-lingual conversations</td></tr>
     <tr>
-      <td></td>
-      <td></td>
+      <td>Assess multi-lingual conversations</td>
+    </tr>
+    <tr>
       <td><b>Concept 2B</b><br>Self-reported documentation</td>
       <td>Conversational AI intake before first visit: chatbot interviews patient in a friendly, engaging way, and sends a structured summary to the PT before the patient walks in</td>
     </tr>
   </tbody>
 </table>
+
 
 
 
