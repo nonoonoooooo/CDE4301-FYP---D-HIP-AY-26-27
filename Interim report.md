@@ -50,6 +50,8 @@ Of the 16 existing solutions we reviewed (Appendix A), digital exercise platform
 
 For patients recovering from RCR who struggle to keep up their home exercises, ReMotion is a home rehabilitation solution that helps them exercise regularly, correctly and at a clinically appropriate pace. Built around the post-RCR recovery phases, it offers short sessions that fit into daily routines, feedback on technique, progress tracked against the expected recovery trajectory, and signals on acceptable pain and when to progress. There is early evidence that this approach works: a physiotherapist who shows patients their test results every session reported that it greatly improved adherence (Appendix B, Theme 3). ReMotion also gives physiotherapists a summary of progress between visits, saving consultation time. For the health system, better adherence could reduce stiffness-related delays and the number of patients referred back to physiotherapy (Appendix B, Theme 7).
 
+ReMotion's novelty lies in whom it is designed around. Most existing solutions are built for clinicians and the organisations that pay for care: their main buyers are clinicians, clinics, hospitals, employers and health plans (Appendix A.2), and their features serve clinical workflows, such as reducing administrative work (PhysioBuddy), integrating with medical records (Medbridge) and giving clinicians dashboards to monitor patients remotely (Appendix A.6). In these solutions, patient adherence is an expected benefit rather than the starting point of the design. ReMotion puts the patient's experience first: each feature is designed around a reason patients do not adhere, namely lack of time, uncertainty about technique, misjudging progress and fear of pain (Section 1.2). For example, ReMotion shows patients their own progress against the expected recovery trajectory, which none of the solutions we reviewed describes (Appendix A.6). Patient uptake of existing solutions also remains limited in Singapore: one sensor-based system has been taken up by 29 patients in a public hospital since March 2026, and printed exercise sheets and videos recorded on patients' phones remain the most common take-home materials (Appendix A.5).
+
 ### 1.4 Design specifications
 
 | ID | Specification | Justification |
@@ -63,9 +65,26 @@ For patients recovering from RCR who struggle to keep up their home exercises, R
 ## 2. Methodology / Concept Development
 
 > **~700 words.** How do you intend to achieve the intended deliverables of your project? How do you know that your approach is suitable?
-> 
+>
+> Show the logic: root causes (why) → design questions → ideas → chosen direction (how). The prototype in Section 3 should follow naturally from this.
+>
+> Rubric A2 (Exceptional): chosen concept and its alternatives evaluated in a systematic and comprehensive manner.
+
+### 2.1 Root causes and design questions
+
+> Go one level below the four barriers in Section 1.2: why does each happen? Turn each root cause into a design question ("How might we…"). These questions are what the prototype will answer.
+
+| Barrier (Section 1.2) | Root cause | Design question | Spec |
+|---|---|---|---|
+| Lack of time and discipline | [Root cause] | [How might we…] | S3 |
+| Uncertainty about technique | [Root cause] | [How might we…] | S1 |
+| Misjudging progress | [Root cause] | [How might we…] | S2 |
+| Pain and fear of movement | [Root cause] | [How might we…] | S5 |
+| No visibility between visits | [Root cause] | [How might we…] | S4 |
+
+### 2.2 Ideation
+
 Considering our design specifications and taking the ACE framework as a guide, we ideated on the potential solutions we can develop to address them. The use of thinking tools such as ‘SCAMPER’ (Substitute, Combine, Adapt, Modify, Purpose, Eliminate, Reverse), ‘BruteThink’ and doing an ‘Idea Box’ enabled us to brainstorm ideas at the start. Afterwards, we review them against our Needs Criteria and organised them accordingly in the tables below.
-> 
 
 <table>
   <thead>
@@ -297,61 +316,83 @@ Considering our design specifications and taking the ACE framework as a guide, w
 
 
 
-### 2.1 Chosen methodology / concept
+### 2.3 Concept selection
 
-[Content]
-
-### 2.2 Evaluation against alternatives
-
-> Evaluated in a systematic and comprehensive manner.
+> Compare the shortlisted concepts against S1–S5 in a systematic way, explain how the weights were set, and justify the direction chosen: how do you know it is suitable (evidence from Section 1 and Appendices A–C)? The direction can still change in Semester 2; say what result would make you change it.
 
 | Criterion (spec) | Weight | Concept A | Concept B | Concept C |
 |---|---|---|---|---|
 | [Criterion] (S1) | [w] | [Score] | [Score] | [Score] |
 | [Criterion] (S2) | [w] | [Score] | [Score] | [Score] |
+| [Criterion] (S3) | [w] | [Score] | [Score] | [Score] |
+| [Criterion] (S4) | [w] | [Score] | [Score] | [Score] |
+| [Criterion] (S5) | [w] | [Score] | [Score] | [Score] |
 | **Weighted total** | | | | |
 
 [Content]
 
 ## 3. Fabrication of Prototypes
 
-> **~600 words.** What have you created to achieve the intended deliverables of your project? What are the purposes of these specimens or prototypes? How did you create these specimens or prototypes?
+> **~600 words.** What have you created to achieve the intended deliverables of your project? What are the purposes of these prototypes? How did you create them?
+>
+> Rubric A3 rates a section with nothing made as Poor ("prototypes could have been made, but not carried out"). So show at least simple, low-fidelity prototypes made this semester (sketches, storyboards, paper or clickable mock-ups), each with a clear purpose. Prototype for learning, not for show. Exceptional: multiple prototypes, thoughtfully created, with extensive references to and sound application of knowledge, principles and theories.
 
-### 3.1 Detail design and low-fidelity prototype
+### 3.1 Questions the prototype will answer
 
-> Multiple prototypes, thoughtfully created, with fine workmanship. Detail design, sketches and wireframes all count; state the purpose of each.
+> Each question should trace back to a root cause in Section 2.1 and a specification in Section 1.4. Pick the riskiest assumptions first.
+
+| Question | Root cause (Section 2.1) | Spec | Prototype | What we will learn |
+|---|---|---|---|---|
+| [Question] | [Root cause] | [S#] | [Prototype] | [Insight we need] |
+| [Question] | [Root cause] | [S#] | [Prototype] | [Insight we need] |
+
+### 3.2 Prototypes created and how
+
+> For each prototype made: what it is (form and fidelity, e.g. sketch, storyboard, paper or clickable mock-up, Wizard-of-Oz, sensor rig), its purpose (which question in 3.1), how it was made, and the knowledge, principles or theories applied, with references. Include images.
 
 [Content]
 
-### 3.2 How they were created
+### 3.3 Next prototypes
 
-> Extensive references to and sound application of knowledge, principles and theories in relevant fields.
+> What will be built next, at what fidelity, and why that fidelity is enough to answer its question.
 
 [Content]
 
 ## 4. Testing
 
 > **~400 words.** What tests have you performed to investigate the key questions in your project? What are the purposes of these tests? How did you conduct these tests?
+>
+> Rubric A4 rates a section with no testing done as Poor. A quick test is enough at this stage, e.g. a walkthrough of a sketch or mock-up with 3–5 patients or physiotherapists, or concept feedback from our clinical mentor. Exceptional: purpose and scope clearly defined, and testing conducted conscientiously using the best possible approach for the purpose.
 
-### 4.1 Purpose and scope of testing
+### 4.1 Purpose and scope
 
-> Clearly defined.
+> One row per question in Section 3.1; tie the success criterion to the spec target where possible.
+
+| Question | Method | Participants | Measure | Success criterion |
+|---|---|---|---|---|
+| [Question] | [Method] | [n, who] | [Measure] | [Target, from spec] |
+
+### 4.2 Tests conducted
+
+> What was done: recruitment, participants, task script, set-up and what was recorded. Why this approach suits the purpose.
 
 [Content]
 
-### 4.2 Test approach
+### 4.3 Planned tests
 
-> Conducted conscientiously using the best possible approaches for the intended purposes. Walkthroughs of the low-fidelity prototype (3–5 participants, same task script) are suitable at the interim stage.
+> Tests for the next prototypes and for the Semester 2 evaluation against S1–S5.
 
 [Content]
 
 ## 5. Analysis
 
-> **~650 words.** What have you found out through the specimens or prototypes which you have created and/or tests which you have conducted in your project? How do you know that your findings are valid?
+> **~650 words.** What have you found out through the prototypes and tests, and how do you know your findings are valid?
+>
+> Rubric A5 (Exceptional): in-depth analysis through precise use of appropriate methods, techniques, theories and concepts to explain key behaviour and trends.
 
 ### 5.1 Findings
 
-> In-depth analysis and explanation of data and observations. Use the walkthrough observations and your needs research data.
+> In-depth analysis of the test results from Section 4.2, supported by the interview, survey and solution-review data (Appendices A–C). Explain the trends, not just list them, and state what each finding changes in the design.
 
 | Finding | Evidence | Design implication |
 |---|---|---|
@@ -359,35 +400,38 @@ Considering our design specifications and taking the ACE framework as a guide, w
 
 ### 5.2 Methods and validity
 
-> Precise use of appropriate methods, techniques, theories and/or concepts to explain key behaviour/trends.
+> How the test and needs data were analysed (e.g. thematic analysis, counting how many participants raised each theme, triangulation across patients, physiotherapists, surgeons and the survey), and the limits of each, such as sample size and self-selection.
 
 [Content]
 
 ## 6. Discussion of Problems and Project Plan
 
 > **~400 words.** What are the problems you faced or current shortcomings identified in your work? How do you plan to resolve them?
+>
+> Rubric A6 (Exceptional): detailed discussion of how problems were resolved; major shortcomings clearly identified with sound, well-justified proposals; detailed, viable plan with well-articulated steps and clearly identified milestones.
 
 ### 6.1 Problems faced and how they were resolved
 
-> Detailed discussion.
+> Detailed discussion: each problem, what caused it, and what was done about it.
 
 [Content]
 
 ### 6.2 Shortcomings and proposed solutions
 
-> Clearly identified, with sound and well-justified proposals.
+> Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants) and of the needs data (Appendices B.1, B.5 and C.5).
 
 [Content]
 
 ### 6.3 Project plan
 
-> Detailed and viable, with well-articulated steps and clearly identified milestones.
+> Detailed and viable, with well-articulated steps and clearly identified milestones, from first prototype and test through to the Semester 2 evaluation against S1–S5.
 
 | Milestone | Steps | Deliverable | Owner | Week |
 |---|---|---|---|---|
 | M1 | [Steps] | [Deliverable] | [Name] | [Week] |
 | M2 | [Steps] | [Deliverable] | [Name] | [Week] |
 | M3 | [Steps] | [Deliverable] | [Name] | [Week] |
+| M4 | [Steps] | [Deliverable] | [Name] | [Week] |
 
 ## 7. Individual Contributions
 
