@@ -70,7 +70,7 @@ ReMotion's novelty lies in whom it is designed around. Most existing solutions a
 
 ### 2.1 Root Cause evaluation
 
-Barrier (Section 1.2) | Root cause | Design question | Spec |
+Problem (Section 1.2) | Root cause | Design question | Spec |
 |---|---|---|---|
 | Lack of time and discipline | Work and daily commitments compete with rehabilitation. Patients may lose motivation once they feel sufficiently recovered and this may lead to low adoption rate. | How might we help patients incorporate prescribed rehabilitation exercises into their daily routines and sustain engagement throughout recovery? | S3 |
 | Uncertainty about technique | Patients receive limited feedback between PT appointments and PTs are only able to correct these exercises during the sessions themselves. | How might we enable patients to recognise and correct improper exercise techniques independently during the home rehabilitation phase? | S1 |
@@ -80,7 +80,7 @@ Barrier (Section 1.2) | Root cause | Design question | Spec |
 
 ### 2.2 Ideation
 
-Following the identification of key rehabilitation barriers and establishment of design specifications and their justifications (Section 1), concept generation was conducted using ideation techniques, including SCAMPER, BruteThink and Idea Box. The resulting ideas were organised using the **Approach–Concept–Embodiment (ACE) framework**, progressing from broad solution strategies to specific concepts and potential implementations. Concepts were generated across the five main problem areas that were identified as barriers to rehabilitation. The main approaches are summarised in the table below, while the complete ACE framework is provided in [Appendix D.1](#d1-overall-ace-framework-for-concept-generation).
+Following the identification of key rehabilitation barriers and establishment of design specifications and their justifications (Section 1), concept generation was conducted using ideation techniques, including SCAMPER, BruteThink and Idea Box. The resulting ideas were organised using the **Approach–Concept–Embodiment (ACE) framework**, progressing from broad solution strategies to specific concepts and potential implementations. Concepts were generated across the five main problem areas identified in our research. The main approaches are summarised in the table below, while the complete ACE framework is provided in [Appendix D.1](#d1-overall-ace-framework-for-concept-generation).
 
 | Main Problem | Main Approaches explored |
 |---|---|
