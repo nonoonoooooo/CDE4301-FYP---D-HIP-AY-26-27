@@ -806,3 +806,123 @@ Other things respondents found helpful were YouTube videos on their condition an
     </tr>
   </tbody>
 </table>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Problem(s)</th>
+      <th>'Easy' Concepts Identified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Patients can't tell if they are doing the exercises correctly</td>
+      <td>Visual, auditory or haptic feedback on what is wrong and how to adjust</td>
+    </tr>
+    <tr><td>Pulley system using the unaffected hand to assist movement</td></tr>
+    <tr><td>Thermal sleeve to aid with cold therapy</td></tr>
+    <tr><td>Creation of pre-recorded exercise videos by PTs or other professionals</td></tr>
+
+   <tr>
+      <td rowspan="5">Patients don't know if they are progressing</td>
+      <td>Graph showing patients' progress over time, linked to important life goals and reference ranges</td>
+    </tr>
+    <tr><td>PT's objective evaluations recorded for patients to view</td></tr>
+    <tr><td>Automatic patient scoring using sensor-recorded measurements</td></tr>
+    <tr><td>PT's subjective evaluations recorded for patients to view</td></tr>
+    <tr><td>Patients' self-reported scoring of pain and functionality</td></tr>
+
+   <tr>
+      <td rowspan="6">Patients struggle to find time and discipline to do the full set of prescribed exercises at home</td>
+      <td>Badges or recognition for good rehabilitation behaviour</td>
+    </tr>
+    <tr><td>Goal setting and progress tracking</td></tr>
+    <tr><td>Words of encouragement during exercises</td></tr>
+    <tr><td>Exercises unlocked upon reaching PT-approved milestones</td></tr>
+    <tr><td>Using MRT or public transport handles for exercises</td></tr>
+    <tr><td>Micro-rehabilitation exercises during short periods of free time</td></tr>
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Problem(s)</th>
+      <th>'Feasible' Concepts Identified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Patients can't tell if they are doing the exercises correctly</td>
+      <td>Camera and screen to track movement</td>
+    </tr>
+    <tr><td>Wearable sensors: EMG, gyroscope or accelerometer</td></tr>
+    <tr><td>Device to limit bending angle or ROM (physical restraint)</td></tr>
+    <tr><td>Recruit personal trainers or yoga instructors as trusted local sources of advice</td></tr>
+
+   <tr>
+      <td rowspan="2">Patients don't know if they are progressing</td>
+      <td>Animated diagram visualising the actual surgical repair</td>
+   </tr>
+    <tr><td>Auto-generated weekly or monthly progress summaries based on recorded measurements</td></tr>
+
+   <tr>
+      <td rowspan="9">Patients struggle to find time and discipline to do the full set of prescribed exercises at home</td>
+      <td>NTUC vouchers or rebates for achieving rehabilitation milestones</td>
+    </tr>
+    <tr><td>Online communities for sharing encouragement (e.g. Strava for rehabilitation)</td></tr>
+    <tr><td>Asynchronous exercise sessions with rehabilitation buddies</td></tr>
+    <tr><td>Personal rehabilitation avatar accompanying patients during exercises</td></tr>
+    <tr><td>Incentives similar to Healthy 365 challenges</td></tr>
+    <tr><td>Rehabilitation exercises converted into mini-games with progress levels and competition</td></tr>
+    <tr><td>Portable device for shoulder rehabilitation</td></tr>
+    <tr><td>Exercise-based alarm and desktop widget reminders</td></tr>
+    <tr><td>Personalised rehabilitation avatar with progress updates</td></tr>
+
+   <tr>
+      <td rowspan="4">PT spending more time on reviewing notes and performing documentation</td>
+      <td>Home rehabilitation sensors and patient scoring</td>
+    </tr>
+    <tr><td>Audio ambient scribe for automatic documentation of measurements and conversations</td></tr>
+    <tr><td>AI-enabled prescriber that records session details, editable by PT</td></tr>
+    <tr><td>Conversational AI patient intake providing structured summaries before appointments</td></tr>
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Problem(s)</th>
+      <th>'Challenging' Concepts Identified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Patients can't tell if they are doing the exercises correctly</td>
+      <td>AI rehabilitation companion (e.g. Alexa or Google Home)</td>
+    </tr>
+    <tr><td>Pneumatic or hydraulic exoskeleton for controlled movement</td></tr>
+    <tr><td>Auto-recorded PT sessions with a video library for patient reference</td></tr>
+
+   <tr>
+      <td>Patients don't know if they are progressing</td>
+      <td>Telerehabilitation and remote evaluation combined with home-based sensor data</td>
+    </tr>
+
+   <tr>
+      <td rowspan="3">Patients struggle to find time and discipline to do the full set of prescribed exercises at home</td>
+      <td>Rehabilitation leaderboard for competition between patients</td>
+   </tr>
+    <tr><td>AI-suggested integration of rehabilitation exercises into everyday activities</td></tr>
+    <tr><td>AI-based environment scanning to suggest rehabilitation exercises using nearby objects</td></tr>
+
+   <tr>
+      <td>PT spending more time on reviewing notes and performing documentation</td>
+      <td>Multilingual conversation assessment and documentation</td>
+    </tr>
+  </tbody>
+</table>
+
