@@ -112,6 +112,7 @@ Following preliminary screening, three key concepts were shortlisted for further
 | Reduced PT time on (documentation) workload | 1 | 0 | 1 |
 | Safe guidance (managing pain) | 2 | 0 | 0 |
 | **Total score (maximum 10)** | **6** | **4** | **5** |
+
 Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion. The thresholds are taken from your draft specifications, not established clinical standards.
 
 Based on the needs-criteria evaluation, 'Feedback Provision' demonstrated the strongest alignment with our design specifications, particularly in providing exercise technique feedback and supporting safe rehabilitation. 'Rehabilitation Progress Tracking' was also identified as a promising complementary concept, allowing patients to better understand their recovery and providing relevant information for physiotherapists. Although 'Gamification' scored lower overall, it demonstrated potential in encouraging exercise adherence through integration into patients' daily routines. Therefore, feedback provision and progress tracking were prioritised for further development, with gamification considered as a supporting feature. These concepts will undergo initial prototyping to assess their technical feasibility and usability before further refinement.
