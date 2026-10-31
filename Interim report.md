@@ -6,8 +6,6 @@
 **Semester:** Semester 1, AY2026/27  
 **Supervisor(s):** Mark Chong Seow Khoon
 
-> Word limit: 4,000 words excluding appendices. Delete all blockquotes before submission.
-
 ## Table of Contents
 
 1. [Objective, Scope and Context](#1-objective-scope-and-context)
@@ -138,7 +136,7 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 
 - **P1, progress tracker** ([source](prototypes/p1_progress_tracker/index.html)). A one-screen mock-up with a chart drawn in code, plotting a fictional patient's shoulder range of motion against an expected recovery band, linked to a personal goal such as reaching a high shelf. Three versions show a patient who is ahead, on track, and feeling well but behind. The third recreates the point around three months when patients stop ([Appendix B, Theme 3](#b4-findings-by-theme)). The versions are labelled only as Screens 1–3, so the labels do not give away the answer. The recovery band is illustrative, not clinical data, because this test is about whether the chart can be read.
 - **P2, exercise session flow** ([source](prototypes/p2_session_flow/index.html)). A clickable mock-up of one session, from opening it to finishing: choosing the exercise, seeing instructions, setting up the phone, doing the repetitions, reporting pain and viewing the result. Two placeholder exercises use animated figures, one seen from the side and one from the front. Each cycle of the animation counts as one repetition. On the published link, the set-up screen uses a test photo to check framing, because the platform does not allow a live camera view. A facilitator panel on the last screen shows the time spent on each step.
-- **P3, camera tracking test** ([source](prototypes/p3_camera_tracking/measure_angle.py)). A Python script that analyses phone video with MediaPipe Pose, an open-source pose-estimation tool that locates body landmarks in video (Bazarevsky et al., 2020). For each clip, it calculates the shoulder angle from the shoulder, elbow and hip landmarks, takes the median across frames to reduce the effect of wobble, and reports the mean error against the reference angle. The script is built but has not yet been run on footage. Team members will raise an arm to reference angles marked with a protractor on a wall chart.
+- **P3, camera tracking test** ([source](prototypes/p3_camera_tracking/measure_angle.py)). A Python script that analyses phone video with MediaPipe Pose, an open-source pose-estimation tool that locates body landmarks in video (Bazarevsky et al., 2020). For each clip, it calculates the shoulder angle from the shoulder, elbow and hip landmarks, takes the median across frames to reduce the effect of wobble, and reports the mean error against the reference angle. Team members will raise an arm to reference angles marked with a protractor on a wall chart.
 
 ## 4. Testing
 
@@ -222,8 +220,8 @@ These findings are early indications, not conclusions:
 
 | Team member | Contribution |
 |---|---|
-| Raghavi | [Content] |
-| Phyllis | [Content] |
+| Raghavi | Wrote Section 2 and the P3 parts of Sections 4 and 5; built prototype P3 (camera tracking test) |
+| Phyllis | Wrote Section 1 and the P1 and P2 parts of Sections 4 and 5; built prototypes P1 and P2 and ran their test sessions |
 
 ## References
 
