@@ -66,257 +66,15 @@ ReMotion's novelty lies in whom it is designed around. Most existing solutions a
 
 > **~700 words.** How do you intend to achieve the intended deliverables of your project? How do you know that your approach is suitable?
 >
-> Show the logic: root causes (why) → design questions → ideas → chosen direction (how). The prototype in Section 3 should follow naturally from this.
+> Show the logic: barriers (why) → ideas → chosen direction (how). The prototype in Section 3 should follow naturally from this.
 >
 > Rubric A2 (Exceptional): chosen concept and its alternatives evaluated in a systematic and comprehensive manner.
 
-### 2.1 Root causes and design questions
+### 2.1 Ideation
 
-> Go one level below the four barriers in Section 1.2: why does each happen? Turn each root cause into a design question ("How might we…"). These questions are what the prototype will answer.
+Considering our design specifications and taking the ACE framework as a guide, we ideated on the potential solutions we can develop to address them. The use of thinking tools such as ‘SCAMPER’ (Substitute, Combine, Adapt, Modify, Purpose, Eliminate, Reverse), ‘BruteThink’ and doing an ‘Idea Box’ enabled us to brainstorm ideas at the start. Afterwards, we review them against our Needs Criteria and organised them accordingly in the tables in Appendix D.
 
-| Barrier (Section 1.2) | Root cause | Design question | Spec |
-|---|---|---|---|
-| Lack of time and discipline | [Root cause] | [How might we…] | S3 |
-| Uncertainty about technique | [Root cause] | [How might we…] | S1 |
-| Misjudging progress | [Root cause] | [How might we…] | S2 |
-| Pain and fear of movement | [Root cause] | [How might we…] | S5 |
-| No visibility between visits | [Root cause] | [How might we…] | S4 |
-
-### 2.2 Ideation
-
-Considering our design specifications and taking the ACE framework as a guide, we ideated on the potential solutions we can develop to address them. The use of thinking tools such as ‘SCAMPER’ (Substitute, Combine, Adapt, Modify, Purpose, Eliminate, Reverse), ‘BruteThink’ and doing an ‘Idea Box’ enabled us to brainstorm ideas at the start. Afterwards, we review them against our Needs Criteria and organised them accordingly in the tables below.
-
-<table>
-  <thead>
-    <tr>
-      <th>PROBLEM</th>
-      <th>APPROACH</th>
-      <th>CONCEPT</th>
-      <th>EMBODIMENT</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="15"><b>(1) Patients can't tell if they are doing the exercises correctly</b></td>
-      <td rowspan="5"><b>APPROACH 1</b><br>Movement tracking and feedback</td>
-      <td rowspan="2"><b>Concept 1A</b><br>Movement tracking</td>
-      <td>Camera and screen or VR and sensors to track movement</td>
-    </tr>
-    <tr><td>Wearable sensors: EMG or gyroscope or accelerometer</td></tr>
-    <tr>
-      <td rowspan="3"><b>Concept 1B</b><br>Real-time feedback</td>
-      <td>Pain detection: facial expression, jerking movement, patient input (verbal or haptic)</td>
-    </tr>
-    <tr><td>Visual or auditory or haptic feedback on what's wrong and how to adjust</td></tr>
-    <tr><td>AI-related companion (like Alexa or Google Home)</td></tr>
-    <tr>
-      <td rowspan="5"><b>APPROACH 2</b><br>Assisted Movement</td>
-      <td rowspan="2"><b>Concept 2A</b><br>Physical constraint</td>
-      <td>Machine to isolate the muscle</td>
-    </tr>
-    <tr><td>Device to limit bending angle or ROM (physical restraint)</td></tr>
-    <tr>
-      <td rowspan="3"><b>Concept 2B</b><br>Physical aid</td>
-      <td>Pneumatic or hydraulics driven exoskeleton for controlled movement</td>
-    </tr>
-    <tr><td>Pulley system to utilize unaffected hand to assist movement</td></tr>
-    <tr><td>Automatic adjustable thermal sleeve to aid with cold therapy</td></tr>
-    <tr>
-      <td rowspan="5"><b>APPROACH 3</b><br>Self-guided Learning</td>
-      <td rowspan="2"><b>Concept 3A</b><br>Video Instruction recordings</td>
-      <td>Auto-recorded PT session and creation of video library for the patients to refer to</td>
-    </tr>
-    <tr><td>Creation of pre-recorded video exercise by the PT or other professionals</td></tr>
-    <tr>
-      <td rowspan="3"><b>Concept 3B</b><br>Community Based</td>
-      <td>Recruit personal trainer, yoga instructor, etc. as trusted source of advice at local level</td>
-    </tr>
-    <tr><td>Community based-forum with PT and doctors as verified professionals to answer question</td></tr>
-    <tr><td>Local PT walk-in 5 minute clinic for quick questions</td></tr>
-  </tbody>
-</table>
-
-
-
-<table>
-  <thead>
-    <tr>
-      <th>PROBLEM</th>
-      <th>APPROACH</th>
-      <th>CONCEPT</th>
-      <th>EMBODIMENT</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="14"><b>(2) Patients don't know if they are progressing</b></td>
-      <td rowspan="5"><b>APPROACH 1</b><br>Visualization</td>
-      <td rowspan="2"><b>Concept 1A</b><br>Diagram</td>
-      <td>Diagram to show animated visualization of the actual repair</td>
-    </tr>
-    <tr><td>Images of MRI taken during doctors' appointments with labelling to show progress</td></tr>
-    <tr>
-      <td rowspan="3"><b>Concept 1B</b><br>Graph</td>
-      <td>Graph to show time required to reach milestones</td>
-    </tr>
-    <tr><td>Graph to show patients' progress over time, and link progress with important life goals</td></tr>
-    <tr><td>To be able to compare against base/normal range to show progression</td></tr>
-    <tr>
-      <td rowspan="5"><b>APPROACH 2</b><br>Scoring system</td>
-      <td rowspan="2"><b>Concept 2A</b><br>Objective scoring</td>
-      <td>PT's objective evaluations are recorded for patients to view</td>
-    </tr>
-    <tr><td>Automatic scoring of patients using measurements recorded from sensors</td></tr>
-    <tr>
-      <td rowspan="3"><b>Concept 2B</b><br>Subjective scoring</td>
-      <td>PT's subjective evaluations are recorded for patients to view</td>
-    </tr>
-    <tr><td>Patients' own scoring of their pain/functionality</td></tr>
-    <tr><td>Assistance from caregivers or family members to help with scoring</td></tr>
-    <tr>
-      <td rowspan="4"><b>APPROACH 3</b><br>Regular review</td>
-      <td rowspan="2"><b>Concept 3A</b><br>Monthly/weekly check-ins</td>
-      <td>Auto-generated monthly/weekly summaries based on recorded measurements</td>
-    </tr>
-    <tr><td>Telerehab and remote evaluation combined with home-based sensor data</td></tr>
-    <tr>
-      <td rowspan="2"><b>Concept 3B</b><br>Self-reflections</td>
-      <td>Monthly reviews generated from patients' own reflections on their daily progress</td>
-    </tr>
-    <tr><td>Feedback from PT to assess the reviews and get back to patient (online)</td></tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>PROBLEM</th>
-      <th>APPROACH</th>
-      <th>CONCEPT</th>
-      <th>EMBODIMENT</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="13"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
-      <td rowspan="5"><b>APPROACH 1</b><br>Rewards</td>
-      <td rowspan="2"><b>Concept 1A</b><br>Monetary incentives</td>
-      <td>NTUC vouchers/rebates for unlocking certain milestones</td>
-    </tr>
-    <tr><td>Patient deposit that is deductible (for charity) if patient not doing exercise</td></tr>
-    <tr>
-      <td rowspan="3"><b>Concept 1B</b><br>Non-monetary incentives</td>
-      <td>Badges/recognition for good behaviour</td>
-    </tr>
-    <tr><td>Goal setting &amp; progress tracking</td></tr>
-    <tr><td>Words of encouragement from the app as the patient do the exercise</td></tr>
-    <tr>
-      <td rowspan="8"><b>APPROACH 2</b><br>Scoring system</td>
-      <td rowspan="3"><b>Concept 2A</b><br>Competition</td>
-      <td>Competing with other patients on the same recovery journey (e.g. Duolingo but for rehab) | Rehab Leaderboard</td>
-    </tr>
-    <tr><td>Competing as a group with patients from other groups (e.g. knee)</td></tr>
-    <tr><td>Competing with family/friends who are trying to keep fit</td></tr>
-    <tr>
-      <td rowspan="5"><b>Concept 2B</b><br>Support group</td>
-      <td>Group physiotherapy:<br>- At local community centres or zones, doing PT with fellow peers<br>- In groups with other patients (e.g. group-based PT session) with little PT supervision</td>
-    </tr>
-    <tr><td>Online communities to share encouragement (e.g. Strava for rehab)</td></tr>
-    <tr><td>Asynchronous "exercise together" see when your buddy completes the same session</td></tr>
-    <tr><td>Personal rehab avatar that accompanies patient during exercises, learning their habits and mood over time; shares progress updates with family/friends (with patient's approval), so loved ones can cheer them on without patient having to explain</td></tr>
-  </tbody>
-</table>
-
-
-<table>
-  <thead>
-    <tr>
-      <th>PROBLEM</th>
-      <th>APPROACH</th>
-      <th>CONCEPT</th>
-      <th>EMBODIMENT</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="13"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
-      <td rowspan="5"><b>APPROACH 1</b><br>Gamification</td>
-      <td rowspan="2"><b>Concept 1A</b><br>Gamified rewards</td>
-      <td>Unlocking certain in-app rewards when milestones are reached</td>
-    </tr>
-    <tr><td>Tie in with incentives to received (similar to Healthy 365 10K steps challenge etc)</td></tr>
-    <tr>
-      <td rowspan="3"><b>Concept 1B</b><br>Rehab as games</td>
-      <td>Turn rehab exercises into mini-games with progress levels with in-game competition</td>
-    </tr>
-    <tr><td>Adaptive exercise difficulty "just within reach" level based on user's recent performance</td></tr>
-    <tr><td>Exercises unlockable as patient reaches milestone</td></tr>
-    <tr>
-      <td rowspan="8"><b>APPROACH 2</b><br>Integration with daily routine</td>
-      <td rowspan="3"><b>Concept 2A</b><br>Part of activities done at home/work</td>
-      <td>AI to suggest how to incorporate exercises with everyday tasks, e.g. lifting and reaching for cabinet, ironing shirt, wiping table</td>
-    </tr>
-    <tr><td>Fidget toys but for shoulder rehab</td></tr>
-    <tr><td>Using MRT or public transport handle for exercise</td></tr>
-    <tr>
-      <td rowspan="5"><b>Concept 2B</b><br>A way to fit into their daily schedule</td>
-      <td>Camera based scanning device that tracks ROM while PT can immediately read measurements while talking with patient</td>
-    </tr>
-    <tr><td>Turn off alarm by doing exercise and Desktop widget reminders</td></tr>
-    <tr><td>Make rehab tool feels luxurious (smooth wood, etc.) (not mundane looking medical tools)</td></tr>
-    <tr><td>Micro rehab exercises (1 min each) during small windows of free time. Concept same as Anki or flashcard, to be done while MRT, waiting in queue, bored, desk job, etc.</td></tr>
-    <tr><td>Snap surroundings → AI suggests rehab exercises using nearby objects; new environment, new routine each time</td></tr>
-  </tbody>
-</table>
-
-
-<table>
-  <thead>
-    <tr>
-      <th>PROBLEM</th>
-      <th>APPROACH</th>
-      <th>CONCEPT</th>
-      <th>EMBODIMENT</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="7"><b>(4) PT spending more time reviewing notes &amp; performing documentation</b></td>
-      <td rowspan="4"><b>APPROACH 1</b><br>Automated documentation for patients ROM</td>
-      <td rowspan="2"><b>Concept 1A</b><br>Device that can automatically assess patient's ROM</td>
-      <td>A type of scanning device that can assess ROM in 3D</td>
-    </tr>
-    <tr>
-      <td>Home rehab sensors and patient scoring</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><b>Concept 1B</b><br>Visual assessment</td>
-      <td>Camera based scanning device that tracks ROM while PT can immediately read measurements while talking with patient</td>
-    </tr>
-    <tr>
-      <td>Audio + vision ambient scribe - PT taps to capture key measurements (e.g. ROM), auto-documented with conversation context</td>
-    </tr>
-    <tr>
-      <td rowspan="3"><b>APPROACH 2</b><br>Recording of patients' notes</td>
-      <td rowspan="2"><b>Concept 2A</b><br>A way to prescribe notes for each session</td>
-      <td>AI-enabled prescriber that records details discussed in each session</td>
-    </tr>
-    <tr>
-      <td>Assess multi-lingual conversations</td>
-    </tr>
-    <tr>
-      <td><b>Concept 2B</b><br>Self-reported documentation</td>
-      <td>Conversational AI intake before first visit: chatbot interviews patient in a friendly, engaging way, and sends a structured summary to the PT before the patient walks in</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-
-
-### 2.3 Concept selection
+### 2.2 Concept selection
 
 > Compare the shortlisted concepts against S1–S5 in a systematic way, explain how the weights were set, and justify the direction chosen: how do you know it is suitable (evidence from Section 1 and Appendices A–C)? The direction can still change in Semester 2; say what result would make you change it.
 
@@ -335,54 +93,101 @@ Considering our design specifications and taking the ACE framework as a guide, w
 
 > **~600 words.** What have you created to achieve the intended deliverables of your project? What are the purposes of these prototypes? How did you create them?
 >
-> Rubric A3 rates a section with nothing made as Poor ("prototypes could have been made, but not carried out"). So show at least simple, low-fidelity prototypes made this semester (sketches, storyboards, paper or clickable mock-ups), each with a clear purpose. Prototype for learning, not for show. Exceptional: multiple prototypes, thoughtfully created, with extensive references to and sound application of knowledge, principles and theories.
+> Rubric A3 rates a section with nothing made as Poor ("prototypes could have been made, but not carried out"). This section is currently a plan: nothing below has been built yet. Once P4–P7 exist, change them to past tense, describe how they were made and add images.
 
-### 3.1 Questions the prototype will answer
+### 3.1 Questions the prototypes will answer
 
-> Each question should trace back to a root cause in Section 2.1 and a specification in Section 1.4. Pick the riskiest assumptions first.
+We will not build one integrated prototype yet. Each prototype answers a small set of open questions at the lowest fidelity that can answer them, and any of them may be dropped or changed based on the results. The questions are of two types:
 
-| Question | Root cause (Section 2.1) | Spec | Prototype | What we will learn |
-|---|---|---|---|---|
-| [Question] | [Root cause] | [S#] | [Prototype] | [Insight we need] |
-| [Question] | [Root cause] | [S#] | [Prototype] | [Insight we need] |
+- **Proof of principle (PoP):** how the underlying mechanism works.
+- **Proof of concept (PoC):** how the idea works for patients and clinicians in practice, and what value they see in it.
 
-### 3.2 Prototypes created and how
+| ID | Prototype | Question | Type | Spec | Stage |
+|---|---|---|---|---|---|
+| P1 | Live feedback session | How should feedback be given during an exercise, in terms of timing and visual, audio or haptic form? | PoP | S1 | Semester 2 |
+| | | What kind of feedback do patients need during an exercise? | PoC | S1 | |
+| | | How useful do patients find this feedback, and why? | PoC | S1 | |
+| P2 | Tracking rig and sensor mock-ups | How closely can a camera or wearable sensor track shoulder movement, compared with a physiotherapist's rating? | PoP | S1 | Semester 2 |
+| | | What should a wearable sensor look like, and where should it sit? | PoC | S1 | |
+| | | How do patients feel about wearing a sensor during exercises, and what would put them off? | PoC | S1 | |
+| P3 | Micro-rehab plan | How can prescribed exercises be broken down into micro exercises that keep the prescribed dose? | PoP | S3 | Semester 2 |
+| | | How useful do patients find exercises adjusted to their schedules, and why? | PoC | S3 | |
+| P4 | Question-answering service | How should a patient's question travel from being asked to receiving a trustworthy answer? | PoP | S5 | Interim |
+| | | How accurately can AI answer common post-RCR questions, compared with physiotherapists and surgeons? | PoP | S5 | |
+| | | What combination of AI and clinician review gives safe answers at a workload clinicians accept? | PoP | S5 | |
+| | | Under what conditions would physiotherapists and surgeons be willing to answer questions? | PoC | S5 | |
+| | | How does a forum compare with private messaging as a place to give feedback? | PoC | S5 | |
+| P5 | Exercise session flow | What steps make up one exercise session from start to finish? | PoC | S3 | Interim |
+| | | How easy do patients find each step, and where do they struggle? | PoC | S3 | |
+| P6 | Progress tracker | What should progress tracking look like for patients? | PoC | S2 | Interim |
+| | | How do patients interpret their progress, and how useful do they find it? | PoC | S2 | |
+| P7 | Physiotherapist summary | What information do physiotherapists need to review progress between visits? | PoC | S4 | Interim |
+| | | How long does a review take, and what do physiotherapists do with it? | PoC | S4 | |
 
-> For each prototype made: what it is (form and fidelity, e.g. sketch, storyboard, paper or clickable mock-up, Wizard-of-Oz, sensor rig), its purpose (which question in 3.1), how it was made, and the knowledge, principles or theories applied, with references. Include images.
+P4–P7 come first because they are cheap to make, need no sensing technology, and address what patients most wanted (Appendix C) and what physiotherapists asked for (Appendix B, Theme 6). P1–P3 need more time, because they involve patients exercising, a sensing set-up or days of real use.
 
-[Content]
+### 3.2 Prototypes for the interim stage
 
-### 3.3 Next prototypes
+All four use fictional patient data, and any clinical content will be drafted with a physiotherapist or our clinical mentor.
 
-> What will be built next, at what fidelity, and why that fidelity is enough to answer its question.
+- **P4, question-answering service.** A set of common patient questions drawn from our interviews, such as "I feel pain with this — is that normal?" (Appendix B, Theme 4), each answered by an AI tool and by clinicians. Alongside this, a storyboard shows three ways to deliver answers: AI only, AI with clinician review, and a moderated forum. Timely answers aim to replace the fear-avoidance response of stopping at any pain (Vlaeyen & Linton, 2000). AI answers will be used for evaluation only and will not be given to patients as advice.
+- **P5, exercise session flow.** A paper or clickable mock-up of one session, from opening the session to finishing it: choosing the exercise, seeing instructions, doing the repetitions, reporting pain and viewing the result.
+- **P6, progress tracker.** A one-screen mock-up plotting a fictional patient's shoulder range of motion and strength against the expected range for their weeks since surgery, linked to a personal goal such as reaching a high shelf. Three versions show a patient who is ahead, on track, and feeling well but behind. The third recreates the point around three months when patients stop (Appendix B, Theme 3). Expected values will come from clinical input.
+- **P7, physiotherapist summary.** A one-page document showing a fictional patient's exercise completion, range of motion against target, pain reports and flags, built around "compliance and whether they reach the target angle" (PT9).
 
-[Content]
+### 3.3 Prototypes for Semester 2
+
+- **P1, live feedback session.** A team member will watch a participant exercise and give feedback by hand, using different forms and timings, in a Wizard-of-Oz set-up (Kelley, 1984). This shows what feedback helps before any detection system is built.
+- **P2, tracking rig and sensor mock-ups.** We will compare a phone camera with pose estimation against wearable motion sensors, the two tracking options in Appendix D, on an exercise chosen with a physiotherapist. Non-working foam or 3D-printed mock-ups will explore the sensor's shape and position.
+- **P3, micro-rehab plan.** With physiotherapists, we will break prescribed exercises into short sessions, then link them to each participant's daily routines, because habits form through repeating a behaviour in a consistent context (Lally et al., 2010). The team will send reminders manually. Any breakdown will be approved by the participant's physiotherapist.
+
+The prototypes that prove useful will then be combined into the functional prototype for evaluation against S1–S5.
 
 ## 4. Testing
 
 > **~400 words.** What tests have you performed to investigate the key questions in your project? What are the purposes of these tests? How did you conduct these tests?
 >
-> Rubric A4 rates a section with no testing done as Poor. A quick test is enough at this stage, e.g. a walkthrough of a sketch or mock-up with 3–5 patients or physiotherapists, or concept feedback from our clinical mentor. Exceptional: purpose and scope clearly defined, and testing conducted conscientiously using the best possible approach for the purpose.
+> Rubric A4 rates a section with no testing done as Poor. No test has been run yet: this section is a plan. Run the P4–P7 tests, change Section 4.2 to past tense, and fill in the results and Section 5. Targets marked "proposed" are ours, not from the specifications; confirm them with your supervisor.
 
 ### 4.1 Purpose and scope
 
-> One row per question in Section 3.1; tie the success criterion to the spec target where possible.
+The tests answer the questions in Section 3.1. They cover usefulness, usability and technical feasibility, not clinical effectiveness or long-term adherence, which are out of scope (Section 1.1).
 
-| Question | Method | Participants | Measure | Success criterion |
+| ID | Method | Participants | What we record | Reference point |
 |---|---|---|---|---|
-| [Question] | [Method] | [n, who] | [Measure] | [Target, from spec] |
+| P1 | Wizard-of-Oz session | 3–5 patients | Which forms and timings help; ratings and reasons | Patient preferences |
+| P2 | Technical comparison; mock-up wear trial | Team members or healthy volunteers; 1–2 physiotherapists as raters; 3–5 patients | Agreement with the physiotherapist's rating; comfort and concerns | At least 80% agreement (S1) |
+| P3 | Physiotherapist working session; 1-week field trial | 2–3 physiotherapists; 3–5 working patients | Time spent; set-up time; sessions completed; reasons for missed sessions | No more time than current exercises; set-up under 2 minutes (S3) |
+| P4 | Blinded rating of answers; storyboard interviews | Clinical mentor and 2–3 physiotherapists or surgeons; 5 patients | Accuracy and safety ratings; review time; preferred service model and reasons | No AI answer rated unsafe after review (proposed; S5) |
+| P5 | Task-based walkthrough | 5 patients | Steps completed unaided; where participants hesitate; time taken | Set-up under 2 minutes (S3) |
+| P6 | Task-based walkthrough | 5 patients | What participants say each version means and what they would do next; usefulness and why | At least 4 of 5 correctly state whether the patient is on track (S2) |
+| P7 | Timed review | 5 physiotherapists | Time to review; what they conclude; information missing or unused | Review under 2 minutes (S4) |
 
-### 4.2 Tests conducted
+### 4.2 Interim tests: P4–P7
 
-> What was done: recruitment, participants, task script, set-up and what was recorded. Why this approach suits the purpose.
+We will recruit patients and physiotherapists through our interview contacts and the physiotherapists who offered to help with recruitment. Five participants per group suits this stage because a small group can reveal most usability problems in a design (Nielsen & Landauer, 1993). The results will therefore show how the ideas work and why, not how common a response is.
 
-[Content]
+Patient sessions (P4–P6) follow the same script, in person or by video call:
 
-### 4.3 Planned tests
+1. Explain that the design is being tested, not the participant, and that all data shown are fictional.
+2. Give each prototype without explanation and ask the participant to think aloud.
+3. P5: ask them to go through a session and describe what they would do at each step.
+4. P6: for the three versions in random order, ask where the patient stands and what they would do next.
+5. P4: walk through the three service models and ask which they would trust, and why.
+6. Close with what was confusing, missing or useful.
 
-> Tests for the next prototypes and for the Semester 2 evaluation against S1–S5.
+For P4, clinicians will rate AI and clinician answers without knowing the source, then discuss what they would be willing to review and how much time it would take. For P7, we will time physiotherapists from opening the summary until they state the patient's progress and their plan for the next visit.
 
-[Content]
+One team member will facilitate and the other will record answers, timings and quotes on a shared sheet.
+
+**Results:** [To complete after testing.]
+
+### 4.3 Tests for Semester 2
+
+- **P1:** participants will do an exercise already prescribed to them while receiving feedback in different forms, then compare the forms.
+- **P2:** we will film correct and deliberately incorrect repetitions from healthy participants, with physiotherapists rating each one independently of the system. Besides percentage agreement, we will report Cohen's kappa, which accounts for agreement by chance (Landis & Koch, 1977). Patients will wear the non-working mock-ups and describe how they feel.
+- **P3:** participants will record daily whether they exercised, how long it took and why when they did not, with their current routine as the comparison.
+- **Final evaluation:** the integrated functional prototype will be evaluated with patients and physiotherapists against all of S1–S5.
 
 ## 5. Analysis
 
@@ -446,11 +251,21 @@ Considering our design specifications and taking the ACE framework as a guide, w
 
 Burns, D., Boyer, P., Razmjou, H., Richards, R., & Whyne, C. (2021). Adherence patterns and dose response of physiotherapy for rotator cuff pathology: Longitudinal cohort study. *JMIR Rehabilitation and Assistive Technologies, 8*(1), e21374. https://doi.org/10.2196/21374
 
+Kelley, J. F. (1984). An iterative design methodology for user-friendly natural language office information applications. *ACM Transactions on Information Systems, 2*(1), 26–41. https://doi.org/10.1145/357417.357420
+
+Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. *European Journal of Social Psychology, 40*(6), 998–1009. https://doi.org/10.1002/ejsp.674
+
+Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics, 33*(1), 159–174. https://doi.org/10.2307/2529310
+
+Nielsen, J., & Landauer, T. K. (1993). A mathematical model of the finding of usability problems. *Proceedings of the INTERACT '93 and CHI '93 Conference on Human Factors in Computing Systems*, 206–213. https://doi.org/10.1145/169059.169166
+
 Sambandam, S. N. (2015). Rotator cuff tears: An evidence based approach. *World Journal of Orthopedics, 6*(11), 902. https://doi.org/10.5312/wjo.v6.i11.902
 
 Simon, L. M., Nguyen, V., & Ezinwa, N. M. (2023). Acute shoulder injuries in adults. *American Family Physician, 107*(5), 503–512. https://www.aafp.org/afp/2023/0500/acute-shoulder-injuries
 
 Sripathi, P., & Agrawal, D. K. (2024). Rotator cuff injury: Pathogenesis, biomechanics, and repair. *Journal of Orthopaedics and Sports Medicine, 6*(4). https://doi.org/10.26502/josm.511500167
+
+Vlaeyen, J. W. S., & Linton, S. J. (2000). Fear-avoidance and its consequences in chronic musculoskeletal pain: A state of the art. *Pain, 85*(3), 317–332. https://doi.org/10.1016/S0304-3959(99)00242-0
 
 ## Appendices
 
@@ -680,3 +495,226 @@ Other things respondents found helpful were YouTube videos on their condition an
 - **Home exercise is done alone:** 5 of 6 respondents had no help, so support needs to reach the patient directly.
 - **Few respondents doubted their technique** (1 of 6), whereas physiotherapists widely reported technique problems (Appendix B, Theme 2). This suggests patients may not recognise their own errors, which supports objective technique feedback (S1).
 - **Limitations:** the sample is small and self-selected, and most respondents are working men, so the results show the range of patient experiences rather than how common each one is.
+
+### Appendix D: Ideation tables
+
+<table>
+  <thead>
+    <tr>
+      <th>PROBLEM</th>
+      <th>APPROACH</th>
+      <th>CONCEPT</th>
+      <th>EMBODIMENT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="15"><b>(1) Patients can't tell if they are doing the exercises correctly</b></td>
+      <td rowspan="5"><b>APPROACH 1</b><br>Movement tracking and feedback</td>
+      <td rowspan="2"><b>Concept 1A</b><br>Movement tracking</td>
+      <td>Camera and screen or VR and sensors to track movement</td>
+    </tr>
+    <tr><td>Wearable sensors: EMG or gyroscope or accelerometer</td></tr>
+    <tr>
+      <td rowspan="3"><b>Concept 1B</b><br>Real-time feedback</td>
+      <td>Pain detection: facial expression, jerking movement, patient input (verbal or haptic)</td>
+    </tr>
+    <tr><td>Visual or auditory or haptic feedback on what's wrong and how to adjust</td></tr>
+    <tr><td>AI-related companion (like Alexa or Google Home)</td></tr>
+    <tr>
+      <td rowspan="5"><b>APPROACH 2</b><br>Assisted Movement</td>
+      <td rowspan="2"><b>Concept 2A</b><br>Physical constraint</td>
+      <td>Machine to isolate the muscle</td>
+    </tr>
+    <tr><td>Device to limit bending angle or ROM (physical restraint)</td></tr>
+    <tr>
+      <td rowspan="3"><b>Concept 2B</b><br>Physical aid</td>
+      <td>Pneumatic or hydraulics driven exoskeleton for controlled movement</td>
+    </tr>
+    <tr><td>Pulley system to utilize unaffected hand to assist movement</td></tr>
+    <tr><td>Automatic adjustable thermal sleeve to aid with cold therapy</td></tr>
+    <tr>
+      <td rowspan="5"><b>APPROACH 3</b><br>Self-guided Learning</td>
+      <td rowspan="2"><b>Concept 3A</b><br>Video Instruction recordings</td>
+      <td>Auto-recorded PT session and creation of video library for the patients to refer to</td>
+    </tr>
+    <tr><td>Creation of pre-recorded video exercise by the PT or other professionals</td></tr>
+    <tr>
+      <td rowspan="3"><b>Concept 3B</b><br>Community Based</td>
+      <td>Recruit personal trainer, yoga instructor, etc. as trusted source of advice at local level</td>
+    </tr>
+    <tr><td>Community based-forum with PT and doctors as verified professionals to answer question</td></tr>
+    <tr><td>Local PT walk-in 5 minute clinic for quick questions</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PROBLEM</th>
+      <th>APPROACH</th>
+      <th>CONCEPT</th>
+      <th>EMBODIMENT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="14"><b>(2) Patients don't know if they are progressing</b></td>
+      <td rowspan="5"><b>APPROACH 1</b><br>Visualization</td>
+      <td rowspan="2"><b>Concept 1A</b><br>Diagram</td>
+      <td>Diagram to show animated visualization of the actual repair</td>
+    </tr>
+    <tr><td>Images of MRI taken during doctors' appointments with labelling to show progress</td></tr>
+    <tr>
+      <td rowspan="3"><b>Concept 1B</b><br>Graph</td>
+      <td>Graph to show time required to reach milestones</td>
+    </tr>
+    <tr><td>Graph to show patients' progress over time, and link progress with important life goals</td></tr>
+    <tr><td>To be able to compare against base/normal range to show progression</td></tr>
+    <tr>
+      <td rowspan="5"><b>APPROACH 2</b><br>Scoring system</td>
+      <td rowspan="2"><b>Concept 2A</b><br>Objective scoring</td>
+      <td>PT's objective evaluations are recorded for patients to view</td>
+    </tr>
+    <tr><td>Automatic scoring of patients using measurements recorded from sensors</td></tr>
+    <tr>
+      <td rowspan="3"><b>Concept 2B</b><br>Subjective scoring</td>
+      <td>PT's subjective evaluations are recorded for patients to view</td>
+    </tr>
+    <tr><td>Patients' own scoring of their pain/functionality</td></tr>
+    <tr><td>Assistance from caregivers or family members to help with scoring</td></tr>
+    <tr>
+      <td rowspan="4"><b>APPROACH 3</b><br>Regular review</td>
+      <td rowspan="2"><b>Concept 3A</b><br>Monthly/weekly check-ins</td>
+      <td>Auto-generated monthly/weekly summaries based on recorded measurements</td>
+    </tr>
+    <tr><td>Telerehab and remote evaluation combined with home-based sensor data</td></tr>
+    <tr>
+      <td rowspan="2"><b>Concept 3B</b><br>Self-reflections</td>
+      <td>Monthly reviews generated from patients' own reflections on their daily progress</td>
+    </tr>
+    <tr><td>Feedback from PT to assess the reviews and get back to patient (online)</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PROBLEM</th>
+      <th>APPROACH</th>
+      <th>CONCEPT</th>
+      <th>EMBODIMENT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="13"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
+      <td rowspan="5"><b>APPROACH 1</b><br>Rewards</td>
+      <td rowspan="2"><b>Concept 1A</b><br>Monetary incentives</td>
+      <td>NTUC vouchers/rebates for unlocking certain milestones</td>
+    </tr>
+    <tr><td>Patient deposit that is deductible (for charity) if patient not doing exercise</td></tr>
+    <tr>
+      <td rowspan="3"><b>Concept 1B</b><br>Non-monetary incentives</td>
+      <td>Badges/recognition for good behaviour</td>
+    </tr>
+    <tr><td>Goal setting &amp; progress tracking</td></tr>
+    <tr><td>Words of encouragement from the app as the patient do the exercise</td></tr>
+    <tr>
+      <td rowspan="8"><b>APPROACH 2</b><br>Scoring system</td>
+      <td rowspan="3"><b>Concept 2A</b><br>Competition</td>
+      <td>Competing with other patients on the same recovery journey (e.g. Duolingo but for rehab) | Rehab Leaderboard</td>
+    </tr>
+    <tr><td>Competing as a group with patients from other groups (e.g. knee)</td></tr>
+    <tr><td>Competing with family/friends who are trying to keep fit</td></tr>
+    <tr>
+      <td rowspan="5"><b>Concept 2B</b><br>Support group</td>
+      <td>Group physiotherapy:<br>- At local community centres or zones, doing PT with fellow peers<br>- In groups with other patients (e.g. group-based PT session) with little PT supervision</td>
+    </tr>
+    <tr><td>Online communities to share encouragement (e.g. Strava for rehab)</td></tr>
+    <tr><td>Asynchronous "exercise together" see when your buddy completes the same session</td></tr>
+    <tr><td>Personal rehab avatar that accompanies patient during exercises, learning their habits and mood over time; shares progress updates with family/friends (with patient's approval), so loved ones can cheer them on without patient having to explain</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PROBLEM</th>
+      <th>APPROACH</th>
+      <th>CONCEPT</th>
+      <th>EMBODIMENT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="13"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
+      <td rowspan="5"><b>APPROACH 1</b><br>Gamification</td>
+      <td rowspan="2"><b>Concept 1A</b><br>Gamified rewards</td>
+      <td>Unlocking certain in-app rewards when milestones are reached</td>
+    </tr>
+    <tr><td>Tie in with incentives to received (similar to Healthy 365 10K steps challenge etc)</td></tr>
+    <tr>
+      <td rowspan="3"><b>Concept 1B</b><br>Rehab as games</td>
+      <td>Turn rehab exercises into mini-games with progress levels with in-game competition</td>
+    </tr>
+    <tr><td>Adaptive exercise difficulty "just within reach" level based on user's recent performance</td></tr>
+    <tr><td>Exercises unlockable as patient reaches milestone</td></tr>
+    <tr>
+      <td rowspan="8"><b>APPROACH 2</b><br>Integration with daily routine</td>
+      <td rowspan="3"><b>Concept 2A</b><br>Part of activities done at home/work</td>
+      <td>AI to suggest how to incorporate exercises with everyday tasks, e.g. lifting and reaching for cabinet, ironing shirt, wiping table</td>
+    </tr>
+    <tr><td>Fidget toys but for shoulder rehab</td></tr>
+    <tr><td>Using MRT or public transport handle for exercise</td></tr>
+    <tr>
+      <td rowspan="5"><b>Concept 2B</b><br>A way to fit into their daily schedule</td>
+      <td>Camera based scanning device that tracks ROM while PT can immediately read measurements while talking with patient</td>
+    </tr>
+    <tr><td>Turn off alarm by doing exercise and Desktop widget reminders</td></tr>
+    <tr><td>Make rehab tool feels luxurious (smooth wood, etc.) (not mundane looking medical tools)</td></tr>
+    <tr><td>Micro rehab exercises (1 min each) during small windows of free time. Concept same as Anki or flashcard, to be done while MRT, waiting in queue, bored, desk job, etc.</td></tr>
+    <tr><td>Snap surroundings → AI suggests rehab exercises using nearby objects; new environment, new routine each time</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PROBLEM</th>
+      <th>APPROACH</th>
+      <th>CONCEPT</th>
+      <th>EMBODIMENT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7"><b>(4) PT spending more time reviewing notes &amp; performing documentation</b></td>
+      <td rowspan="4"><b>APPROACH 1</b><br>Automated documentation for patients ROM</td>
+      <td rowspan="2"><b>Concept 1A</b><br>Device that can automatically assess patient's ROM</td>
+      <td>A type of scanning device that can assess ROM in 3D</td>
+    </tr>
+    <tr>
+      <td>Home rehab sensors and patient scoring</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>Concept 1B</b><br>Visual assessment</td>
+      <td>Camera based scanning device that tracks ROM while PT can immediately read measurements while talking with patient</td>
+    </tr>
+    <tr>
+      <td>Audio + vision ambient scribe - PT taps to capture key measurements (e.g. ROM), auto-documented with conversation context</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><b>APPROACH 2</b><br>Recording of patients' notes</td>
+      <td rowspan="2"><b>Concept 2A</b><br>A way to prescribe notes for each session</td>
+      <td>AI-enabled prescriber that records details discussed in each session</td>
+    </tr>
+    <tr>
+      <td>Assess multi-lingual conversations</td>
+    </tr>
+    <tr>
+      <td><b>Concept 2B</b><br>Self-reported documentation</td>
+      <td>Conversational AI intake before first visit: chatbot interviews patient in a friendly, engaging way, and sends a structured summary to the PT before the patient walks in</td>
+    </tr>
+  </tbody>
+</table>
