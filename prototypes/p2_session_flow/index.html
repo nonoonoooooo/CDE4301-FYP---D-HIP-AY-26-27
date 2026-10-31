@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Session Flow Prototype</title>
+<style>
+  :root {
+    --surface: #F6F4EF; --card: #FFFDF9; --ink: #12313A; --muted: #4A5A60;
+    --line: #DCE3E0; --accent: #B5481F; --soft: #E9EFED;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--surface); color: var(--ink);
+         font: 17px/1.45 "Segoe UI", Arial, sans-serif; }
+  main { max-width: 420px; min-height: 100vh; margin: 0 auto; padding: 16px;
+         display: flex; flex-direction: column; gap: 12px; }
+  header { display: flex; align-items: center; gap: 12px; min-height: 40px; }
+  header button { padding: 6px 12px; font-size: 15px; width: auto; color: var(--ink);
+                  background: transparent; border: 1px solid var(--line); }
+  header p { margin: 0 0 0 auto; font-size: 14px; color: var(--muted); }
+  h1 { font-size: 24px; line-height: 1.2; margin: 0; }
+  p { margin: 0; }
+  .sub { color: var(--muted); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .spacer { flex: 1; }
+  button { font: inherit; width: 100%; padding: 14px; border-radius: 10px; border: 0; cursor: pointer;
+           color: var(--card); background: var(--ink); }
+  button.secondary { color: var(--ink); background: var(--soft); }
+  button.choice { display: block; text-align: left; color: var(--ink); background: var(--card);
+                  border: 1px solid var(--line); }
+  button.choice b { display: block; }
+  button.choice span { color: var(--muted); font-size: 15px; }
+  button:disabled { opacity: 0.45; cursor: default; }
+  ol { margin: 0; padding-left: 22px; }
+  li + li { margin-top: 6px; }
+  svg { display: block; width: 100%; max-width: 220px; height: auto; margin: 0 auto; }
+  .count { font-size: 72px; font-weight: 700; line-height: 1; text-align: center; }
+  .scale { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+  .scale button { padding: 12px 0; color: var(--ink); background: var(--card); border: 1px solid var(--line); }
+  .scale button[aria-pressed="true"] { color: var(--card); background: var(--ink); }
+  .ends { display: flex; justify-content: space-between; font-size: 14px; color: var(--muted); }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .stats p { color: var(--muted); font-size: 14px; }
+  .stats b { display: block; color: var(--ink); font-size: 22px; }
+  details { font-size: 14px; color: var(--muted); }
+  table { width: 100%; margin-top: 8px; border-collapse: collapse; }
+  td { padding: 3px 0; border-top: 1px solid var(--line); }
+  td:last-child { text-align: right; }
+  .note { font-size: 13px; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>
+  // Placeholder exercises for testing the flow. Not a rehabilitation prescription.
+  const exercises = {
+    a: { name: 'Exercise A: forward arm raise', sets: '5 repetitions', minutes: 2, raise: 'forward' },
+    b: { name: 'Exercise B: side arm raise', sets: '5 repetitions', minutes: 2, raise: 'to the side' },
+  };
+  const totalReps = 5;
+  const stepNames = ['Home', 'Instructions', 'Phone set-up', 'Exercise', 'Pain check', 'Result'];
+  const app = document.getElementById('app');
+  const figure = `<svg viewBox="0 0 220 150" role="img" aria-label="Simple figure raising one arm">
+    <circle cx="90" cy="30" r="14" fill="none" stroke="#12313A" stroke-width="4"/>
+    <path d="M90 44 V100 M90 100 L70 145 M90 100 L110 145 M90 56 L70 90" fill="none" stroke="#12313A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M90 56 L150 22" fill="none" stroke="#B5481F" stroke-width="5" stroke-linecap="round"/>
+    <path d="M152 70 A62 62 0 0 0 150 22" fill="none" stroke="#B5481F" stroke-width="2" stroke-dasharray="4 4"/>
+  </svg>`;
+
+  const state = { step: 0, exercise: null, reps: 0, paused: false, pain: null, times: [] };
+  let timer = null;
+
+  function go(step) {
+    clearInterval(timer);
+    state.step = step;
+    state.times.push({ step, at: performance.now() });
+    render();
+  }
+
+  function view(body, canGoBack = true) {
+    const back = canGoBack ? '<button id="back">Back</button>' : '';
+    const position = state.step > 0 && state.step < 5 ? `Step ${state.step} of 4` : '';
+    app.innerHTML = `<header>${back}<p>${position}</p></header>${body}
+      <p class="note">Prototype only. Please do not use it as exercise advice.</p>`;
+    const button = document.getElementById('back');
+    if (button) button.onclick = () => go(state.step - 1);
+  }
+
+  function on(id, handler) {
+    document.getElementById(id).onclick = handler;
+  }
+
+  const screens = [
+    function home() {
+      view(`<h1>Today’s session</h1><p class="sub">Choose an exercise to begin.</p>
+        ${Object.entries(exercises).map(([id, item]) => `
+          <button class="choice" data-id="${id}"><b>${item.name}</b>
+          <span>${item.sets} · about ${item.minutes} minutes</span></button>`).join('')}`, false);
+      app.querySelectorAll('.choice').forEach((button) => {
+        button.onclick = () => {
+          state.exercise = exercises[button.dataset.id];
+          go(1);
+        };
+      });
+    },
+    function instructions() {
+      view(`<h1>${state.exercise.name}</h1>
+        <div class="card">${figure}</div>
+        <div class="card"><ol>
+          <li>Stand up straight with your arms by your sides.</li>
+          <li>Slowly raise your arm ${state.exercise.raise}.</li>
+          <li>Lower it slowly. That is one repetition.</li>
+        </ol></div>
+        <div class="spacer"></div><button id="next">Next</button>`);
+      on('next', () => go(2));
+    },
+    function setup() {
+      view(`<h1>Set up your phone</h1>
+        <p class="sub">Your phone will follow your movement.</p>
+        <div class="card"><ol>
+          <li>Lean your phone against something at chest height.</li>
+          <li>Stand about two big steps away.</li>
+          <li>Check that your head and hips are in the frame.</li>
+        </ol></div>
+        <label class="card"><input type="checkbox" id="framed"> I can see my head and hips</label>
+        <div class="spacer"></div><button id="next" disabled>I’m ready</button>`);
+      document.getElementById('framed').onchange = (event) => {
+        document.getElementById('next').disabled = !event.target.checked;
+      };
+      on('next', () => go(3));
+    },
+    function exercise() {
+      state.reps = 0;
+      state.paused = false;
+      view(`<h1>Follow along</h1>
+        <p class="sub">Repetitions are counted for you.</p>
+        <div class="card"><p class="count" id="count">0</p>
+          <p class="sub" style="text-align:center">of ${totalReps} repetitions</p></div>
+        <div class="spacer"></div>
+        <button class="secondary" id="pause">Pause</button>
+        <button id="next" disabled>Finish</button>`);
+      on('pause', () => {
+        state.paused = !state.paused;
+        document.getElementById('pause').textContent = state.paused ? 'Resume' : 'Pause';
+      });
+      on('next', () => go(4));
+      timer = setInterval(() => {
+        if (state.paused) return;
+        state.reps += 1;
+        document.getElementById('count').textContent = state.reps;
+        if (state.reps === totalReps) {
+          clearInterval(timer);
+          document.getElementById('next').disabled = false;
+          document.getElementById('pause').disabled = true;
+        }
+      }, 2000);
+    },
+    function painCheck() {
+      state.pain = null;
+      view(`<h1>How much pain did you feel?</h1>
+        <p class="sub">Choose a number from 0 to 10.</p>
+        <div class="card"><div class="scale">
+          ${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => `<button data-pain="${n}">${n}</button>`).join('')}
+        </div><div class="ends" style="margin-top:8px"><span>0: no pain</span><span>10: worst pain</span></div></div>
+        <div class="spacer"></div><button id="next" disabled>See my result</button>`);
+      app.querySelectorAll('[data-pain]').forEach((button) => {
+        button.onclick = () => {
+          state.pain = Number(button.dataset.pain);
+          app.querySelectorAll('[data-pain]').forEach((other) => {
+            other.setAttribute('aria-pressed', String(other === button));
+          });
+          document.getElementById('next').disabled = false;
+        };
+      });
+      on('next', () => go(5));
+    },
+    function result() {
+      const seconds = (from, to) => ((to - from) / 1000).toFixed(0);
+      const rows = state.times.slice(0, -1).map((entry, i) => `<tr><td>${stepNames[entry.step]}</td>
+        <td>${seconds(entry.at, state.times[i + 1].at)} s</td></tr>`).join('');
+      const started = state.times.find((entry) => entry.step === 1);
+      const exercising = [...state.times].reverse().find((entry) => entry.step === 3);
+      view(`<h1>Session complete</h1>
+        <div class="card stats">
+          <p><b>${state.reps} of ${totalReps}</b>Repetitions</p>
+          <p><b>${state.pain} of 10</b>Pain reported</p>
+        </div>
+        <div class="spacer"></div>
+        <button id="restart" class="secondary">Back to today’s session</button>
+        <details><summary>For the facilitator</summary><table>
+          <tr><td><b>Set-up time (S3)</b></td><td><b>${seconds(started.at, exercising.at)} s</b></td></tr>
+          ${rows}
+        </table></details>`, false);
+      on('restart', () => {
+        state.times = [];
+        go(0);
+      });
+    },
+  ];
+
+  function render() {
+    screens[state.step]();
+  }
+
+  // Lets the facilitator open a screen directly, for example index.html#3.
+  const start = Number(location.hash.slice(1)) || 0;
+  state.exercise = exercises.a;
+  go(start);
+</script>
+</body>
+</html>
