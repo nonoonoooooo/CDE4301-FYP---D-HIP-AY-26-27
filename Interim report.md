@@ -217,12 +217,10 @@ These findings are early indications, not conclusions:
 
 ## 7. Individual Contributions
 
-> **~100 words.** Indicate individual areas of work clearly.
-
 | Team member | Contribution |
 |---|---|
-| Raghavi | Wrote Section 2 and the P3 parts of Sections 4 and 5; built prototype P3 (camera tracking test) |
-| Phyllis | Wrote Section 1 and the P1 and P2 parts of Sections 4 and 5; built prototypes P1 and P2 and ran their test sessions |
+| Raghavi | Wrote Sections 2 and 6 and the P3 parts of Sections 4 and 5; tested prototype P3  |
+| Phyllis | Wrote Sections 1 and 3 and the P1 and P2 parts of Sections 4 and 5; built prototypes P1 and P2 and ran their test sessions |
 
 ## References
 
