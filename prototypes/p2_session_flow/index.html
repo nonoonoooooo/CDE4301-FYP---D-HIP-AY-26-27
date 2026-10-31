@@ -34,6 +34,21 @@
   ol { margin: 0; padding-left: 22px; }
   li + li { margin-top: 6px; }
   svg { display: block; width: 100%; max-width: 220px; height: auto; margin: 0 auto; }
+  #arm { transform-box: view-box; }
+  #arm.moving { animation: raise 5s ease-in-out infinite; }
+  #arm.paused { animation-play-state: paused; }
+  @keyframes raise { 40%, 55% { transform: rotate(-150deg); } }
+  [hidden] { display: none !important; }
+  .preview { position: relative; height: 280px; display: flex; align-items: center; justify-content: center;
+             overflow: hidden; background: var(--ink); border-radius: 12px; }
+  .preview video, .preview img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .preview video { transform: scaleX(-1); }
+  .preview p { position: relative; padding: 16px; text-align: center; color: var(--card); }
+  .guide { position: absolute; left: 0; right: 0; border-top: 2px dashed var(--card);
+           color: var(--card); font-size: 13px; padding-left: 8px; text-shadow: 0 1px 2px var(--ink); }
+  .photo { display: block; padding: 14px; text-align: center; border-radius: 10px; cursor: pointer;
+           color: var(--ink); background: var(--soft); }
+  .caption { margin-top: 8px; text-align: center; font-size: 15px; color: var(--muted); }
   .count { font-size: 72px; font-weight: 700; line-height: 1; text-align: center; }
   .scale { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
   .scale button { padding: 12px 0; color: var(--ink); background: var(--card); border: 1px solid var(--line); }
@@ -54,24 +69,81 @@
 <script>
   // Placeholder exercises for testing the flow. Not a rehabilitation prescription.
   const exercises = {
-    a: { name: 'Exercise A: forward arm raise', sets: '5 repetitions', minutes: 2, raise: 'forward' },
-    b: { name: 'Exercise B: side arm raise', sets: '5 repetitions', minutes: 2, raise: 'to the side' },
+    a: {
+      name: 'Exercise A: forward arm raise', sets: '5 repetitions', minutes: 2, raise: 'forward',
+      caption: 'Seen from the side: the arm moves forward',
+      shoulder: [100, 74],
+      body: `<circle cx="100" cy="44" r="16" fill="#12313A"/>
+        <path d="M115 40 L123 46 L114 49 Z" fill="#12313A"/>
+        <path d="M100 121 L92 176" stroke="#7E9094" stroke-width="12"/>
+        <path d="M100 121 L108 176 H122" stroke="#12313A" stroke-width="12"/>
+        <path d="M100 70 V121" stroke="#12313A" stroke-width="24"/>`,
+    },
+    b: {
+      name: 'Exercise B: side arm raise', sets: '5 repetitions', minutes: 2, raise: 'to the side',
+      caption: 'Seen from the front: the arm moves out to the side',
+      shoulder: [128, 74],
+      body: `<circle cx="110" cy="44" r="16" fill="#12313A"/>
+        <path d="M100 124 L96 176 H84 M120 124 L124 176 H136" stroke="#12313A" stroke-width="12"/>
+        <path d="M92 74 L84 132" stroke="#12313A" stroke-width="10"/>
+        <rect x="90" y="62" width="40" height="64" rx="14" fill="#12313A"/>`,
+    },
   };
   const totalReps = 5;
   const stepNames = ['Home', 'Instructions', 'Phone set-up', 'Exercise', 'Pain check', 'Result'];
   const app = document.getElementById('app');
-  const figure = `<svg viewBox="0 0 220 150" role="img" aria-label="Simple figure raising one arm">
-    <circle cx="90" cy="30" r="14" fill="none" stroke="#12313A" stroke-width="4"/>
-    <path d="M90 44 V100 M90 100 L70 145 M90 100 L110 145 M90 56 L70 90" fill="none" stroke="#12313A" stroke-width="4" stroke-linecap="round"/>
-    <path d="M90 56 L150 22" fill="none" stroke="#B5481F" stroke-width="5" stroke-linecap="round"/>
-    <path d="M152 70 A62 62 0 0 0 150 22" fill="none" stroke="#B5481F" stroke-width="2" stroke-dasharray="4 4"/>
-  </svg>`;
 
-  const state = { step: 0, exercise: null, reps: 0, paused: false, pain: null, times: [] };
-  let timer = null;
+  // Exercise A is drawn side-on and Exercise B front-on, so the two movements look different.
+  function figure(exercise, animated) {
+    const [x, y] = exercise.shoulder;
+    const pose = animated ? '' : 'transform:rotate(-110deg);';
+    return `<svg viewBox="0 0 220 184" role="img" aria-label="${exercise.caption}">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M${x} ${y + 76} A76 76 0 0 0 ${x + 38} ${y - 66}" stroke="#B5481F" stroke-width="2" stroke-dasharray="4 5"/>
+        ${exercise.body}
+        <path id="arm" class="${animated ? 'moving' : ''}" style="${pose}transform-origin:${x}px ${y}px"
+          d="M${x} ${y} V${y + 60}" stroke="#B5481F" stroke-width="11"/>
+      </g>
+    </svg><p class="caption">${exercise.caption}</p>`;
+  }
+
+  const state = { step: 0, exercise: null, reps: 0, paused: false, pain: null, times: [], stream: null };
+
+  function stopCamera() {
+    if (state.stream) state.stream.getTracks().forEach((track) => track.stop());
+    state.stream = null;
+  }
+
+  // Some browsers and pages refuse live video, so a test photo is the fallback.
+  async function startCamera() {
+    const status = document.getElementById('camera-status');
+    const offerPhoto = () => { document.getElementById('photo-button').hidden = false; };
+    const wait = setTimeout(() => {
+      status.textContent = 'Allow camera access, or take a test photo instead.';
+      offerPhoto();
+    }, 6000);
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' }, audio: false });
+      if (state.step !== 2) {
+        stream.getTracks().forEach((track) => track.stop());
+        return;
+      }
+      state.stream = stream;
+      const video = document.getElementById('video');
+      video.srcObject = stream;
+      video.hidden = false;
+      status.hidden = true;
+      clearTimeout(wait);
+    } catch {
+      clearTimeout(wait);
+      if (state.step !== 2) return;
+      status.textContent = 'Live camera is not available here. Take a photo to check your position.';
+      offerPhoto();
+    }
+  }
 
   function go(step) {
-    clearInterval(timer);
+    stopCamera();
     state.step = step;
     state.times.push({ step, at: performance.now() });
     render();
@@ -105,7 +177,7 @@
     },
     function instructions() {
       view(`<h1>${state.exercise.name}</h1>
-        <div class="card">${figure}</div>
+        <div class="card">${figure(state.exercise, false)}</div>
         <div class="card"><ol>
           <li>Stand up straight with your arms by your sides.</li>
           <li>Slowly raise your arm ${state.exercise.raise}.</li>
@@ -116,44 +188,62 @@
     },
     function setup() {
       view(`<h1>Set up your phone</h1>
-        <p class="sub">Your phone will follow your movement.</p>
-        <div class="card"><ol>
-          <li>Lean your phone against something at chest height.</li>
-          <li>Stand about two big steps away.</li>
-          <li>Check that your head and hips are in the frame.</li>
-        </ol></div>
-        <label class="card"><input type="checkbox" id="framed"> I can see my head and hips</label>
+        <p class="sub">Lean your phone against something at chest height and stand about two big steps away. The picture stays on this phone and is not saved.</p>
+        <div class="preview">
+          <video id="video" autoplay playsinline muted hidden></video>
+          <img id="photo" alt="Your test photo" hidden>
+          <p id="camera-status">Starting camera…</p>
+          <span class="guide" style="top:12%">Head below this line</span>
+          <span class="guide" style="top:78%">Hips above this line</span>
+        </div>
+        <label class="photo" id="photo-button" hidden>Take a test photo
+          <input type="file" id="photo-input" accept="image/*" capture="user" hidden></label>
+        <label class="card"><input type="checkbox" id="framed"> My head and hips are between the lines</label>
         <div class="spacer"></div><button id="next" disabled>I’m ready</button>`);
       document.getElementById('framed').onchange = (event) => {
         document.getElementById('next').disabled = !event.target.checked;
       };
+      document.getElementById('photo-input').onchange = (event) => {
+        const [file] = event.target.files;
+        if (!file) return;
+        const photo = document.getElementById('photo');
+        URL.revokeObjectURL(photo.src);
+        photo.src = URL.createObjectURL(file);
+        photo.hidden = false;
+        document.getElementById('camera-status').hidden = true;
+        document.getElementById('photo-button').firstChild.textContent = 'Retake test photo';
+      };
       on('next', () => go(3));
+      startCamera();
     },
     function exercise() {
       state.reps = 0;
       state.paused = false;
       view(`<h1>Follow along</h1>
-        <p class="sub">Repetitions are counted for you.</p>
+        <p class="sub">Move with the figure. Repetitions are counted for you.</p>
+        <div class="card">${figure(state.exercise, true)}</div>
         <div class="card"><p class="count" id="count">0</p>
           <p class="sub" style="text-align:center">of ${totalReps} repetitions</p></div>
         <div class="spacer"></div>
         <button class="secondary" id="pause">Pause</button>
         <button id="next" disabled>Finish</button>`);
+      const arm = document.getElementById('arm');
       on('pause', () => {
         state.paused = !state.paused;
+        arm.classList.toggle('paused', state.paused);
         document.getElementById('pause').textContent = state.paused ? 'Resume' : 'Pause';
       });
       on('next', () => go(4));
-      timer = setInterval(() => {
-        if (state.paused) return;
+      // Each cycle of the animation is one repetition, so the count stays in step with the arm.
+      arm.addEventListener('animationiteration', () => {
         state.reps += 1;
         document.getElementById('count').textContent = state.reps;
         if (state.reps === totalReps) {
-          clearInterval(timer);
+          arm.classList.remove('moving');
           document.getElementById('next').disabled = false;
           document.getElementById('pause').disabled = true;
         }
-      }, 2000);
+      });
     },
     function painCheck() {
       state.pain = null;

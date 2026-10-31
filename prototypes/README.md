@@ -2,7 +2,7 @@
 
 ## P1: progress tracker
 
-Open `p1_progress_tracker/index.html` in a browser. All data are fictional, and the expected range is illustrative.
+Open the [web link](https://claude.ai/artifact/6eKZh5YK9Trb4vgazCfDg2), or open `p1_progress_tracker/index.html` in a browser. All data are fictional, and the expected range is illustrative.
 
 The screens have neutral names so they do not give away the answer. Show them in a different random order to each participant.
 
@@ -16,7 +16,9 @@ Screen 1 is the key test: does the participant notice the patient is behind even
 
 ## P2: exercise session flow
 
-Open `p2_session_flow/index.html` in a browser, ideally on a phone or in a narrow window. Participants tap through one session: choose an exercise, read the instructions, set up the phone, follow along, report pain and see the result. The exercises are placeholders, and the repetitions count automatically, so participants do not need to do any movement.
+Open the [web link](https://claude.ai/artifact/MCof3qxjA9kXrffwU7wZJs), or open `p2_session_flow/index.html` in a browser, ideally on a phone or in a narrow window. The web link uses the test photo, because live camera preview is not available there. Participants tap through one session: choose an exercise, read the instructions, set up the phone, follow along, report pain and see the result. The exercises are placeholders, and the repetitions count automatically, so participants do not need to do any movement.
+
+The set-up screen shows a live camera preview where the browser allows it. Otherwise it offers a test photo taken with the phone camera. The picture stays on the device and is not saved or uploaded.
 
 At the end, open "For the facilitator" to read the set-up time and the time spent on each screen. Reload the page between participants. To open one screen directly, add its number to the address, for example `index.html#3`.
 
