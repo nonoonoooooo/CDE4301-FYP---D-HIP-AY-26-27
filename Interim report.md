@@ -19,6 +19,12 @@
 7. [Individual Contributions](#7-individual-contributions)
 8. [References](#references)
 9. [Appendices](#appendices)
+   - [Appendix A: Review of existing solutions](#appendix-a-review-of-existing-solutions)
+   - [Appendix B: Summary of stakeholder interviews](#appendix-b-summary-of-stakeholder-interviews)
+   - [Appendix C: Patient survey](#appendix-c-patient-survey)
+   - [Appendix D: Concept Generation & Screening](#appendix-d-concept-generation--screening)
+   - [Appendix E: Test session findings](#appendix-e-test-session-findings)
+   - [Appendix F: Semester 2 prototypes](#appendix-f-semester-2-prototypes)
 
 ## 1. Objective, Scope and Context
 
@@ -35,32 +41,32 @@ By the end of Semester 2, we aim to deliver a functional prototype evaluated wit
 
 Rotator cuff tears are among the most common causes of shoulder pain and disability (Simon et al., 2023), and their prevalence rises with age (Sripathi & Agrawal, 2024). When conservative management fails or the tear is large, patients may undergo surgical rotator cuff repair (RCR) (Sambandam, 2015).
 
-Recovery then follows a phased rehabilitation protocol lasting several months, progressing from sling immobilisation and passive range-of-motion exercises to active movement and strengthening (Sambandam, 2015). Most of this is done unsupervised at home, and adherence is low (Burns et al., 2021). Physiotherapists we interviewed estimated that 30–50% of patients do not do their home exercises and up to 20–30% drop out of public-sector physiotherapy, leading to prolonged recovery, residual stiffness and repeat care (Appendix B, B.5 and Theme 7). In Singapore's public hospitals, follow-ups are often 3–4 weeks apart, so physiotherapists cannot see patients' progress in between, and adherence depends on patients' own discipline.
+Recovery then follows a phased rehabilitation protocol lasting several months, progressing from sling immobilisation and passive range-of-motion exercises to active movement and strengthening (Sambandam, 2015). Most of this is done unsupervised at home, and adherence is low (Burns et al., 2021). Physiotherapists we interviewed estimated that 30–50% of patients do not do their home exercises and up to 20–30% drop out of public-sector physiotherapy, leading to prolonged recovery, residual stiffness and repeat care ([Appendix B, B.5](#b5-estimates-of-adherence-and-drop-off) and Theme 7). In Singapore's public hospitals, follow-ups are often 3–4 weeks apart, so physiotherapists cannot see patients' progress in between, and adherence depends on patients' own discipline.
 
-Our interviews with 6 patients, 10 physiotherapists and 3 surgeons (Appendix B) and a survey of 6 patients (Appendix C) identified four barriers to adherence:
+Our interviews with 6 patients, 10 physiotherapists and 3 surgeons ([Appendix B](#appendix-b-summary-of-stakeholder-interviews)) and a survey of 6 patients ([Appendix C](#appendix-c-patient-survey)) identified four barriers to adherence:
 
 1. **Lack of time and discipline**, especially after patients return to work (7/10 physiotherapists; 3/6 survey respondents).
 2. **Uncertainty about technique:** patients forget exercises or cannot tell whether their form is correct (8/10 physiotherapists).
 3. **Misjudging progress:** patients often stop once they feel "good enough", around three months after surgery, before strength and range are restored (7/10 physiotherapists).
 4. **Pain and fear of movement:** patients interpret pain as damage to the repair and stop exercising, leading to stiffness (7/10 physiotherapists; 2/6 survey respondents).
 
-Of the 16 existing solutions we reviewed (Appendix A), digital exercise platforms offer videos and reminders but no technique feedback, while sensor- and camera-based systems mostly target general musculoskeletal care or the knee. In Singapore, uptake is further limited by data-protection rules and out-of-pocket costs (Appendix A.5). None describes showing patients their progress against the expected post-RCR trajectory, adapting exercises to daily routines, or giving RCR-specific guidance on pain.
+Of the 16 existing solutions we reviewed ([Appendix A](#appendix-a-review-of-existing-solutions)), digital exercise platforms offer videos and reminders but no technique feedback, while sensor- and camera-based systems mostly target general musculoskeletal care or the knee. In Singapore, uptake is further limited by data-protection rules and out-of-pocket costs ([Appendix A.5](#a5-use-in-singapore-from-interviews)). None describes showing patients their progress against the expected post-RCR trajectory, adapting exercises to daily routines, or giving RCR-specific guidance on pain.
 
 ### 1.3 Novelty and value proposition
 
-For patients recovering from RCR who struggle to keep up their home exercises, ReMotion is a home rehabilitation solution that helps them exercise regularly, correctly and at a clinically appropriate pace. Built around the post-RCR recovery phases, it offers short sessions that fit into daily routines, feedback on technique, and progress tracked against the expected recovery trajectory. There is early evidence that this approach works: a physiotherapist who shows patients their test results every session reported that it greatly improved adherence (Appendix B, Theme 3). ReMotion also gives physiotherapists a summary of progress between visits, saving consultation time. For the health system, better adherence could reduce stiffness-related delays and the number of patients referred back to physiotherapy (Appendix B, Theme 7).
+For patients recovering from RCR who struggle to keep up their home exercises, ReMotion is a home rehabilitation solution that helps them exercise regularly, correctly and at a clinically appropriate pace. Built around the post-RCR recovery phases, it offers short sessions that fit into daily routines, feedback on technique, and progress tracked against the expected recovery trajectory. There is early evidence that this approach works: a physiotherapist who shows patients their test results every session reported that it greatly improved adherence ([Appendix B, Theme 3](#b4-findings-by-theme)). ReMotion also gives physiotherapists a summary of progress between visits, saving consultation time. For the health system, better adherence could reduce stiffness-related delays and the number of patients referred back to physiotherapy ([Appendix B, Theme 7](#b4-findings-by-theme)).
 
-ReMotion's novelty lies in whom it is designed around. Most existing solutions are built for clinicians and the organisations that pay for care: their main buyers are clinicians, clinics, hospitals, employers and health plans (Appendix A.2), and their features serve clinical workflows, such as reducing administrative work (PhysioBuddy), integrating with medical records (Medbridge) and giving clinicians dashboards to monitor patients remotely (Appendix A.6). In these solutions, patient adherence is an expected benefit rather than the starting point of the design. ReMotion puts the patient's experience first: each feature is designed around a reason patients do not adhere, namely lack of time, uncertainty about technique, misjudging progress and fear of pain (Section 1.2). For example, ReMotion shows patients their own progress against the expected recovery trajectory, which none of the solutions we reviewed describes (Appendix A.6). Patient uptake of existing solutions also remains limited in Singapore, where printed sheets and phone videos are still the most common take-home materials (Appendix A.5).
+ReMotion's novelty lies in whom it is designed around. Most existing solutions are built for clinicians and the organisations that pay for care: their main buyers are clinicians, clinics, hospitals, employers and health plans ([Appendix A.2](#a2-direct-competitors-profiles)), and their features serve clinical workflows, such as reducing administrative work (PhysioBuddy), integrating with medical records (Medbridge) and giving clinicians dashboards to monitor patients remotely ([Appendix A.6](#a6-gaps-against-our-specifications)). In these solutions, patient adherence is an expected benefit rather than the starting point of the design. ReMotion puts the patient's experience first: each feature is designed around a reason patients do not adhere, namely lack of time, uncertainty about technique, misjudging progress and fear of pain (Section 1.2). For example, ReMotion shows patients their own progress against the expected recovery trajectory, which none of the solutions we reviewed describes ([Appendix A.6](#a6-gaps-against-our-specifications)). Patient uptake of existing solutions also remains limited in Singapore, where printed sheets and phone videos are still the most common take-home materials ([Appendix A.5](#a5-use-in-singapore-from-interviews)).
 
 ### 1.4 Design specifications
 
 | ID | Specification | Justification |
 |---|---|---|
-| S1 | The solution tells patients whether they are performing exercises correctly, agreeing with a physiotherapist's rating of the same repetitions at least 80% of the time. | Technique is checked only in session; 8/10 physiotherapists reported technique problems (Appendix B, Theme 2). |
-| S2 | The solution shows patients how they are progressing, so that at least 4 of 5 test participants can correctly say whether they are on track. | Patients stop once they feel "good enough" (Appendix B, Theme 3); seeing progress was the most wanted support (5/6; Appendix C). |
-| S3 | The solution fits into patients' schedules, taking no more time than their currently prescribed exercises, with set-up taking under 2 minutes. | Time was the most reported barrier; physiotherapists improve adherence by fitting exercises into routines (Appendix B, Theme 1; Appendix C). |
-| S4 | The solution reduces the time physiotherapists spend reviewing patients' progress, with a between-visit summary they can review in under 2 minutes. | Physiotherapists see adherence only at the next visit and said a between-visit summary would save time (Appendix B, Theme 6). |
-| S5 | The solution tells patients which pain is acceptable and when to progress, and never prompts movement beyond the range permitted for their rehabilitation phase. | Fear of pain was raised by 7/10 physiotherapists (Appendix B, Theme 4), and 4/6 survey respondents wanted to feel safe (Appendix C). |
+| S1 | The solution tells patients whether they are performing exercises correctly, agreeing with a physiotherapist's rating of the same repetitions at least 80% of the time. | Technique is checked only in session; 8/10 physiotherapists reported technique problems ([Appendix B, Theme 2](#b4-findings-by-theme)). |
+| S2 | The solution shows patients how they are progressing, so that at least 4 of 5 test participants can correctly say whether they are on track. | Patients stop once they feel "good enough" ([Appendix B, Theme 3](#b4-findings-by-theme)); seeing progress was the most wanted support (5/6; [Appendix C](#appendix-c-patient-survey)). |
+| S3 | The solution fits into patients' schedules, taking no more time than their currently prescribed exercises, with set-up taking under 2 minutes. | Time was the most reported barrier; physiotherapists improve adherence by fitting exercises into routines ([Appendix B, Theme 1](#b4-findings-by-theme); [Appendix C](#appendix-c-patient-survey)). |
+| S4 | The solution reduces the time physiotherapists spend reviewing patients' progress, with a between-visit summary they can review in under 2 minutes. | Physiotherapists see adherence only at the next visit and said a between-visit summary would save time ([Appendix B, Theme 6](#b4-findings-by-theme)). |
+| S5 | The solution tells patients which pain is acceptable and when to progress, and never prompts movement beyond the range permitted for their rehabilitation phase. | Fear of pain was raised by 7/10 physiotherapists ([Appendix B, Theme 4](#b4-findings-by-theme)), and 4/6 survey respondents wanted to feel safe ([Appendix C](#appendix-c-patient-survey)). |
 
 ## 2. Methodology / Concept Development
 
@@ -76,7 +82,7 @@ Barrier (Section 1.2) | Root cause | Design question | Spec |
 
 ### 2.2 Ideation
 
-Following the identification of key rehabilitation barriers and establishment of design specifications and their justifications (Section 1), concept generation was conducted using ideation techniques, including SCAMPER, BruteThink and Idea Box. The resulting ideas were organised using the **Approach–Concept–Embodiment (ACE) framework**, progressing from broad solution strategies to specific concepts and potential implementations. Concepts were generated across the four main problem areas that were identified as barriers to rehabilitation. The main approaches are summarised in the table below, while the complete ACE framework is provided in Appendix D.1.
+Following the identification of key rehabilitation barriers and establishment of design specifications and their justifications (Section 1), concept generation was conducted using ideation techniques, including SCAMPER, BruteThink and Idea Box. The resulting ideas were organised using the **Approach–Concept–Embodiment (ACE) framework**, progressing from broad solution strategies to specific concepts and potential implementations. Concepts were generated across the four main problem areas that were identified as barriers to rehabilitation. The main approaches are summarised in the table below, while the complete ACE framework is provided in [Appendix D.1](#d1-overall-ace-framework-for-concept-generation).
 
 | Main Problem | Main Approaches explored |
 |---|---|
@@ -87,7 +93,7 @@ Following the identification of key rehabilitation barriers and establishment of
 
 ### 2.3 Concept selection
 
-An initial screening was conducted to narrow the broad range of generated concepts according to their anticipated development and implementation feasibility. Concepts were classified as 'Easy', 'Feasible', 'Challenging' or 'Out of Scope'. 'Easy' concepts for instance demonstrate already established technology that is simple to recreate, while 'Feasible' ones may require slightly more resources or technology to develop but can be achieved. 'Challenging' concepts require vastly more resources or knowledge to validate and develop, while those under 'Out of scope' do not directly address the problems. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in Appendix D.2.
+An initial screening was conducted to narrow the broad range of generated concepts according to their anticipated development and implementation feasibility. Concepts were classified as 'Easy', 'Feasible', 'Challenging' or 'Out of Scope'. 'Easy' concepts for instance demonstrate already established technology that is simple to recreate, while 'Feasible' ones may require slightly more resources or technology to develop but can be achieved. 'Challenging' concepts require vastly more resources or knowledge to validate and develop, while those under 'Out of scope' do not directly address the problems. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in [Appendix D.2](#d2-overall-concept-screening-categorisation).
 
 | Screening category | Summarised concepts |
 |---|---|
@@ -124,13 +130,13 @@ Based on the needs-criteria evaluation, 'Feedback Provision' demonstrated the st
 | P3 | Camera tracking test | How closely can a phone camera with pose estimation measure shoulder angle, compared with a manual reference? | PoP | S1 |
 | | | How do camera position and arm angle affect the measurement? | PoP | S1 |
 
-Prototypes that need patients or clinicians are planned for Semester 2 (Appendix F).
+Prototypes that need patients or clinicians are planned for Semester 2 ([Appendix F](#appendix-f-semester-2-prototypes)).
 
 ### 3.2 Prototypes for the interim stage
 
 The prototypes are in the [prototypes](prototypes) folder of this repository, and its [README](prototypes/README.md) explains how to run each one. We built them with AI assistance (Claude Code). P1 and P2 are self-contained web pages written in HTML, CSS and JavaScript, so they run in a phone browser and need no installation. We published them as web links for testing: [P1](https://claude.ai/artifact/6eKZh5YK9Trb4vgazCfDg2) and [P2](https://claude.ai/artifact/MCof3qxjA9kXrffwU7wZJs).
 
-- **P1, progress tracker** ([source](prototypes/p1_progress_tracker/index.html)). A one-screen mock-up with a chart drawn in code, plotting a fictional patient's shoulder range of motion against an expected recovery band, linked to a personal goal such as reaching a high shelf. Three versions show a patient who is ahead, on track, and feeling well but behind. The third recreates the point around three months when patients stop (Appendix B, Theme 3). The versions are labelled only as Screens 1–3, so the labels do not give away the answer. The recovery band is illustrative, not clinical data, because this test is about whether the chart can be read.
+- **P1, progress tracker** ([source](prototypes/p1_progress_tracker/index.html)). A one-screen mock-up with a chart drawn in code, plotting a fictional patient's shoulder range of motion against an expected recovery band, linked to a personal goal such as reaching a high shelf. Three versions show a patient who is ahead, on track, and feeling well but behind. The third recreates the point around three months when patients stop ([Appendix B, Theme 3](#b4-findings-by-theme)). The versions are labelled only as Screens 1–3, so the labels do not give away the answer. The recovery band is illustrative, not clinical data, because this test is about whether the chart can be read.
 - **P2, exercise session flow** ([source](prototypes/p2_session_flow/index.html)). A clickable mock-up of one session, from opening it to finishing: choosing the exercise, seeing instructions, setting up the phone, doing the repetitions, reporting pain and viewing the result. Two placeholder exercises use animated figures, one seen from the side and one from the front. Each cycle of the animation counts as one repetition. On the published link, the set-up screen uses a test photo to check framing, because the platform does not allow a live camera view. A facilitator panel on the last screen shows the time spent on each step.
 - **P3, camera tracking test** ([source](prototypes/p3_camera_tracking/measure_angle.py)). A Python script that analyses phone video with MediaPipe Pose, an open-source pose-estimation tool that locates body landmarks in video (Bazarevsky et al., 2020). For each clip, it calculates the shoulder angle from the shoulder, elbow and hip landmarks, takes the median across frames to reduce the effect of wobble, and reports the mean error against the reference angle. The script is built but has not yet been run on footage. Team members will raise an arm to reference angles marked with a protractor on a wall chart.
 
@@ -154,7 +160,7 @@ The sessions followed these steps:
 2. **P2:** participants worked through Exercise A and Exercise B.
 3. **Set-up:** the published prototype could not show a live camera view, so Participant A used the test photo to check their position. Participant B did not set up the phone.
 
-The facilitator stepped in when a participant needed help, for example to explain the high-shelf goal and the test photo. Both sessions were audio-recorded and transcribed (Appendix E summarises them).
+The facilitator stepped in when a participant needed help, for example to explain the high-shelf goal and the test photo. Both sessions were audio-recorded and transcribed ([Appendix E](#appendix-e-test-session-findings) summarises them).
 
 **P3.** Each team member will raise their arm to reference angles of 30°, 60°, 90°, 120° and 150°, repeated three times, filmed from the side and then from about 45°. We will calculate the mean error for each angle and camera position. Only team members will be filmed, and the movements are simple arm raises by uninjured people.
 
@@ -162,13 +168,13 @@ The facilitator stepped in when a participant needed help, for example to explai
 
 ### 5.1 Findings
 
-We tested P1 and P2 in two sessions with family members as stand-in participants, called Participants A and B. Appendix E sets out what each participant said and did. Three main findings emerged.
+We tested P1 and P2 in two sessions with family members as stand-in participants, called Participants A and B. [Appendix E](#appendix-e-test-session-findings) sets out what each participant said and did. Three main findings emerged.
 
-**Progress tracking (S2).** The chart could be read, but participants drew different conclusions from it: A compared patients with the expected range, while B followed the shape of the line. One likely reason is that the patient's line is the boldest element on the screen, while the expected range sits behind it as a pale band and nothing tells the reader what to conclude. A was also asked directly how each patient was doing, which may have prompted the comparison. B's unprompted reading mirrors how patients judge recovery (Appendix B, Theme 3), so a rising line could reassure a patient who is falling behind. The tracker should state plainly where the patient stands.
+**Progress tracking (S2).** The chart could be read, but participants drew different conclusions from it: A compared patients with the expected range, while B followed the shape of the line. One likely reason is that the patient's line is the boldest element on the screen, while the expected range sits behind it as a pale band and nothing tells the reader what to conclude. A was also asked directly how each patient was doing, which may have prompted the comparison. B's unprompted reading mirrors how patients judge recovery ([Appendix B, Theme 3](#b4-findings-by-theme)), so a rising line could reassure a patient who is falling behind. The tracker should state plainly where the patient stands.
 
 **Guidance during exercise (S1, S3).** Both participants appear to have assumed that the screen was following them, which left them unsure whether they were exercising correctly. This is an understandable assumption, because the set-up step asks users to position themselves in front of the phone, which implies that the phone will then watch them. Nothing on the exercise screen corrected this, and it began straight away, before they had time to work out their role. A more user-friendly design would guide patients through each movement and wait for them to do it correctly, instead of playing the exercise automatically and counting repetitions while they work out what to do.
 
-**Set-up (S3).** Participants either struggled with set-up or skipped it: A took about 3 minutes, over the 2-minute target, and B did not set up the phone at all. The causes appear to differ. A had trouble trying to position the camera within the frame. B had no reason to set up, because the exercise ran whether or not the phone was in position, so set-up seemed optional. Together, these suggest that set-up must fit real home surroundings and must visibly matter to the session. This matches the positioning hassle reported with a previous system (Appendix A.5), and could add a new burden when time is already the most reported barrier (Appendix B, Theme 1). Prototype limitations such as the lack of a live camera view probably added to A's time, so this is a warning about framing, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
+**Set-up (S3).** Participants either struggled with set-up or skipped it: A took about 3 minutes, over the 2-minute target, and B did not set up the phone at all. The causes appear to differ. A had trouble trying to position the camera within the frame. B had no reason to set up, because the exercise ran whether or not the phone was in position, so set-up seemed optional. Together, these suggest that set-up must fit real home surroundings and must visibly matter to the session. This matches the positioning hassle reported with a previous system ([Appendix A.5](#a5-use-in-singapore-from-interviews)), and could add a new burden when time is already the most reported barrier ([Appendix B, Theme 1](#b4-findings-by-theme)). Prototype limitations such as the lack of a live camera view probably added to A's time, so this is a warning about framing, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
 
 ### 5.2 Methods and validity
 
@@ -298,6 +304,8 @@ We identified 16 existing solutions through searches of company websites and pub
 | Designed for post-RCR | Rebee Health (among other conditions), ANAPA, UINCARE Home+, Breg ARC Dynamic | ANAPA and UINCARE Home+ remain at research stage; Breg ARC Dynamic covers the passive phase only |
 | Guidance on pain | Sword Health, Hinge Health (general MSK pain management), KineQuantum (fear of movement) | No solution reviewed offers RCR-specific guidance on acceptable pain and when to progress |
 
+[← Back to Section 1](#1-objective-scope-and-context) | [↑ Back to contents](#table-of-contents)
+
 ### Appendix B: Summary of stakeholder interviews
 
 #### B.1 Method
@@ -409,6 +417,8 @@ These figures are individual physiotherapists' estimates, not measured rates.
 
 These views suggest that non-adherence is concentrated among working patients in settings with infrequent follow-up, rather than being universal.
 
+[← Back to Section 1](#1-objective-scope-and-context) | [↑ Back to contents](#table-of-contents)
+
 ### Appendix C: Patient survey
 
 #### C.1 Method
@@ -460,6 +470,7 @@ Other things respondents found helpful were YouTube videos on their condition an
 - **Few respondents doubted their technique** (1 of 6), whereas physiotherapists widely reported technique problems (Appendix B, Theme 2). This suggests patients may not recognise their own errors, which supports objective technique feedback (S1).
 - **Limitations:** the sample is small and self-selected, and most respondents are working men, so the results show the range of patient experiences rather than how common each one is.
 
+[← Back to Section 1](#1-objective-scope-and-context) | [↑ Back to contents](#table-of-contents)
 
 ### Appendix D: Concept Generation & Screening
 
@@ -867,6 +878,8 @@ Other things respondents found helpful were YouTube videos on their condition an
   </tbody>
 </table>
 
+[← Back to Section 2](#2-methodology--concept-development) | [↑ Back to contents](#table-of-contents)
+
 ### Appendix E: Test session findings
 
 This table sets out what Participants A and B said and did. Quotes come from AI transcripts of the audio recordings and are lightly edited for clarity. Times refer to each session's recording. Session 1 (Participant A) lasted about 8 minutes and Session 2 (Participant B) about 3 minutes.
@@ -878,6 +891,8 @@ This table sets out what Participants A and B said and did. Quotes come from AI 
 | The exercise screen did not make clear what to do | A said: "I assume there'll be a camera here to check if you are doing it properly" (A, 02:12). During the repetitions, B asked: "What would you want me to do?" (B, 01:01) and "I don't understand what you want me to do" (B, 01:07), before working out that the arm should go up and down. The facilitator told A that the figure was "not really following you. You had to follow it" (A, 02:59) | Guide patients through each movement and wait for them to do it correctly, instead of counting automatically (S1, S3) |
 | The test photo option was easily missed | The facilitator pointed out the camera function to A after Exercise A, and explained that the photo showed whether A was within the frame (A, 03:19) | Make framing a guided step (S3) |
 | Set-up was either slow or skipped | A took about 3 minutes to get into frame, from about 04:02 to 07:06, over the 2-minute target. A placed the phone on the floor (A, 04:25–05:12), noticed that the camera could zoom out (A, 06:02), and had a photo fall outside the lines (A, 06:23) before getting it right (A, 07:06). B did not set up the phone and went straight to the exercise (B, 00:35–00:55) | Simplify phone placement, show a live preview, and check framing before the exercise starts (S3) |
+
+[← Back to Section 5](#5-analysis) | [↑ Back to contents](#table-of-contents)
 
 ### Appendix F: Semester 2 prototypes
 
@@ -896,3 +911,5 @@ These prototypes need patients or clinicians, so they are planned for Semester 2
 | | | How accurately can AI answer common post-RCR questions, and what combination of AI and clinician review keeps answers safe? | PoP | S5 |
 | | | Under what conditions would clinicians answer questions, and how does a forum compare with private messaging? | PoC | S5 |
 | P8 | Physiotherapist summary | What information do physiotherapists need, how long does a review take, and what do they do with it? | PoC | S4 |
+
+[← Back to Section 3](#3-fabrication-of-prototypes) | [↑ Back to contents](#table-of-contents)
