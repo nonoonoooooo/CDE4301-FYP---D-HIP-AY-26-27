@@ -93,53 +93,50 @@ Considering our design specifications and taking the ACE framework as a guide, w
 
 > **~600 words.** What have you created to achieve the intended deliverables of your project? What are the purposes of these prototypes? How did you create them?
 >
-> Rubric A3 rates a section with nothing made as Poor ("prototypes could have been made, but not carried out"). This section is currently a plan: nothing below has been built yet. Once P4–P7 exist, change them to past tense, describe how they were made and add images.
+> Rubric A3 rates a section with nothing made as Poor ("prototypes could have been made, but not carried out"). This section is currently a plan: nothing below has been built yet. Once P1–P3 exist, change them to past tense, describe how they were made and add images.
 
 ### 3.1 Questions the prototypes will answer
 
 We will not build one integrated prototype yet. Each prototype answers a small set of open questions at the lowest fidelity that can answer them, and any of them may be dropped or changed based on the results. The questions are of two types:
 
 - **Proof of principle (PoP):** how the underlying mechanism works.
-- **Proof of concept (PoC):** how the idea works for patients and clinicians in practice, and what value they see in it.
+- **Proof of concept (PoC):** how the idea works for its users in practice, and what value they see in it.
+
+At the interim stage we are testing without patients or physiotherapists, so we chose questions that do not depend on clinical judgement or on having had surgery: how easily a design is understood and used, and how a tracking method performs. Questions that need patients or clinicians move to Semester 2.
 
 | ID | Prototype | Question | Type | Spec | Stage |
 |---|---|---|---|---|---|
-| P1 | Live feedback session | How should feedback be given during an exercise, in terms of timing and visual, audio or haptic form? | PoP | S1 | Semester 2 |
-| | | What kind of feedback do patients need during an exercise? | PoC | S1 | |
-| | | How useful do patients find this feedback, and why? | PoC | S1 | |
-| P2 | Tracking rig and sensor mock-ups | How closely can a camera or wearable sensor track shoulder movement, compared with a physiotherapist's rating? | PoP | S1 | Semester 2 |
-| | | What should a wearable sensor look like, and where should it sit? | PoC | S1 | |
-| | | How do patients feel about wearing a sensor during exercises, and what would put them off? | PoC | S1 | |
-| P3 | Micro-rehab plan | How can prescribed exercises be broken down into micro exercises that keep the prescribed dose? | PoP | S3 | Semester 2 |
+| P1 | Progress tracker | What should progress tracking look like so that first-time users can read it? | PoC | S2 | Interim |
+| | | How do users interpret a chart showing someone who feels well but is behind the expected recovery? | PoC | S2 | |
+| P2 | Exercise session flow | What steps make up one exercise session from start to finish? | PoC | S3 | Interim |
+| | | How easy is each step for first-time users, and where do they struggle? | PoC | S3 | |
+| P3 | Camera tracking test | How closely can a phone camera with pose estimation measure shoulder angle, compared with a manual reference? | PoP | S1 | Interim |
+| | | How do camera position and arm angle affect the measurement? | PoP | S1 | |
+| P1, P2 | Patient re-test | How useful do patients find the tracker and session flow, and why? | PoC | S2, S3 | Semester 2 |
+| P4 | Live feedback session | How should feedback be given during an exercise, in terms of timing and visual, audio or haptic form? | PoP | S1 | Semester 2 |
+| | | What kind of feedback do patients need, and how useful do they find it? | PoC | S1 | |
+| P5 | Technique detection and sensor mock-ups | How closely can camera or wearable tracking match a physiotherapist's rating of technique? | PoP | S1 | Semester 2 |
+| | | What should a wearable sensor look like, and how do patients feel about wearing one? | PoC | S1 | |
+| P6 | Micro-rehab plan | How can prescribed exercises be broken down into micro exercises that keep the prescribed dose? | PoP | S3 | Semester 2 |
 | | | How useful do patients find exercises adjusted to their schedules, and why? | PoC | S3 | |
-| P4 | Question-answering service | How should a patient's question travel from being asked to receiving a trustworthy answer? | PoP | S5 | Interim |
-| | | How accurately can AI answer common post-RCR questions, compared with physiotherapists and surgeons? | PoP | S5 | |
-| | | What combination of AI and clinician review gives safe answers at a workload clinicians accept? | PoP | S5 | |
-| | | Under what conditions would physiotherapists and surgeons be willing to answer questions? | PoC | S5 | |
-| | | How does a forum compare with private messaging as a place to give feedback? | PoC | S5 | |
-| P5 | Exercise session flow | What steps make up one exercise session from start to finish? | PoC | S3 | Interim |
-| | | How easy do patients find each step, and where do they struggle? | PoC | S3 | |
-| P6 | Progress tracker | What should progress tracking look like for patients? | PoC | S2 | Interim |
-| | | How do patients interpret their progress, and how useful do they find it? | PoC | S2 | |
-| P7 | Physiotherapist summary | What information do physiotherapists need to review progress between visits? | PoC | S4 | Interim |
-| | | How long does a review take, and what do physiotherapists do with it? | PoC | S4 | |
-
-P4–P7 come first because they are cheap to make, need no sensing technology, and address what patients most wanted (Appendix C) and what physiotherapists asked for (Appendix B, Theme 6). P1–P3 need more time, because they involve patients exercising, a sensing set-up or days of real use.
+| P7 | Question-answering service | How should a patient's question travel from being asked to receiving a trustworthy answer? | PoP | S5 | Semester 2 |
+| | | How accurately can AI answer common post-RCR questions, and what combination of AI and clinician review keeps answers safe? | PoP | S5 | |
+| | | Under what conditions would clinicians answer questions, and how does a forum compare with private messaging? | PoC | S5 | |
+| P8 | Physiotherapist summary | What information do physiotherapists need, how long does a review take, and what do they do with it? | PoC | S4 | Semester 2 |
 
 ### 3.2 Prototypes for the interim stage
 
-All four use fictional patient data, and any clinical content will be drafted with a physiotherapist or our clinical mentor.
-
-- **P4, question-answering service.** A set of common patient questions drawn from our interviews, such as "I feel pain with this — is that normal?" (Appendix B, Theme 4), each answered by an AI tool and by clinicians. Alongside this, a storyboard shows three ways to deliver answers: AI only, AI with clinician review, and a moderated forum. Timely answers aim to replace the fear-avoidance response of stopping at any pain (Vlaeyen & Linton, 2000). AI answers will be used for evaluation only and will not be given to patients as advice.
-- **P5, exercise session flow.** A paper or clickable mock-up of one session, from opening the session to finishing it: choosing the exercise, seeing instructions, doing the repetitions, reporting pain and viewing the result.
-- **P6, progress tracker.** A one-screen mock-up plotting a fictional patient's shoulder range of motion and strength against the expected range for their weeks since surgery, linked to a personal goal such as reaching a high shelf. Three versions show a patient who is ahead, on track, and feeling well but behind. The third recreates the point around three months when patients stop (Appendix B, Theme 3). Expected values will come from clinical input.
-- **P7, physiotherapist summary.** A one-page document showing a fictional patient's exercise completion, range of motion against target, pain reports and flags, built around "compliance and whether they reach the target angle" (PT9).
+- **P1, progress tracker.** A one-screen mock-up, made in a design tool or slides, plotting a fictional patient's shoulder range of motion against an expected recovery band, linked to a personal goal such as reaching a high shelf. Three versions show a patient who is ahead, on track, and feeling well but behind. The third recreates the point around three months when patients stop (Appendix B, Theme 3). The recovery band is illustrative, not clinical data, because this test is about whether the chart can be read.
+- **P2, exercise session flow.** A clickable mock-up of one session, from opening it to finishing: choosing the exercise, seeing instructions, doing the repetitions, reporting pain and viewing the result. The exercise shown is a placeholder.
+- **P3, camera tracking test.** A phone video analysed with MediaPipe Pose, an open-source pose-estimation tool that locates body landmarks in video (Bazarevsky et al., 2020). A short script will calculate the shoulder angle from the shoulder, elbow and hip landmarks. Team members will raise an arm to reference angles marked with a protractor on a wall chart.
 
 ### 3.3 Prototypes for Semester 2
 
-- **P1, live feedback session.** A team member will watch a participant exercise and give feedback by hand, using different forms and timings, in a Wizard-of-Oz set-up (Kelley, 1984). This shows what feedback helps before any detection system is built.
-- **P2, tracking rig and sensor mock-ups.** We will compare a phone camera with pose estimation against wearable motion sensors, the two tracking options in Appendix D, on an exercise chosen with a physiotherapist. Non-working foam or 3D-printed mock-ups will explore the sensor's shape and position.
-- **P3, micro-rehab plan.** With physiotherapists, we will break prescribed exercises into short sessions, then link them to each participant's daily routines, because habits form through repeating a behaviour in a consistent context (Lally et al., 2010). The team will send reminders manually. Any breakdown will be approved by the participant's physiotherapist.
+- **P4, live feedback session.** A team member will watch a participant exercise and give feedback by hand, using different forms and timings, in a Wizard-of-Oz set-up (Kelley, 1984). This shows what feedback helps before any detection system is built.
+- **P5, technique detection and sensor mock-ups.** P3 measures angle only. P5 will extend it to judging technique, comparing the camera with wearable motion sensors (Appendix D) on an exercise chosen with a physiotherapist. Non-working foam or 3D-printed mock-ups will explore the sensor's shape and position.
+- **P6, micro-rehab plan.** With physiotherapists, we will break prescribed exercises into short sessions, then link them to each participant's daily routines, because habits form through repeating a behaviour in a consistent context (Lally et al., 2010). The team will send reminders manually. Any breakdown will be approved by the participant's physiotherapist.
+- **P7, question-answering service.** Common patient questions from our interviews, such as "I feel pain with this — is that normal?" (Appendix B, Theme 4), will be answered by an AI tool and by clinicians. A storyboard will show three ways to deliver answers: AI only, AI with clinician review, and a moderated forum. Timely answers aim to replace the fear-avoidance response of stopping at any pain (Vlaeyen & Linton, 2000). AI answers will be used for evaluation only and will not be given to patients as advice.
+- **P8, physiotherapist summary.** A one-page document showing a fictional patient's exercise completion, range of motion against target, pain reports and flags, built around "compliance and whether they reach the target angle" (PT9).
 
 The prototypes that prove useful will then be combined into the functional prototype for evaluation against S1–S5.
 
@@ -147,46 +144,43 @@ The prototypes that prove useful will then be combined into the functional proto
 
 > **~400 words.** What tests have you performed to investigate the key questions in your project? What are the purposes of these tests? How did you conduct these tests?
 >
-> Rubric A4 rates a section with no testing done as Poor. No test has been run yet: this section is a plan. Run the P4–P7 tests, change Section 4.2 to past tense, and fill in the results and Section 5. Targets marked "proposed" are ours, not from the specifications; confirm them with your supervisor.
+> Rubric A4 rates a section with no testing done as Poor. No test has been run yet: this section is a plan. Run the P1–P3 tests, change Section 4.2 to past tense, and fill in the results and Section 5. Update the participant numbers to match what you actually did. Targets marked "proposed" are ours, not from the specifications; confirm them with your supervisor.
 
 ### 4.1 Purpose and scope
 
-The tests answer the questions in Section 3.1. They cover usefulness, usability and technical feasibility, not clinical effectiveness or long-term adherence, which are out of scope (Section 1.1).
+The interim tests check whether the tracker and session flow can be understood and used, and how well a phone camera measures shoulder angle. They use stand-in participants, so they cannot show that the designs are useful to patients, and they do not test clinical effectiveness or adherence, which are out of scope (Section 1.1). Results against S2 and S3 are therefore provisional until repeated with patients. P3 does not test S1 itself, which requires comparison with a physiotherapist's rating.
 
 | ID | Method | Participants | What we record | Reference point |
 |---|---|---|---|---|
-| P1 | Wizard-of-Oz session | 3–5 patients | Which forms and timings help; ratings and reasons | Patient preferences |
-| P2 | Technical comparison; mock-up wear trial | Team members or healthy volunteers; 1–2 physiotherapists as raters; 3–5 patients | Agreement with the physiotherapist's rating; comfort and concerns | At least 80% agreement (S1) |
-| P3 | Physiotherapist working session; 1-week field trial | 2–3 physiotherapists; 3–5 working patients | Time spent; set-up time; sessions completed; reasons for missed sessions | No more time than current exercises; set-up under 2 minutes (S3) |
-| P4 | Blinded rating of answers; storyboard interviews | Clinical mentor and 2–3 physiotherapists or surgeons; 5 patients | Accuracy and safety ratings; review time; preferred service model and reasons | No AI answer rated unsafe after review (proposed; S5) |
-| P5 | Task-based walkthrough | 5 patients | Steps completed unaided; where participants hesitate; time taken | Set-up under 2 minutes (S3) |
-| P6 | Task-based walkthrough | 5 patients | What participants say each version means and what they would do next; usefulness and why | At least 4 of 5 correctly state whether the patient is on track (S2) |
-| P7 | Timed review | 5 physiotherapists | Time to review; what they conclude; information missing or unused | Review under 2 minutes (S4) |
+| P1 | Task-based walkthrough | 5 stand-in participants | What participants say each version means and what they would do next | At least 4 of 5 correctly state whether the patient is on track (provisional; S2) |
+| P2 | Task-based walkthrough | 5 stand-in participants | Steps completed unaided; where participants hesitate; time taken | Set-up under 2 minutes (provisional; S3) |
+| P3 | Technical measurement | 2 team members | Difference between measured and reference angle, in degrees | Mean error within 10° (proposed) |
 
-### 4.2 Interim tests: P4–P7
+### 4.2 Interim tests: P1–P3
 
-We will recruit patients and physiotherapists through our interview contacts and the physiotherapists who offered to help with recruitment. Five participants per group suits this stage because a small group can reveal most usability problems in a design (Nielsen & Landauer, 1993). The results will therefore show how the ideas work and why, not how common a response is.
+**P1 and P2.** Participants will be friends or family who have not seen the designs, including older adults where possible, because our survey respondents were aged 31–70 (Appendix C). Five participants per group suits this stage because a small group can reveal most usability problems in a design (Nielsen & Landauer, 1993). The results show how the designs work and why, not how common a response is.
 
-Patient sessions (P4–P6) follow the same script, in person or by video call:
+Each session lasts about 15 minutes and follows the same script:
 
-1. Explain that the design is being tested, not the participant, and that all data shown are fictional.
-2. Give each prototype without explanation and ask the participant to think aloud.
-3. P5: ask them to go through a session and describe what they would do at each step.
-4. P6: for the three versions in random order, ask where the patient stands and what they would do next.
-5. P4: walk through the three service models and ask which they would trust, and why.
-6. Close with what was confusing, missing or useful.
+1. Introduce the scenario: imagine you are recovering from shoulder surgery and doing exercises at home. Explain that the design is being tested, not the participant, and that all data are fictional.
+2. P1: show the three versions in random order. For each, ask where the patient stands and what they would do next.
+3. P2: ask them to complete a session while thinking aloud, without help, and time it.
+4. Close with what was confusing, missing or useful.
 
-For P4, clinicians will rate AI and clinician answers without knowing the source, then discuss what they would be willing to review and how much time it would take. For P7, we will time physiotherapists from opening the summary until they state the patient's progress and their plan for the next visit.
+One team member will facilitate and the other will record answers, timings and quotes.
 
-One team member will facilitate and the other will record answers, timings and quotes on a shared sheet.
+**P3.** Each team member will raise their arm to reference angles of 30°, 60°, 90°, 120° and 150°, repeated three times, filmed from the side and then from about 45°. We will calculate the mean error for each angle and camera position. Only team members will be filmed, and the movements are simple arm raises by uninjured people.
 
 **Results:** [To complete after testing.]
 
 ### 4.3 Tests for Semester 2
 
-- **P1:** participants will do an exercise already prescribed to them while receiving feedback in different forms, then compare the forms.
-- **P2:** we will film correct and deliberately incorrect repetitions from healthy participants, with physiotherapists rating each one independently of the system. Besides percentage agreement, we will report Cohen's kappa, which accounts for agreement by chance (Landis & Koch, 1977). Patients will wear the non-working mock-ups and describe how they feel.
-- **P3:** participants will record daily whether they exercised, how long it took and why when they did not, with their current routine as the comparison.
+- **P1 and P2:** repeat with patients, adding how useful they find the designs and why.
+- **P4:** participants will do an exercise already prescribed to them while receiving feedback in different forms, then compare the forms.
+- **P5:** we will film correct and deliberately incorrect repetitions from healthy participants, with physiotherapists rating each one independently of the system. Besides percentage agreement, we will report Cohen's kappa, which accounts for agreement by chance (Landis & Koch, 1977). Patients will wear the non-working mock-ups and describe how they feel.
+- **P6:** a 1-week trial with 3–5 working patients, who will record daily whether they exercised, how long it took and why when they did not, with their current routine as the comparison.
+- **P7:** clinicians will rate AI and clinician answers without knowing the source, then discuss what they would be willing to review. Patients will compare the three service models.
+- **P8:** 5 physiotherapists will be timed from opening the summary until they state the patient's progress and their plan (under 2 minutes; S4).
 - **Final evaluation:** the integrated functional prototype will be evaluated with patients and physiotherapists against all of S1–S5.
 
 ## 5. Analysis
@@ -223,7 +217,7 @@ One team member will facilitate and the other will record answers, timings and q
 
 ### 6.2 Shortcomings and proposed solutions
 
-> Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants) and of the needs data (Appendices B.1, B.5 and C.5).
+> Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants, stand-in participants rather than patients or physiotherapists) and of the needs data (Appendices B.1, B.5 and C.5).
 
 [Content]
 
@@ -248,6 +242,8 @@ One team member will facilitate and the other will record answers, timings and q
 | Phyllis | [Content] |
 
 ## References
+
+Bazarevsky, V., Grishchenko, I., Raveendran, K., Zhu, T., Zhang, F., & Grundmann, M. (2020). *BlazePose: On-device real-time body pose tracking*. arXiv. https://doi.org/10.48550/arXiv.2006.10204
 
 Burns, D., Boyer, P., Razmjou, H., Richards, R., & Whyne, C. (2021). Adherence patterns and dose response of physiotherapy for rotator cuff pathology: Longitudinal cohort study. *JMIR Rehabilitation and Assistive Technologies, 8*(1), e21374. https://doi.org/10.2196/21374
 
