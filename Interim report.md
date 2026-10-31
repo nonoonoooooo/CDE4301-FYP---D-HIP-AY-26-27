@@ -76,7 +76,7 @@ Problem (Section 1.2) | Root cause | Design question | Spec |
 | Uncertainty about technique | Patients receive limited feedback between PT appointments and PTs are only able to correct these exercises during the sessions themselves. | How might we enable patients to recognise and correct improper exercise techniques independently during the home rehabilitation phase? | S1 |
 | Misjudging progress | Patients have limited access to objective information on their progress unless requested and may mistake reduced pain or improved function for complete recovery. | How might we help patients understand their rehabilitation progress and potentially recognise when further improvement is needed? | S2 |
 | Pain and fear of movement | Patients sometimes do not understand that the pain/discomfort during exercise is to be expected or whether the pain they feel requires them to seek professional advice | How might we help patients handle uncertainty about exercise-related pain and potentially continue rehabilitation safely within prescribed limits? | S5 |
-| No visibility between visits | Home rehabilitation is largely self-managed, where PTs mostly rely on patient-reported responses and in-person reassessment.| How might we provide physiotherapists with relevant, actionable information about patients' home rehabilitation while minimising additional workload? | S4 |
+| PT time and visibility between visits | Home rehabilitation is largely self-managed, where PTs mostly rely on patient-reported responses and in-person reassessment.| How might we provide physiotherapists with relevant, actionable information about patients' home rehabilitation while minimising additional workload? | S4 |
 
 ### 2.2 Ideation
 
@@ -84,11 +84,11 @@ Following the identification of key rehabilitation barriers and establishment of
 
 | Main Problem | Main Approaches explored |
 |---|---|
-| Uncertainty regarding exercise techniques | Movement tracking and feedback, Assisted movement, Self-guided learning |
-| Difficulty assessing rehabilitation progress | Progress visualisation, Scoring System, Regular reviews |
-| Limited time and discipline for doing rehabilitation exercises at home | Rewards and incentives, Social support, Gamification, Integration into daily routines |
+| Uncertainty about technique | Movement tracking and feedback, Assisted movement, Self-guided learning |
+| Misjudging progress | Progress visualisation, Scoring System, Regular reviews |
+| Lack of time and discipline | Rewards and incentives, Social support, Gamification, Integration into daily routines |
 | Pain and fear of movement | Patient pain scoring, Pain detection, Answering patients' questions |
-| PTs spending more time on their administrative workload | Automated ROM documentation, Recorded note-taking of patients |
+| PT time and visibility between visits | Automated ROM documentation, Recorded note-taking of patients |
 
 ### 2.3 Concept selection
 
