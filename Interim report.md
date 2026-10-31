@@ -80,13 +80,14 @@ Barrier (Section 1.2) | Root cause | Design question | Spec |
 
 ### 2.2 Ideation
 
-Following the identification of key rehabilitation barriers and establishment of design specifications and their justifications (Section 1), concept generation was conducted using ideation techniques, including SCAMPER, BruteThink and Idea Box. The resulting ideas were organised using the **Approach–Concept–Embodiment (ACE) framework**, progressing from broad solution strategies to specific concepts and potential implementations. Concepts were generated across the four main problem areas that were identified as barriers to rehabilitation. The main approaches are summarised in the table below, while the complete ACE framework is provided in [Appendix D.1](#d1-overall-ace-framework-for-concept-generation).
+Following the identification of key rehabilitation barriers and establishment of design specifications and their justifications (Section 1), concept generation was conducted using ideation techniques, including SCAMPER, BruteThink and Idea Box. The resulting ideas were organised using the **Approach–Concept–Embodiment (ACE) framework**, progressing from broad solution strategies to specific concepts and potential implementations. Concepts were generated across the five main problem areas that were identified as barriers to rehabilitation. The main approaches are summarised in the table below, while the complete ACE framework is provided in [Appendix D.1](#d1-overall-ace-framework-for-concept-generation).
 
 | Main Problem | Main Approaches explored |
 |---|---|
 | Uncertainty regarding exercise techniques | Movement tracking and feedback, Assisted movement, Self-guided learning |
 | Difficulty assessing rehabilitation progress | Progress visualisation, Scoring System, Regular reviews |
 | Limited time and discipline for doing rehabilitation exercises at home | Rewards and incentives, Social support, Gamification, Integration into daily routines |
+| Pain and fear of movement | Patient pain scoring, Pain detection, Answering patients' questions |
 | PTs spending more time on their administrative workload | Automated ROM documentation, Recorded note-taking of patients |
 
 ### 2.3 Concept selection
@@ -696,6 +697,36 @@ Other things respondents found helpful were YouTube videos on their condition an
       <td><b>Concept 2B</b><br>Self-reported documentation</td>
       <td>Conversational AI intake before first visit: chatbot interviews patient in a friendly, engaging way, and sends a structured summary to the PT before the patient walks in</td>
     </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>PROBLEM</th>
+      <th>APPROACH</th>
+      <th>CONCEPT</th>
+      <th>EMBODIMENT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4"><b>(5) Pain and fear of movement</b></td>
+      <td><b>APPROACH 1</b><br>Patient pain scoring</td>
+      <td><b>Concept 1A</b><br>Subjective scoring</td>
+      <td>Patients' own scoring of their pain/functionality</td>
+    </tr>
+    <tr>
+      <td><b>APPROACH 2</b><br>Pain detection</td>
+      <td><b>Concept 2A</b><br>Automatic detection</td>
+      <td>Pain detection: facial expression, jerking movement, patient input (verbal or haptic)</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>APPROACH 3</b><br>Answering patients' questions</td>
+      <td rowspan="2"><b>Concept 3A</b><br>Access to professionals</td>
+      <td>Community based-forum with PT and doctors as verified professionals to answer question</td>
+    </tr>
+    <tr><td>Local PT walk-in 5 minute clinic for quick questions</td></tr>
   </tbody>
 </table>
 
