@@ -70,24 +70,51 @@ ReMotion's novelty lies in whom it is designed around. Most existing solutions a
 >
 > Rubric A2 (Exceptional): chosen concept and its alternatives evaluated in a systematic and comprehensive manner.
 
-### 2.1 Ideation
+### 2.1 Root Cause evaluation
 
-Considering our design specifications and taking the ACE framework as a guide, we ideated on the potential solutions we can develop to address them. The use of thinking tools such as ‘SCAMPER’ (Substitute, Combine, Adapt, Modify, Purpose, Eliminate, Reverse), ‘BruteThink’ and doing an ‘Idea Box’ enabled us to brainstorm ideas at the start. Afterwards, we review them against our Needs Criteria and organised them accordingly in the tables in Appendix D.
+ Barrier (Section 1.2) | Root cause | Design question | Spec |
+|---|---|---|---|
+| Lack of time and discipline | Work and daily commitments compete with rehabilitation. Patients may lose motivation once they feel sufficiently recovered and this may lead to low adoption rate. | How might we help patients incorporate prescribed rehabilitation exercises into their daily routines and sustain engagement throughout recovery | S3 |
+| Uncertainty about technique | Patients receive limited feedback between PT appointments and PTs are only able to correct these exercises during sessions itself. | How might we enable patients to recognise and correct improper exercise techniques independently during home rehabilitation phase? | S1 |
+| Misjudging progress | Patients have limited access to objective information on their progress unless requested and may mistake reduced pain or improved function for complete recovery. | How might we help patients understand their rehabilitation progress and potentially recognise when further improvement is needed? | S2 |
+| Pain and fear of movement | Patients sometimes do not understand that the pain/discomfort during exercise is to be expected or whether the pain they feel requires them to seek professional advice | How might we help patients handle uncertainty about exercise-related pain and potentially continue rehabilitation safely within prescribed limits? | S5 |
+| No visibility between visits | Home rehabilitation is largely self-managed, where PTs mostly rely on patient-reported responses and in-person reassessment.| How might we provide physiotherapists with relevant, actionable information about patients' home rehabilitation while minimising additional workload? | S4 |
 
-### 2.2 Concept selection
+### 2.2 Ideation
 
-> Compare the shortlisted concepts against S1–S5 in a systematic way, explain how the weights were set, and justify the direction chosen: how do you know it is suitable (evidence from Section 1 and Appendices A–C)? The direction can still change in Semester 2; say what result would make you change it.
+Following the identification of key rehabilitation barriers and establishment of design specifications and their justifications (Section 1), concept generation was conducted using ideation techniques, including SCAMPER, BruteThink and Idea Box. The resulting ideas were organised using the **Approach–Concept–Embodiment (ACE) framework**, progressing from broad solution strategies to specific concepts and potential implementations. Concepts were generated across the four main problem areas that were identified as barriers to rehabilitation. The main approaches are summarised in the table below, while the complete ACE framework is provided in Appendix D.1.
 
-| Criterion (spec) | Weight | Concept A | Concept B | Concept C |
-|---|---|---|---|---|
-| [Criterion] (S1) | [w] | [Score] | [Score] | [Score] |
-| [Criterion] (S2) | [w] | [Score] | [Score] | [Score] |
-| [Criterion] (S3) | [w] | [Score] | [Score] | [Score] |
-| [Criterion] (S4) | [w] | [Score] | [Score] | [Score] |
-| [Criterion] (S5) | [w] | [Score] | [Score] | [Score] |
-| **Weighted total** | | | | |
+| Main Problem | Main Approaches explored |
+|---|---|
+| Uncertainty regarding exercise techniques | Movement tracking and feedback, Assisted movement, Self-guided learning |
+| Difficulty assessing rehabilitation progress | Progress visualisation, Scoring System, Regular reviews |
+| Limited time and discipline for doing rehabilitation exercises at home | Rewards and incentives, Social support, Gamification, Integration into daily routines |
+| PTs spending more time on their administrative workload | Automated ROM documentation, Recorded note-taking of patients |
 
-[Content]
+### 2.3 Concept selection
+
+An initial screening was conducted to narrow the broad range of generated concepts according to their anticipated development and implementation feasibility. Concepts were classified as 'Easy', 'Feasible', 'Challenging' or 'Out of Scope'. 'Easy' concepts for instance demonstrate already established technology that simple to recreate, while 'Feasible' ones may require slight more resources or technology to develop but can be achieved. 'Challenging' concepts require vastly more resources or knowledge to validate and develop, while those under 'Out of scope' do not directly address the problems. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in Appendix D.2.
+
+| Screening category | Summarised concepts |
+|---|---|
+| Easy | Pre-recorded exercise videos, patient progress/evaluation graphs, goal setting and reminders, channel for feedback and support, micro-rehab exercises |
+| Feasible | Camera-based movement tracking, wearable motion sensors, automated progress summaries, gamified incentives, AI-based prescriber (for PT) |
+| Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab, Auto-recorded PT sessions |
+| Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
+
+Following preliminary screening, three key concepts were shortlisted for further evaluation: Feedback Provision, Gamification (Incentivised Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised as they directly address the major barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision. To assess their suitability, the shortlisted concepts were compared against the established design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below.
+
+| Design specification / Needs criteria | Feedback Provision | Gamification (Incentivised Exercises) | Rehabilitation Progress Tracking |
+|---|:---:|:---:|:---:|
+| Feedback on exercise technique (to see if they are doing it right) | 2 | 1 | 1 |
+| Clear and understandable progress visibility for patients | 1 | 1 | 2 |
+| Seamless integration into patients' schedule (no additional time needed) | 0 | 2 | 1 |
+| Reduced PT time on (documentation) workload | 1 | 0 | 1 |
+| Safe guidance (managing pain) | 2 | 0 | 0 |
+| **Total score (maximum 10)** | **6** | **4** | **5** |
+Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion. The thresholds are taken from your draft specifications, not established clinical standards.
+
+Based on the needs-criteria evaluation, 'Feedback Provision' demonstrated the strongest alignment with our design specifications, particularly in providing exercise technique feedback and supporting safe rehabilitation. 'Rehabilitation Progress Tracking' was also identified as a promising complementary concept, allowing patients to better understand their recovery and providing relevant information for physiotherapists. Although 'Gamification' scored lower overall, it demonstrated potential in encouraging exercise adherence through integration into patients' daily routines. Therefore, feedback provision and progress tracking were prioritised for further development, with gamification considered as a supporting feature. These concepts will undergo initial prototyping to assess their technical feasibility and usability before further refinement.
 
 ## 3. Fabrication of Prototypes
 
@@ -492,7 +519,10 @@ Other things respondents found helpful were YouTube videos on their condition an
 - **Few respondents doubted their technique** (1 of 6), whereas physiotherapists widely reported technique problems (Appendix B, Theme 2). This suggests patients may not recognise their own errors, which supports objective technique feedback (S1).
 - **Limitations:** the sample is small and self-selected, and most respondents are working men, so the results show the range of patient experiences rather than how common each one is.
 
-### Appendix D: Ideation tables
+
+### Appendix D: Concept Generation & Screening
+
+#### D.1 Overall ACE Framework for concept generation
 
 <table>
   <thead>
@@ -543,6 +573,8 @@ Other things respondents found helpful were YouTube videos on their condition an
     <tr><td>Local PT walk-in 5 minute clinic for quick questions</td></tr>
   </tbody>
 </table>
+
+
 
 <table>
   <thead>
@@ -633,6 +665,7 @@ Other things respondents found helpful were YouTube videos on their condition an
   </tbody>
 </table>
 
+
 <table>
   <thead>
     <tr>
@@ -674,6 +707,7 @@ Other things respondents found helpful were YouTube videos on their condition an
   </tbody>
 </table>
 
+
 <table>
   <thead>
     <tr>
@@ -711,6 +745,64 @@ Other things respondents found helpful were YouTube videos on their condition an
     <tr>
       <td><b>Concept 2B</b><br>Self-reported documentation</td>
       <td>Conversational AI intake before first visit: chatbot interviews patient in a friendly, engaging way, and sends a structured summary to the PT before the patient walks in</td>
+    </tr>
+  </tbody>
+</table>
+
+#### D.2 Overall Concept screening categorisation
+
+<table>
+  <thead>
+    <tr>
+      <th>Problem(s)</th>
+      <th>'Out of Scope' Concepts Identified</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">
+        Patients can't tell if they are doing the exercises correctly
+      </td>
+      <td>VR and sensors to track movement</td>
+    </tr>
+    <tr>
+      <td>Pain detection: facial expression, jerking movement, patient input (verbal or haptic)</td>
+    </tr>
+    <tr>
+      <td>Machine to isolate the muscle</td>
+    </tr>
+
+  <tr>
+      <td rowspan="2">
+        Patients don't know if they are progressing
+      </td>
+      <td>Graph to show time required to reach milestones</td>
+    </tr>
+    <tr>
+      <td>Assistance from caregivers or family members to help with scoring</td>
+    </tr>
+
+   <tr>
+      <td rowspan="3">
+        Patients struggle to find time and discipline to do the full set of prescribed exercises at home
+      </td>
+      <td>Patient deposit that is deductible (for charity) if patient does not do exercises</td>
+    </tr>
+    <tr>
+      <td>Competing as a group with patients from other groups (e.g. knee rehabilitation)</td>
+    </tr>
+    <tr>
+      <td>Competing with family/friends who are trying to keep fit</td>
+    </tr>
+
+   <tr>
+      <td rowspan="2">
+        PT spending more time on reviewing notes and performing documentation
+      </td>
+      <td>A scanning device that can assess ROM in 3D</td>
+    </tr>
+    <tr>
+      <td>Camera-based scanning device that tracks ROM while PT can immediately read measurements during consultation</td>
     </tr>
   </tbody>
 </table>
