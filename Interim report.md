@@ -933,18 +933,20 @@ These tables set out what Participants A to H said and did. Quotes come from AI 
 
 These prototypes need patients or clinicians, so they are planned for Semester 2. P1 and P2 will also be re-tested with patients.
 
-| ID | Prototype | Question | Type | Spec |
-|---|---|---|---|---|
-| P1, P2 | Patient re-test | How useful do patients find the tracker and session flow, and why? | PoC | S2, S3 |
-| P4 | Live feedback session | How should feedback be given during an exercise, in terms of timing and visual, audio or haptic form? | PoP | S1 |
-| | | What kind of feedback do patients need, and how useful do they find it? | PoC | S1 |
-| P5 | Technique detection and sensor mock-ups | How closely can camera or wearable tracking match a physiotherapist's rating of technique? | PoP | S1 |
-| | | What should a wearable sensor look like, and how do patients feel about wearing one? | PoC | S1 |
-| P6 | Micro-rehab plan | How can prescribed exercises be broken down into micro exercises that keep the prescribed dose? | PoP | S3 |
-| | | How useful do patients find exercises adjusted to their schedules, and why? | PoC | S3 |
-| P7 | Question-answering service | How should a patient's question travel from being asked to receiving a trustworthy answer? | PoP | S5 |
-| | | How accurately can AI answer common post-RCR questions, and what combination of AI and clinician review keeps answers safe? | PoP | S5 |
-| | | Under what conditions would clinicians answer questions, and how does a forum compare with private messaging? | PoC | S5 |
-| P8 | Physiotherapist summary | What information do physiotherapists need, how long does a review take, and what do they do with it? | PoC | S4 |
+| Design Question | Proposed Prototype | ID | Type | Spec |
+|---|---|:---:|:---:|:---:|
+| How useful do patients find the tracker and session flow, and why? | Patient re-test | P1, P2 | PoC | S2, S3 |
+| How should feedback be given during an exercise, in terms of timing and visual, audio or haptic form? | Live feedback session | P4 | PoP | S1 |
+| What kind of feedback do patients need, and how useful do they find it? | Live feedback session | P4 | PoC | S1 |
+| How closely can camera or wearable tracking match a physiotherapist's rating of technique? | Technique detection and sensor mock-ups | P5 | PoP | S1 |
+| What should a wearable sensor look like, and how do patients feel about wearing one? | Technique detection and sensor mock-ups | P5 | PoC | S1 |
+| How can prescribed exercises be broken down into micro exercises that keep the prescribed dose? | Micro-rehab plan | P6 | PoP | S3 |
+| How useful do patients find exercises adjusted to their schedules, and why? | Micro-rehab plan | P6 | PoC | S3 |
+| How should a patient's question travel from being asked to receiving a trustworthy answer? | Question-answering service | P7 | PoP | S5 |
+| How accurately can AI answer common post-RCR questions, and what combination of AI and clinician review keeps answers safe? | Question-answering service | P7 | PoP | S5 |
+| Under what conditions would clinicians answer questions, and how does a forum compare with private messaging? | Question-answering service | P7 | PoC | S5 |
+| What information do physiotherapists need, how long does a review take, and what do they do with it? | Physiotherapist summary | P8 | PoC | S4 |
+
+**Note:** PoC - Proof of Concept, PoP - Proof of Principle
 
 [← Back to Section 3](#3-fabrication-of-prototypes) | [↑ Back to contents](#table-of-contents)
