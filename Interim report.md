@@ -124,17 +124,6 @@ Based on the needs-criteria evaluation, 'Feedback Provision' showed the stronges
 
 Following concept screening and evaluation (Section 2), prototyping questions were developed around the two selected concepts (feedback provision and progress tracking). Three prototypes were identified to address key uncertainties: a progress-tracking interface (P1) to assess patients' interpretation of recovery information, an exercise-session workflow (P2) to evaluate usability and setup burden, and a camera-based movement-tracking test (P3) to investigate the feasibility of objectively measuring shoulder movement. These prototypes were selected to examine individual functions before integrating them into a more comprehensive rehabilitation system. Their respective objectives and associated design specifications are summarised below.
 
-| ID | Prototype | Question | Type | Spec |
-|---|---|---|---|---|
-| P1 | Progress tracker | What should progress tracking look like so that first-time users can read it? | PoC | S2 |
-| | | How do users interpret a chart showing someone who feels well but is behind the expected recovery? | PoC | S2 |
-| P2 | Exercise session flow | What steps make up one exercise session from start to finish? | PoC | S3 |
-| | | How easy is each step for first-time users, and where do they struggle? | PoC | S3 |
-| P3 | Camera tracking test | How closely can a phone camera with pose estimation measure shoulder angle, compared with a manual reference? | PoP | S1 |
-| | | How do camera position and arm angle affect the measurement? | PoP | S1 |
-
-(suggested new table)
-
 | Design Question | Proposed Prototype | ID | Type | Spec |
 |---|---|:---:|:---:|:---:|
 | How should rehabilitation progress be visualised so that first-time users can easily understand it? | Progress tracker | P1 | PoC | S2 |
