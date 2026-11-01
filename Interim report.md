@@ -603,7 +603,7 @@ Other things respondents found helpful were YouTube videos on their condition an
   </thead>
   <tbody>
     <tr>
-      <td rowspan="26"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
+      <td rowspan="25"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
       <td rowspan="5"><b>APPROACH 1</b><br>Rewards</td>
       <td rowspan="2"><b>Concept 1A</b><br>Monetary incentives</td>
       <td>NTUC vouchers/rebates for unlocking certain milestones</td>
@@ -616,14 +616,14 @@ Other things respondents found helpful were YouTube videos on their condition an
     <tr><td>Goal setting &amp; progress tracking</td></tr>
     <tr><td>Words of encouragement from the app as the patient do the exercise</td></tr>
     <tr>
-      <td rowspan="8"><b>APPROACH 2</b><br>Social support</td>
+      <td rowspan="7"><b>APPROACH 2</b><br>Social support</td>
       <td rowspan="3"><b>Concept 2A</b><br>Competition</td>
       <td>Competing with other patients on the same recovery journey (e.g. Duolingo but for rehab) | Rehab Leaderboard</td>
     </tr>
     <tr><td>Competing as a group with patients from other groups (e.g. knee)</td></tr>
     <tr><td>Competing with family/friends who are trying to keep fit</td></tr>
     <tr>
-      <td rowspan="5"><b>Concept 2B</b><br>Support group</td>
+      <td rowspan="4"><b>Concept 2B</b><br>Support group</td>
       <td>Group physiotherapy:<br>- At local community centres or zones, doing PT with fellow peers<br>- In groups with other patients (e.g. group-based PT session) with little PT supervision</td>
     </tr>
     <tr><td>Online communities to share encouragement (e.g. Strava for rehab)</td></tr>
