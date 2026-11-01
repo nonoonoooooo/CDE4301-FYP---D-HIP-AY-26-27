@@ -134,6 +134,7 @@ Following concept screening and evaluation (Section 2), prototyping questions we
 | How do camera positioning and shoulder angles affect measurement accuracy? | Camera tracking test | P3 | PoP | S1 |
 
 **Note:** PoC - Proof of Concept, PoP - Proof of Principle
+
 Prototypes that need patients or clinicians are planned for Semester 2 ([Appendix F](#appendix-f-semester-2-prototypes)).
 
 ### 3.2 Prototypes for the interim stage
