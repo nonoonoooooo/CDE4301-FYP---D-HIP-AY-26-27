@@ -52,7 +52,7 @@ Of the 16 existing solutions we reviewed ([Appendix A](#appendix-a-review-of-exi
 
 ### 1.3 Novelty and value proposition
 
-For patients recovering from RCR who struggle to keep up their home exercises, ReMotion is a home rehabilitation solution that helps them exercise regularly, correctly and at a clinically appropriate pace. Built around the post-RCR recovery phases, it offers short sessions that fit into daily routines, feedback on technique, and progress tracked against the expected recovery trajectory. There is early evidence that this approach works: a physiotherapist who shows patients their test results every session reported that it greatly improved adherence ([Appendix B, Theme 3](#b4-findings-by-theme)). ReMotion also gives physiotherapists a summary of progress between visits, saving consultation time. For the health system, better adherence could reduce stiffness-related delays and the number of patients referred back to physiotherapy ([Appendix B, Theme 7](#b4-findings-by-theme)).
+For patients recovering from RCR who struggle to keep up their home exercises, ReMotion is a home rehabilitation solution that potentially helps them exercise regularly, correctly and at a clinically appropriate pace. Built around the post-RCR recovery phases, it offers short sessions that fit into daily routines, feedback on technique, and progress tracked against the expected recovery trajectory. There is early evidence that this approach works: a physiotherapist who shows patients their test results every session reported that it greatly improved adherence ([Appendix B, Theme 3](#b4-findings-by-theme)). ReMotion also gives physiotherapists a summary of progress between visits, saving consultation time. For the health system, better adherence could reduce stiffness-related delays and the number of patients referred back to physiotherapy ([Appendix B, Theme 7](#b4-findings-by-theme)).
 
 ReMotion's novelty lies in whom it is designed around. Most existing solutions are built for clinicians and the organisations that pay for care ([Appendix A.2](#a2-direct-competitors-profiles)), with features that serve clinical workflows, such as reducing administrative work (PhysioBuddy) or giving clinicians remote dashboards ([Appendix A.6](#a6-gaps-against-our-specifications)). Patient adherence is an expected benefit rather than the starting point. ReMotion designs each feature around a reason patients do not adhere (Section 1.2). For example, it shows patients their progress against the expected recovery trajectory, which none of the solutions we reviewed describes. Patient uptake of existing solutions also remains limited in Singapore, where printed sheets and phone videos are still the most common take-home materials ([Appendix A.5](#a5-use-in-singapore-from-interviews)).
 
@@ -68,7 +68,9 @@ ReMotion's novelty lies in whom it is designed around. Most existing solutions a
 
 ## 2. Methodology / Concept Development
 
-### 2.1 Root Cause evaluation
+### 2.1 Identified Barriers and Design Questions
+
+Based on the rehabilitation barriers identified through stakeholder interviews and patient surveys (Section 1.2), the underlying contributing factors were translated into “How Might We” design questions to guide our subsequent concept generation.
 
 Problem (Section 1.2) | Root cause | Design question | Spec |
 |---|---|---|---|
@@ -80,7 +82,7 @@ Problem (Section 1.2) | Root cause | Design question | Spec |
 
 ### 2.2 Ideation
 
-Following the identification of key rehabilitation barriers and establishment of design specifications and their justifications (Section 1), concept generation was conducted using ideation techniques, including SCAMPER, BruteThink and Idea Box. The resulting ideas were organised using the **Approach–Concept–Embodiment (ACE) framework**, progressing from broad solution strategies to specific concepts and potential implementations. Concepts were generated across the five main problem areas identified in our research. The main approaches are summarised in the table below, while the complete ACE framework is provided in [Appendix D.1](#d1-overall-ace-framework-for-concept-generation).
+Guided by the design questions identified in Section 2.1, concepts were generated, with the resulting ideas being organised using the Approach–Concept–Embodiment (ACE) framework, as they progress from broader strategies to specific concepts and potential implementations. The main approaches across the five identified problem areas are summarised below, with the complete ACE framework provided in [Appendix D.1](#d1-overall-ace-framework-for-concept-generation).
 
 | Main Problem | Main Approaches explored |
 |---|---|
@@ -92,7 +94,7 @@ Following the identification of key rehabilitation barriers and establishment of
 
 ### 2.3 Concept selection
 
-An initial screening narrowed the generated concepts by development and implementation feasibility. Concepts were classed as 'Easy' (established technology that is simple to recreate), 'Feasible' (achievable with slightly more resources), 'Challenging' (needing far more resources or knowledge) or 'Out of scope' (not directly addressing the problems). The table below summarises the results, and [Appendix D.2](#d2-overall-concept-screening-categorisation) gives them in full.
+An initial screening was conducted to narrow the broad range of generated concepts according to their anticipated development and implementation feasibility. Concepts were classified as 'Easy', 'Feasible', 'Challenging' or 'Out of Scope'. 'Easy' concepts for instance demonstrate already established technology that is relatively simple to recreate, while 'Feasible' ones may require slightly more resources or technology to develop but can be achieved. 'Challenging' concepts require vastly more resources or knowledge to validate and develop, while those under 'Out of scope' do not directly address the problems or lack feasibility. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in [Appendix D.2](#d2-overall-concept-screening-categorisation).
 
 | Screening category | Summarised concepts |
 |---|---|
@@ -101,24 +103,26 @@ An initial screening narrowed the generated concepts by development and implemen
 | Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab, Auto-recorded PT sessions |
 | Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
 
-Following screening, three concepts were shortlisted: Feedback Provision, Gamification (Incentivised Exercises) and Rehabilitation Progress Tracking. They directly address the main barriers from our research, interviews and observations of PT sessions, and can support home rehabilitation without continuous physiotherapist supervision. They were compared against the design specifications (S1–S5) using the needs-criteria matrix below.
+Following preliminary screening, three key concepts were shortlisted for further evaluation: Feedback Provision, Gamification (Incentivised Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods. Their suitability was then assessed against the design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below.
 
-| Design specification / Needs criteria | Feedback Provision | Gamification (Incentivised Exercises) | Rehabilitation Progress Tracking |
+| Design specification / Needs criteria | Feedback Provision | Gamification (with Micro-Rehab Exercises) | Rehabilitation Progress Tracking |
 |---|:---:|:---:|:---:|
 | Feedback on exercise technique (to see if they are doing it right) | 2 | 1 | 1 |
 | Clear and understandable progress visibility for patients | 1 | 1 | 2 |
 | Seamless integration into patients' schedule (no additional time needed) | 0 | 2 | 1 |
 | Reduced PT time on (documentation) workload | 1 | 0 | 1 |
-| Safe guidance (managing pain) | 2 | 0 | 0 |
-| **Total score (maximum 10)** | **6** | **4** | **5** |
+| Proper guidance (managing pain) | 2 | 0 | 0 |
+| **Average Score** | **1.2** | **0.8** | **1.0** |
 
-Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion. The thresholds are taken from our design specifications, not established clinical standards.
+Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion.
 
-'Feedback Provision' aligned most strongly with our specifications, particularly technique feedback and safe rehabilitation. 'Rehabilitation Progress Tracking' was a promising complement, helping patients understand their recovery and informing physiotherapists. 'Gamification' scored lower but could encourage adherence by fitting into daily routines. We therefore prioritised feedback provision and progress tracking for initial prototyping, with gamification as a supporting feature.
+Based on the needs-criteria evaluation, 'Feedback Provision' showed the strongest alignment with our design specifications, particularly in providing exercise technique feedback and guiding rehabilitation. 'Rehabilitation Progress Tracking' was also identified as a promising complementary concept, allowing patients to better understand their recovery and providing relevant information for physiotherapists. Although 'Gamification' scored lower overall, it can potentially encourage adherence through integration of micro-rehab exercises into patients' daily routines. Therefore, feedback provision and progress tracking were initially prioritised for further development and prototyping, with gamification considered as a possible supporting feature. These concepts will undergo initial prototyping to assess their technical feasibility and usability before refining them further.
 
 ## 3. Fabrication of Prototypes
 
 ### 3.1 Questions the prototypes will answer
+
+Following concept screening and evaluation (Section 2), prototyping questions were developed around the two selected concepts (feedback provision and progress tracking). Three prototypes were identified to address key uncertainties: a progress-tracking interface (P1) to assess patients' interpretation of recovery information, an exercise-session workflow (P2) to evaluate usability and setup burden, and a camera-based movement-tracking test (P3) to investigate the feasibility of objectively measuring shoulder movement. These prototypes were selected to examine individual functions before integrating them into a more comprehensive rehabilitation system. Their respective objectives and associated design specifications are summarised below.
 
 | ID | Prototype | Question | Type | Spec |
 |---|---|---|---|---|
@@ -129,6 +133,18 @@ Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion
 | P3 | Camera tracking test | How closely can a phone camera with pose estimation measure shoulder angle, compared with a manual reference? | PoP | S1 |
 | | | How do camera position and arm angle affect the measurement? | PoP | S1 |
 
+(New Table)
+
+| Design Question | Proposed Prototype | ID | Type | Spec |
+|---|---|:---:|:---:|:---:|
+| How should rehabilitation progress be visualised so that first-time users can easily understand it? | Progress tracker | P1 | PoC | S2 |
+| How can we help patients recognise when their recovery is behind expectations, even if they feel well or are improving? | Progress tracker | P1 | PoC | S2 |
+| How should a home rehabilitation exercise session be structured from start to finish? | Exercise session flow | P2 | PoC | S3 |
+| How can we make each step of the exercise session intuitive and minimise difficulties for first-time users? | Exercise session flow | P2 | PoC | S3 |
+| How accurately can phone-based pose estimation measure shoulder angles compared with a manual reference? | Camera tracking test | P3 | PoP | S1 |
+| How do camera positioning and shoulder angles affect measurement accuracy? | Camera tracking test | P3 | PoP | S1 |
+
+**Note:** PoC - Proof of Concept, PoP - Proof of Principle
 Prototypes that need patients or clinicians are planned for Semester 2 ([Appendix F](#appendix-f-semester-2-prototypes)).
 
 ### 3.2 Prototypes for the interim stage
