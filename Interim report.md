@@ -48,13 +48,13 @@ Our interviews with 6 patients, 10 physiotherapists and 3 surgeons ([Appendix B]
 3. **Misjudging progress:** patients often stop once they feel "good enough", around three months after surgery, before strength and range are restored (7/10 physiotherapists).
 4. **Pain and fear of movement:** patients interpret pain as damage to the repair and stop exercising, leading to stiffness (7/10 physiotherapists; 2/6 survey respondents).
 
-Of the 16 existing solutions we reviewed ([Appendix A](#appendix-a-review-of-existing-solutions)), digital exercise platforms offer videos and reminders but no technique feedback, while sensor- and camera-based systems mostly target general musculoskeletal care or the knee. In Singapore, uptake is further limited by data-protection rules and out-of-pocket costs ([Appendix A.5](#a5-use-in-singapore-from-interviews)). None describes showing patients their progress against the expected post-RCR trajectory, adapting exercises to daily routines, or giving RCR-specific guidance on pain.
+Of the 17 existing solutions we reviewed ([Appendix A](#appendix-a-review-of-existing-solutions)), digital exercise platforms offer videos and reminders but no technique feedback, while sensor- and camera-based systems mostly target general musculoskeletal care or the knee. In Singapore, uptake is further limited by data-protection rules and out-of-pocket costs ([Appendix A.5](#a5-use-in-singapore-from-interviews)). None describes showing patients their progress against the expected post-RCR trajectory, adapting exercises to daily routines, or giving RCR-specific guidance on pain.
 
 ### 1.3 Novelty and value proposition
 
 For patients recovering from RCR who struggle to keep up their home exercises, ReMotion is a home rehabilitation solution that potentially helps them exercise regularly, correctly and at a clinically appropriate pace. Built around the post-RCR recovery phases, it offers short sessions that fit into daily routines, feedback on technique, and progress tracked against the expected recovery trajectory. There is early evidence that this approach works: a physiotherapist who shows patients their test results every session reported that it greatly improved adherence ([Appendix B, Theme 3](#b4-findings-by-theme)). ReMotion also gives physiotherapists a summary of progress between visits, saving consultation time. For the health system, better adherence could reduce stiffness-related delays and the number of patients referred back to physiotherapy ([Appendix B, Theme 7](#b4-findings-by-theme)).
 
-ReMotion's novelty lies in whom it is designed around. Most existing solutions are built for clinicians and the organisations that pay for care ([Appendix A.2](#a2-direct-competitors-profiles)), with features that serve clinical workflows, such as reducing administrative work (PhysioBuddy) or giving clinicians remote dashboards ([Appendix A.6](#a6-gaps-against-our-specifications)). Patient adherence is an expected benefit rather than the starting point. ReMotion designs each feature around a reason patients do not adhere (Section 1.2). For example, it shows patients their progress against the expected recovery trajectory, which none of the solutions we reviewed describes. Patient uptake of existing solutions also remains limited in Singapore, where printed sheets and phone videos are still the most common take-home materials ([Appendix A.5](#a5-use-in-singapore-from-interviews)).
+ReMotion's novelty lies in being built specifically for the shoulder after RCR. The closest solution in Singapore, ATLAS, is a general system used across multiple health conditions, run by physiotherapy teams for patients discharged from community hospitals (SingHealth Community Hospitals, 2024; Ministry of Health Singapore, 2026). Most other solutions serve clinicians and the organisations that pay for care ([Appendix A.2](#a2-direct-competitors-profiles)), and those designed specifically for post-RCR patients remain at research stage or cover only one phase ([Appendix A.6](#a6-gaps-against-our-specifications)). ReMotion is designed around the reasons working patients do not adhere after RCR (Section 1.2). It fits exercises around work, guides patients on acceptable pain, and shows their progress against the expected post-RCR trajectory, which none of the solutions we reviewed describes. Uptake of existing solutions also remains limited in Singapore, where printed sheets and phone videos are still the most common take-home materials ([Appendix A.5](#a5-use-in-singapore-from-interviews)).
 
 ### 1.4 Design specifications
 
@@ -240,9 +240,13 @@ Bazarevsky, V., Grishchenko, I., Raveendran, K., Zhu, T., Zhang, F., & Grundmann
 
 Burns, D., Boyer, P., Razmjou, H., Richards, R., & Whyne, C. (2021). Adherence patterns and dose response of physiotherapy for rotator cuff pathology: Longitudinal cohort study. *JMIR Rehabilitation and Assistive Technologies, 8*(1), e21374. https://doi.org/10.2196/21374
 
+Ministry of Health Singapore. (2026, July 11). *Speech by Mdm Rahayu Mahzam, Minister of State, Ministry of Digital Development and Information & Ministry of Health, at the Singapore International Physiotherapy Congress 2026*. https://www.moh.gov.sg/newsroom/speech-by-mdm-rahayu-mahzam--minister-of-state--ministry-of-digital-development-and-information---ministry-of-heatlh-at-the-singapore-international-physiotherapy-congress-2026--11-july-2026--9am/
+
 Sambandam, S. N. (2015). Rotator cuff tears: An evidence based approach. *World Journal of Orthopedics, 6*(11), 902. https://doi.org/10.5312/wjo.v6.i11.902
 
 Simon, L. M., Nguyen, V., & Ezinwa, N. M. (2023). Acute shoulder injuries in adults. *American Family Physician, 107*(5), 503–512. https://www.aafp.org/afp/2023/0500/acute-shoulder-injuries
+
+SingHealth Community Hospitals. (2024, May 13). *AI-assisted physiotherapy system*. https://www.singhealth.com.sg/sch/about-sch/news/news-release/2024/ai-assisted-physiotherapy-system.newsdetails
 
 Sripathi, P., & Agrawal, D. K. (2024). Rotator cuff injury: Pathogenesis, biomechanics, and repair. *Journal of Orthopaedics and Sports Medicine, 6*(4). https://doi.org/10.26502/josm.511500167
 
@@ -252,7 +256,7 @@ Sripathi, P., & Agrawal, D. K. (2024). Rotator cuff injury: Pathogenesis, biomec
 
 #### A.1 Method
 
-We identified 16 existing solutions through searches of company websites and published trials, supplemented by tools mentioned in our stakeholder interviews (Appendix B). We grouped them into direct competitors, which support home rehabilitation through software or sensors, and adjacent solutions, which are physical, robotic or VR equipment used mainly in specific phases or in clinics. Features were taken from each solution's official website or published trial. A dash (–) means the feature was not described in the information we reviewed, not that it is definitely absent.
+We identified 17 existing solutions through searches of company websites, news releases and published trials, supplemented by tools mentioned in our stakeholder interviews (Appendix B). We grouped them into direct competitors, which support home rehabilitation through software or sensors, and adjacent solutions, which are physical, robotic or VR equipment used mainly in specific phases or in clinics. Features were taken from each solution's official website, news release or published trial. A dash (–) means the feature was not described in the information we reviewed, not that it is definitely absent.
 
 #### A.2 Direct competitors: profiles
 
@@ -268,6 +272,7 @@ We identified 16 existing solutions through searches of company websites and pub
 | Hinge Health | Camera-guided digital physiotherapy | Employers, health plans | General MSK | $0 to eligible members | Commercial |
 | ANAPA | Digital rehabilitation and shoulder assessment | Post-RCR patients, clinicians | Shoulder, post-RCR | – | Research (24-week pilot trial) |
 | UINCARE Home+ | Augmented-reality home rehabilitation | Hospitals, rehabilitation providers | Shoulder, including post-RCR | – | Clinical trial; commercial availability unconfirmed |
+| ATLAS | Wearable sensor and apps | Community hospitals | Multiple conditions | – | In use at three Singapore community hospitals; co-developed with Rebee Health |
 
 #### A.3 Direct competitors: features
 
@@ -283,6 +288,7 @@ We identified 16 existing solutions through searches of company websites and pub
 | Hinge Health | ✓ | ✓ | ✓ | – | ✓ | ✓ |
 | ANAPA | ✓ | – | ✓ | – | ✓ | – |
 | UINCARE Home+ | ✓ | ✓ | ✓ | ✓ | ✓ | – |
+| ATLAS | ✓ | ✓ | ✓ | ✓ | ✓ | – |
 
 #### A.4 Adjacent solutions
 
@@ -306,8 +312,8 @@ We identified 16 existing solutions through searches of company websites and pub
 
 | Need | Addressed by | Remaining gap |
 |---|---|---|
-| Feedback on technique (S1) | Sensor- and camera-based systems (Rebee Health, Kinexcs, Sword Health, Hinge Health, UINCARE Home+) | Digital exercise platforms give no technique feedback. Most sensor systems target general MSK care or the knee, and in Singapore their use is limited by out-of-pocket cost and set-up effort |
-| Seeing progress (S2) | Most direct competitors track ROM or strength | Tracking is described mainly as clinician dashboards. None of the solutions reviewed describes showing patients their progress against the expected post-RCR trajectory |
+| Feedback on technique (S1) | Sensor- and camera-based systems (Rebee Health, ATLAS, Kinexcs, Sword Health, Hinge Health, UINCARE Home+) | Digital exercise platforms give no technique feedback. Most sensor systems target general MSK care or the knee, and in Singapore their use is limited by out-of-pocket cost and set-up effort |
+| Seeing progress (S2) | Most direct competitors track ROM or strength | Tracking is described mainly as clinician dashboards. ATLAS gives patients feedback on progress towards their rehabilitation goals, but none of the solutions reviewed describes showing patients their progress against the expected post-RCR trajectory |
 | Fitting into schedules (S3) | Exercise reminders (Medbridge, Physitrack) | None describes adapting the programme to patients' daily routines |
 | Saving physiotherapists' time (S4) | PhysioBuddy (reducing admin), Medbridge (EMR integration), ARTICARES H-Man (automatic reports) | Local data-protection rules limit what overseas platforms can share with clinicians |
 | Designed for post-RCR | Rebee Health (among other conditions), ANAPA, UINCARE Home+, Breg ARC Dynamic | ANAPA and UINCARE Home+ remain at research stage; Breg ARC Dynamic covers the passive phase only |
