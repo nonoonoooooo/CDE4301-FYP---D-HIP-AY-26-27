@@ -603,7 +603,7 @@ Other things respondents found helpful were YouTube videos on their condition an
   </thead>
   <tbody>
     <tr>
-      <td rowspan="13"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
+      <td rowspan="26"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
       <td rowspan="5"><b>APPROACH 1</b><br>Rewards</td>
       <td rowspan="2"><b>Concept 1A</b><br>Monetary incentives</td>
       <td>NTUC vouchers/rebates for unlocking certain milestones</td>
@@ -616,7 +616,7 @@ Other things respondents found helpful were YouTube videos on their condition an
     <tr><td>Goal setting &amp; progress tracking</td></tr>
     <tr><td>Words of encouragement from the app as the patient do the exercise</td></tr>
     <tr>
-      <td rowspan="8"><b>APPROACH 2</b><br>Scoring system</td>
+      <td rowspan="8"><b>APPROACH 2</b><br>Social support</td>
       <td rowspan="3"><b>Concept 2A</b><br>Competition</td>
       <td>Competing with other patients on the same recovery journey (e.g. Duolingo but for rehab) | Rehab Leaderboard</td>
     </tr>
@@ -629,23 +629,8 @@ Other things respondents found helpful were YouTube videos on their condition an
     <tr><td>Online communities to share encouragement (e.g. Strava for rehab)</td></tr>
     <tr><td>Asynchronous "exercise together" see when your buddy completes the same session</td></tr>
     <tr><td>Personal rehab avatar that accompanies patient during exercises, learning their habits and mood over time; shares progress updates with family/friends (with patient's approval), so loved ones can cheer them on without patient having to explain</td></tr>
-  </tbody>
-</table>
-
-
-<table>
-  <thead>
     <tr>
-      <th>PROBLEM</th>
-      <th>APPROACH</th>
-      <th>CONCEPT</th>
-      <th>EMBODIMENT</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="13"><b>(3) Patients struggle to find time and discipline to do the full set of prescribed exercises at home</b></td>
-      <td rowspan="5"><b>APPROACH 1</b><br>Gamification</td>
+      <td rowspan="5"><b>APPROACH 3</b><br>Gamification</td>
       <td rowspan="2"><b>Concept 1A</b><br>Gamified rewards</td>
       <td>Unlocking certain in-app rewards when milestones are reached</td>
     </tr>
@@ -657,7 +642,7 @@ Other things respondents found helpful were YouTube videos on their condition an
     <tr><td>Adaptive exercise difficulty "just within reach" level based on user's recent performance</td></tr>
     <tr><td>Exercises unlockable as patient reaches milestone</td></tr>
     <tr>
-      <td rowspan="8"><b>APPROACH 2</b><br>Integration with daily routine</td>
+      <td rowspan="8"><b>APPROACH 4</b><br>Integration with daily routine</td>
       <td rowspan="3"><b>Concept 2A</b><br>Part of activities done at home/work</td>
       <td>AI to suggest how to incorporate exercises with everyday tasks, e.g. lifting and reaching for cabinet, ironing shirt, wiping table</td>
     </tr>
