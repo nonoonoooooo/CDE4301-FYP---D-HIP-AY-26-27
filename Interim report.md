@@ -133,7 +133,7 @@ Following concept screening and evaluation (Section 2), prototyping questions we
 | P3 | Camera tracking test | How closely can a phone camera with pose estimation measure shoulder angle, compared with a manual reference? | PoP | S1 |
 | | | How do camera position and arm angle affect the measurement? | PoP | S1 |
 
-(New Table)
+(suggested new table)
 
 | Design Question | Proposed Prototype | ID | Type | Spec |
 |---|---|:---:|:---:|:---:|
