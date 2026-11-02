@@ -157,12 +157,12 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 
 ### 4.2 Interim tests: P1–P3
 
-**P1 and P2.** We tested the prototypes with nine stand-in participants, A to I. The sessions followed these steps:
+**P1 and P2.** We tested the prototypes with nine participants, A to I. The sessions followed these steps:
 
 1. **P1:** participants viewed the three screens and said what each one meant.
 2. **P2:** participants worked through one or both exercises, from choosing an exercise to viewing the result.
 
-The facilitator stepped in when a participant needed help. Participant I worked through both prototypes alone and recorded their spoken comments. All sessions and comments were audio-recorded and transcribed ([Appendix E](#appendix-e-test-session-findings) summarises them).
+The facilitator stepped in when a participant needed help. All sessions and comments were audio-recorded and transcribed ([Appendix E](#appendix-e-test-session-findings) summarises them).
 
 **P3.** Each team member raised their arm to reference angles of 30°, 60°, 90°, 120° and 150°, three times each, filmed from the side and then from about 45°. We calculated the mean error for each angle and camera position. Only team members were filmed, and the movements were simple arm raises by uninjured people.
 
@@ -170,7 +170,7 @@ The facilitator stepped in when a participant needed help. Participant I worked 
 
 ### 5.1 Findings
 
-We tested P1 and P2 with nine stand-in participants. Five key findings emerged, and [Appendix E](#appendix-e-test-session-findings) sets out what each participant said and did.
+We tested P1 and P2 with nine participants. Five key findings emerged, and [Appendix E](#appendix-e-test-session-findings) sets out what each participant said and did.
 
 **Progress tracking (S2).** The chart could be read, but only 6 of the 8 participants (75%) who commented on each screen said that the Screen 1 patient was behind, short of the provisional target of 4 of 5 (80%). The others followed the rising line and did not compare it with the expected range. One likely reason is that the patient's line is the boldest element on the screen, while the expected range is a pale band and nothing tells the reader what to conclude. This mirrors how patients judge recovery ([Appendix B, Theme 3](#b4-findings-by-theme)), so a rising line could reassure a patient who is falling behind. The tracker should state plainly where the patient stands.
 
@@ -186,7 +186,7 @@ We tested P1 and P2 with nine stand-in participants. Five key findings emerged, 
 
 The sessions were audio-recorded and transcribed by an AI tool. We grouped each participant's comments and actions into findings, compared the participants (Appendix E), and compared the findings with our interviews where relevant (Section 5.1). Durations were estimated from recording timestamps.
 
-These findings are early indications, not conclusions. Stand-ins are not patients, so the sessions cannot show whether patients find either prototype useful.
+These findings are early indications, not conclusions. Since our participants are not patients, the sessions cannot show whether patients find either prototype useful.
 
 ## 6. Discussion of Problems and Project Plan
 
