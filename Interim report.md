@@ -77,7 +77,7 @@ We decided to remove S5 as the PTs told us that the need is weak, and for soluti
 Based on the rehabilitation barriers identified through stakeholder interviews and patient surveys (Section 1.2), the underlying contributing factors were translated into “How Might We” design questions to guide our subsequent concept generation (Appendix D.1). The generated concepts were then organised using the Approach–Concept–Embodiment (ACE) framework, as they progress from broader strategies to specific ideas and potential implementations. For instance, under the 'Movement tracking' and 'Self-guided learning' approaches, we can potentially develop a camera-based sensor to track movements or a community forum or online resource library for patients to seek clarifications. The main approaches across the four identified problem areas are summarised below, with the complete ACE framework provided in [Appendix D.2](#d1-overall-ace-framework-for-concept-generation).
 
 | Main Problem / Identified barriers | Main Approaches explored | Sample Ideas |
-|---|---|
+|---|---|---| 
 | Uncertainty about technique | Movement tracking, Feedback provision, Assisted movement, Self-guided learning | VR/Wearables/Camera-based sensors, User-controlled exoskeleton, pre-recorded exercise videos |
 | Misjudging progress | (Rehab) Progress visualisation, Scoring System, Regular reviews | Graphical visualisation markers, Telerehab remote evaluation, monthly reviews by PT |
 | Lack of time and discipline | Rewards and incentives, Social support, Gamification, Micro-rehab exercises, Integration into daily routines | Vouchers, group PT sessions, online communities |
