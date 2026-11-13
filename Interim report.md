@@ -14,9 +14,10 @@
 4. [Testing](#4-testing)
 5. [Analysis](#5-analysis)
 6. [Discussion of Problems and Project Plan](#6-discussion-of-problems-and-project-plan)
-7. [Individual Contributions](#7-individual-contributions)
-8. [References](#references)
-9. [Appendices](#appendices)
+7. [Conclusion](#7-conclusion)
+8. [Individual Contributions](#8-individual-contributions)
+9. [References](#references)
+10. [Appendices](#appendices)
    - [Appendix A: Review of existing solutions](#appendix-a-review-of-existing-solutions)
    - [Appendix B: Summary of stakeholder interviews](#appendix-b-summary-of-stakeholder-interviews)
    - [Appendix C: Patient survey](#appendix-c-patient-survey)
@@ -211,20 +212,12 @@ For our overall analysis, all 3 prototypes demonstrated a level of basic functio
 | **P2** | - Positioning the phone was challenging (unless recorded with assistance).<br>- Some features could be skipped, making it difficult to ensure that users were performing exercises as instructed. | - Simplify phone/device setup.<br>- Add visual positioning guidance.<br>- Integrate movement detection before claiming repetitions are completed. |
 | **P3** | - Difficulty capturing user positioning and accurately identifying ROM if the user is not positioned correctly.<br>- Inaccuracy of physical reference angles.<br>- Lack of live measurements. | - Use a goniometer to establish reference angles.<br>- Upgrade the source code to support live measurements and account for reference points/user positioning. |
 
-
 ### 6.2 Project Prototyping Plan & Timeline
 
 > Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants, stand-in participants rather than patients or physiotherapists) and of the needs data (Appendices B.1, B.5 and C.5).
-
-[can divide & use space here if word limit allows]
-
-### 6.3 Timeline of Project Plan
-
 > Detailed and viable, with well-articulated steps and clearly identified milestones, from first prototype and test through to the Semester 2 evaluation against S1–S5.
 
 The following table shows a brief overview of our project prototyping timeline alongside the resources potentially required for each phase. 
-
-### Proposed Prototyping Timeline (November 2026 – March 2027)
 
 | Activity / Prototype | Resources Required | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
 |---|---|:---:|:---:|:---:|:---:|:---:|
