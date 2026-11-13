@@ -172,7 +172,7 @@ We tested P1 and P2 with nine participants. Five key findings emerged, and [Appe
 
 **Set-up (S3).** Set-up was observed with only two participants: one took about 3 minutes, over the 2-minute target, and the other skipped it because the exercise ran regardless. This matches the positioning hassle reported with a previous system ([Appendix A.5](#a5-use-in-singapore-from-interviews)), and could add a burden when time is already the most reported barrier ([Appendix B, Theme 1](#b4-findings-by-theme)). The lack of a live view probably added to the time taken, so this is a warning, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
 
-For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking which aligns with S2 to an extent, as based off this mechanism, progress of exercises can be visualised and known. The table below a sample (from trial 3) of how the readings are visualised in a graphical format.
+For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking which aligns with S2 to an extent, as progress of exercises can be visualised and known. The table below a sample (from trial 3) of how the readings are visualised in a graphical format.
 
 | Reference Angle | Graph |
 |---|---|
@@ -182,7 +182,7 @@ For P3, it was observed that the opensource code (from MediaPipe library) was ge
 
 The table shows the average measurements compared against the respective reference angles (up to 3 d.p.). The collated readings were estimated from when the time the user holds up their hands to when they lower their hand over the 'hold phase' as shown in the graphs above. The readings generally showed consistency across trials.
 
-| Reference angle/° | Trial 1/° | Trial 2/° | Trial 3/° | Mean Angle/° | Mean Absolute Angle/° |
+| Reference angle/° | Trial 1/° | Trial 2/° | Trial 3/° | Mean Angle/° | Mean Absolute Error/° |
 |---|---|---|---|---|---|
 | **50** | 51.211 | 49.808 | 49.452 | **50.157** | 0.65 |
 | **90** | 87.675 | 88.283 | 90.547 | **88.835** | 1.53 |
