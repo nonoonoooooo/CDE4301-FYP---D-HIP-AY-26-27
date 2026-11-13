@@ -64,11 +64,11 @@ ReMotion's novelty lies in supporting the shoulder after RCR in a way that fits 
 | S1 | The solution tells patients whether they are performing exercises correctly, agreeing with a physiotherapist's rating of the same repetitions at least 80% of the time. | Technique is checked only in session; 8/10 physiotherapists reported technique problems ([Appendix B, Theme 2](#b4-findings-by-theme)). |
 | S2 | The solution shows patients how they are progressing, so that at least 4 of 5 test participants can correctly say whether they are on track. | Patients stop once they feel "good enough" ([Appendix B, Theme 3](#b4-findings-by-theme)); seeing progress was the most wanted support (5/6; [Appendix C](#appendix-c-patient-survey)). |
 | S3 | The solution fits into patients' schedules, taking no more time than their currently prescribed exercises, with set-up taking under 2 minutes. | Time was the most reported barrier; physiotherapists improve adherence by fitting exercises into routines ([Appendix B, Theme 1](#b4-findings-by-theme); [Appendix C](#appendix-c-patient-survey)). |
-| S4 | The solution reduces the time physiotherapists spend reviewing patients' progress, with a between-visit summary they can review in under 2 minutes. | Physiotherapists see adherence only at the next visit and said a between-visit summary would save time ([Appendix B, Theme 6](#b4-findings-by-theme)). |
+| S5 | The solution tells patients which pain is acceptable and when to progress, and never prompts movement beyond the range permitted for their rehabilitation phase. | Fear of pain was raised by 7/10 physiotherapists ([Appendix B, Theme 4](#b4-findings-by-theme)), and 4/6 survey respondents wanted to feel safe ([Appendix C](#appendix-c-patient-survey)). |
 
-> TO remove? | S5 | The solution tells patients which pain is acceptable and when to progress, and never prompts movement beyond the range permitted for their rehabilitation phase. | Fear of pain was raised by 7/10 physiotherapists ([Appendix B, Theme 4](#b4-findings-by-theme)), and 4/6 survey respondents wanted to feel safe ([Appendix C](#appendix-c-patient-survey)). |
-
-We decided to remove S5 as the PTs told us that the need is weak, and for solution to be useful, it would have to fit inside their workflow (e.g. EHR integration which is costly).
+> TO remove? | S4 | The solution reduces the time physiotherapists spend reviewing patients' progress, with a between-visit summary they can review in under 2 minutes. | Physiotherapists see adherence only at the next visit and said a between-visit summary would save time ([Appendix B, Theme 6](#b4-findings-by-theme)). |
+> ALSO: should we swap numbers? like originally S5 was about pain, but if we go in order it would be S4, but let me know cos my parts would have to change too
+We decided to remove S4 as the PTs told us that the need is weak, and for solution to be useful, it would have to fit inside their workflow (e.g. EHR integration which is costly).
 
 ## 2. Methodology / Concept Development
 
@@ -175,7 +175,7 @@ We tested P1 and P2 with nine participants. Five key findings emerged, and [Appe
 
 **Set-up (S3).** Set-up was observed with only two participants: one took about 3 minutes, over the 2-minute target, and the other skipped it because the exercise ran regardless. This matches the positioning hassle reported with a previous system ([Appendix A.5](#a5-use-in-singapore-from-interviews)), and could add a burden when time is already the most reported barrier ([Appendix B, Theme 1](#b4-findings-by-theme)). The lack of a live view probably added to the time taken, so this is a warning, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
 
-For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking which aligns with S2 to an extent, as progress of exercises can be visualised and known. The table below a sample (from trial 3) of how the readings are visualised in a graphical format. The graphs showed increasing angles during arm elevation, relatively stable measurements during the holding phase, and decreasing angles when lowering.
+For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to measure ROM which aligns with S2 to an extent, as progress of exercises can be visualised and known. The table below a sample (from trial 3) of how the readings are visualised in a graphical format. The graphs showed increasing angles during arm elevation, relatively stable measurements during the holding phase, and decreasing angles when lowering.
 
 | Reference Angle | Graph |
 |---|---|
@@ -195,7 +195,7 @@ The table shows the average measurements compared against the respective referen
 
 For P1 and P2, the sessions were audio-recorded and transcribed by an AI tool. We grouped each participant's comments and actions into findings, compared the participants (Appendix E), and compared the findings with our interviews where relevant (Section 5.1). Durations were estimated from recording timestamps. These findings are early indications, not conclusions. Since our participants are not patients, the sessions cannot show whether patients find either prototype useful.
 
-For P3, videos of the member was taken and uploaded to the laptop to run through the opensource code. Prior to that, reference angles were estimated by measuring arm movement using protractor and ruler. However, it should be noted that the resulting measurements were compared against a protractor reference without established clinical accuracy and still lacks ability to detect incorrect forms.
+For P3, videos of the member was taken and uploaded to the laptop to run through the opensource code. Prior to that, reference angles were estimated by measuring arm movement using protractor and ruler. However, it should be noted that the resulting measurements were compared against a protractor reference without established clinical accuracy and still lacks ability to detect incorrect forms. Additionally, the script is only able to assess movements and joints closest to camera and within 2D space.
 
 ## 6. Discussion of Problems and Project Plan
 
