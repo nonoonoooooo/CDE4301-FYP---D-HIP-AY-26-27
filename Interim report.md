@@ -212,50 +212,41 @@ For our overall analysis, all 3 prototypes demonstrated a level of basic functio
 | **P3** | - Difficulty capturing user positioning and accurately identifying ROM if the user is not positioned correctly.<br>- Inaccuracy of physical reference angles.<br>- Lack of live measurements. | - Use a goniometer to establish reference angles.<br>- Upgrade the source code to support live measurements and account for reference points/user positioning. |
 
 
-### 6.2 Project & Prototyping Plan
+### 6.2 Project Prototyping Plan & Timeline
 
 > Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants, stand-in participants rather than patients or physiotherapists) and of the needs data (Appendices B.1, B.5 and C.5).
 
-
+[can divide & use space here if word limit allows]
 
 ### 6.3 Timeline of Project Plan
 
 > Detailed and viable, with well-articulated steps and clearly identified milestones, from first prototype and test through to the Semester 2 evaluation against S1–S5.
 
+The following table shows a brief overview of our project prototyping timeline alongside the resources potentially required for each phase. 
 
-| Activity / Prototype | Estimated Timeline | Resources Required |
-|---|---|---|
-| **Adaptive micro-rehabilitation scheduling** (Generate short exercise sessions based on patients' availability, location and PT-prescribed plans) | Nov–Dec 2026 (Weeks 1–6) | App prototype, sample exercise prescriptions, scheduling algorithm, developers, PT consultation, patient input |
-| **Camera-based or sensor-based movement tracking** (Assess ROM measurement accuracy under different camera positions, lighting and movements) | Nov–Dec 2026 (Weeks 1–7) | Smartphone, tripod, MediaPipe/OpenCV or other open-source tools, goniometer, 5–10 healthy volunteers |
-| **Real-time corrective exercise feedback** (Detect technique errors and provide actionable visual/audio corrections) | Dec 2026–Feb 2027 (Weeks 5–13) | Pose-estimation software, exercise videos, developers, 1–2 PTs to define and evaluate technique errors |
-| **Patient usability and progress tracking** (Assess exercise-session setup, navigation and interpretation of rehabilitation progress) | Dec 2026–Jan 2027 (Weeks 5–10) | Figma/web prototypes, smartphones, 5–8 participants, questionnaires and task-based testing |
-| **Clinician-approved reassurance and safety guidance** (Develop rehabilitation-phase-specific guidance and symptom escalation rules) | Dec 2026–Feb 2027 (Weeks 7–13) | PTs/clinicians, postoperative rehabilitation protocols, symptom scenarios and rule-based prototype |
-| **Patient progress summary for PTs** (Consolidate ROM, adherence and patient-reported outcomes into a concise report) | Jan–Feb 2027 (Weeks 10–14) | Dashboard mock-up, simulated patient data, developers, 2–3 PTs for review |
-| **System integration** (Combine selected features into one functional prototype) | Feb–Mar 2027 (Weeks 13–18) | Integrated prototype, developers, smartphones and PT consultation |
-| **Integrated usability and technical evaluation** (Test selected functions against S1–S5 where feasible) | Mar 2027 (Weeks 17–20) | Integrated prototype, volunteers or approved patient participants, PTs/clinicians, evaluation protocols |
+### Proposed Prototyping Timeline (November 2026 – March 2027)
 
+| Activity / Prototype | Resources Required | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| **Adaptive micro-rehabilitation scheduling** — Generate short exercise sessions based on patients' availability, location and PT-prescribed plans. | App prototype, sample exercise prescriptions, scheduling algorithm, developers, PT consultation, patient input | █ W1–4 | █ W5–6 | | | |
+| **Camera/sensor-based movement tracking** — Assess ROM measurement accuracy under different camera positions, lighting and movements. | Smartphone, tripod, MediaPipe/OpenCV or other open-source tools, goniometer, 5–10 healthy volunteers | █ W1–4 | █ W5–7 | | | |
+| **Real-time corrective exercise feedback** — Detect technique errors and provide actionable visual/audio corrections. | Pose-estimation software, exercise videos, developers, 1–2 PTs to define and evaluate technique errors | | █ W5–8 | █ W9–12 | █ W13 | |
+| **Patient usability and progress tracking** — Assess exercise-session setup, navigation and interpretation of rehabilitation progress. | Figma/web prototypes, smartphones, 5–8 participants, questionnaires, task-based testing | | █ W5–8 | █ W9–10 | | |
+| **Clinician-approved reassurance and safety guidance** — Develop rehabilitation-phase-specific guidance and symptom escalation rules. | PTs/clinicians, postoperative rehabilitation protocols, symptom scenarios, rule-based prototype | | █ W7–8 | █ W9–12 | █ W13 | |
+| **Patient progress summary for PTs** — Consolidate ROM, adherence and patient-reported outcomes into a concise report. | Dashboard mock-up, simulated patient data, developers, 2–3 PTs for review | | | █ W10–12 | █ W13–14 | |
+| **System integration** — Combine selected features into one functional prototype. | Integrated prototype, developers, smartphones, PT consultation | | | | █ W13–16 | █ W17–18 |
+| **Integrated usability and technical evaluation** — Test selected functions against S1–S5 where feasible. | Integrated prototype, volunteers or approved patient participants, PTs/clinicians, evaluation protocols | | | | | █ W17–20 |
 
-### Proposed Gantt Chart (Nov 2026 – Mar 2027)
+**Legend:** █ = Planned activity period; W = Project week.
 
-| Activity / Prototype | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Adaptive micro-rehabilitation scheduling | █ W1–4 | █ W5–6 | | | |
-| Camera/sensor-based movement tracking | █ W1–4 | █ W5–7 | | | |
-| Real-time corrective exercise feedback | | █ W5–8 | █ W9–12 | █ W13 | |
-| Patient usability and progress tracking | | █ W5–8 | █ W9–10 | | |
-| Clinician-approved reassurance and safety guidance | | █ W7–8 | █ W9–12 | █ W13 | |
-| Patient progress summary for PTs | | | █ W10–12 | █ W13–14 | |
-| System integration | | | | █ W13–16 | █ W17–18 |
-| Integrated usability and technical evaluation | | | | | █ W17–20 |
-
-
+## 7. Conclusion
 In conclusion, we have identified four key barriers during our project investigation: (1) time constraints, (2) uncertainty about exercise technique, (3) difficulty assessing recovery progress, and (4) pain-related concerns. Based on these barriers, we generated some concepts and screened them based on feasibility and technical complexity, which resulted in our final solution focusing on feedback provision, progress tracking,  micro-rehab gamification. Then, we conducted initial prototyping on the former two features and yielded results that demonstrated preliminary feasibility in progress visualisation, exercise guidance, phone-based ROM tracking, although we noted some limitations with the methods we tested. In our next step, we hope to reiterate and further refine our prototypes to develop a more clinically meaningful and suitable home rehabilitation solution.
 
-## 7. Individual Contributions
+## 8. Individual Contributions
 
 | Team member | Contribution |
 |---|---|
-| Raghavi | Wrote Sections 2 and 6 and the P3 parts of Sections 4 and 5; tested prototype P3  |
+| Raghavi | Wrote Sections 2, 6 and 8 and the P3 parts of Sections 4 and 5; tested prototype P3  |
 | Phyllis | Wrote Sections 1 and 3 and the P1 and P2 parts of Sections 4 and 5; built prototypes P1 and P2 and ran their test sessions |
 
 ## References
