@@ -91,7 +91,7 @@ A preliminary screening was conducted to narrow the broad range of generated ide
 | Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab, Auto-recorded PT sessions |
 | Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
 
-After further screening and discussion, we narrowed down the ideas and approaches to form a final overarching solution at this stage, that aims to embody the following concepts as implemented features within the solution: Feedback Provision, Gamification (with Micro-Rehab Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods, such as wearable or camera-based ROM tracking. Their suitability was then assessed against the design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below.
+After further screening and discussion, we narrowed down the ideas and approaches to form a final overarching solution at this stage, that aims to embody the following concepts as implemented features within the solution: Feedback Provision, Gamification (with Micro-Rehab Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods, such as wearable or camera-based ROM tracking. Their suitability was then assessed against the design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below. Further evaluation on our concepts and final solution can be found in Appendix D.4
 
 | Design specification (Identified barriers) | Feedback Provision | Gamification (with Micro-Rehab Exercises) | Rehabilitation Progress Tracking |
 |---|:---:|:---:|:---:|
@@ -105,8 +105,6 @@ After further screening and discussion, we narrowed down the ideas and approache
 Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion.
 
 Based on the needs-criteria evaluation, 'Feedback Provision' showed the strongest alignment with our design specifications, particularly in providing exercise technique feedback and guiding rehabilitation. 'Rehabilitation Progress Tracking' was also identified as a promising complementary concept, allowing patients to better understand their recovery and providing relevant information for physiotherapists. Although 'Gamification' scored lower overall, it can potentially encourage adherence through integration of micro-rehab exercises into patients' daily routines. Therefore, feedback provision and progress tracking were initially prioritised for further development and prototyping, with gamification considered as a possible supporting feature for future prototyping plans. These concepts will undergo initial prototyping to assess their technical feasibility and usability before refining them further.
-
-<img width="490" height="512" alt="image" src="https://github.com/user-attachments/assets/8bfb4a3d-0ab6-4b0c-8ded-25d09dc3ddff" />
 
 
 ## 3. Fabrication of Prototypes
@@ -155,7 +153,7 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 
 The facilitator stepped in when a participant needed help. All sessions and comments were audio-recorded and transcribed ([Appendix E](#appendix-e-test-session-findings) summarises them).
 
-**P3.** The team member raised their arm to reference angles of 50°, 90°, 120° (three times each), filmed with the team member facing sideways to the camera and doing a right-arm shoulder flexion movement. All results are documented and summarised as shown in Appendix E.
+**P3.** The team member raised their arm to reference angles of 50°, 90°, 120° (three times each) and were filmed with the member facing sideways to the camera, doing a right-arm shoulder flexion movement. All results are documented and summarised as shown in Appendix E.
 
 ## 5. Analysis
 
@@ -173,14 +171,25 @@ We tested P1 and P2 with nine participants. Five key findings emerged, and [Appe
 
 **Set-up (S3).** Set-up was observed with only two participants: one took about 3 minutes, over the 2-minute target, and the other skipped it because the exercise ran regardless. This matches the positioning hassle reported with a previous system ([Appendix A.5](#a5-use-in-singapore-from-interviews)), and could add a burden when time is already the most reported barrier ([Appendix B, Theme 1](#b4-findings-by-theme)). The lack of a live view probably added to the time taken, so this is a warning, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
 
-**Ability to track their readings (S1).**  
+For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking, which closely aligns to S1. The table below a sample (from trial 3) of how the readings are visualised in a graphical format.
 
+| Graph for 50°  | <img width="512" height="203" alt="image" src="https://github.com/user-attachments/assets/fedb4fbc-d6ae-4569-addd-40b48fa374ca" /> |
+| Graph for 90° | <img width="512" height="250" alt="image" src="https://github.com/user-attachments/assets/d0d4f257-6059-454e-a47e-36e1d195fa74" /> |
+| Graph for 120° | <img width="512" height="226" alt="image" src="https://github.com/user-attachments/assets/5f0ba9da-8ddb-4fd6-add2-cd91176d035b" /> |
+
+The table shows the average measurements compared against the respective reference angles, which also shows relatively consistent measurements across the 3 trials for each angle.
+
+| Reference angle/° | Trial 1/° | Trial 2/° | Trial 3/° | Mean Angle/° |
+|---|---|---|---|---|
+| **50** | 51.211 | 49.808 | 49.452 | **50.157** |
+| **90** | 87.675 | 88.283 | 90.547 | **88.835** |
+| **120** | 121.139 | 118.70 | 120.944 | **120.261** |
 
 ### 5.2 Methods and validity
 
-The sessions were audio-recorded and transcribed by an AI tool. We grouped each participant's comments and actions into findings, compared the participants (Appendix E), and compared the findings with our interviews where relevant (Section 5.1). Durations were estimated from recording timestamps.
+For P1 and P2, the sessions were audio-recorded and transcribed by an AI tool. We grouped each participant's comments and actions into findings, compared the participants (Appendix E), and compared the findings with our interviews where relevant (Section 5.1). Durations were estimated from recording timestamps. These findings are early indications, not conclusions. Since our participants are not patients, the sessions cannot show whether patients find either prototype useful.
 
-These findings are early indications, not conclusions. Since our participants are not patients, the sessions cannot show whether patients find either prototype useful.
+For P3, videos of the member was taken and uploaded to the laptop to run through the opensource code. Prior to that, reference angles were estimated by measuring arm movement using protractor and ruler.
 
 ## 6. Discussion of Problems and Project Plan
 
@@ -188,19 +197,30 @@ These findings are early indications, not conclusions. Since our participants ar
 >
 > Rubric A6 (Exceptional): detailed discussion of how problems were resolved; major shortcomings clearly identified with sound, well-justified proposals; detailed, viable plan with well-articulated steps and clearly identified milestones.
 
-### 6.1 Problems faced and how they were resolved
+### 6.1 Limitations & Future mitigations
 
 > Detailed discussion: each problem, what caused it, and what was done about it.
 
-[Content]
+A few key limitations exist: Inaccuracy of reference points & angle (subjective user measurement), no live feedback based on direct video recording which does not fully align with S1, limited measurement based on positioning of user (i.e. user has to be accurately positioned facing sideways to camera for measurement to read). We plan to keep these limitations in mind in future iterations of this prototype.
 
-### 6.2 Shortcomings and proposed solutions
+For our overall analysis, all 3 prototypes demonstrated a level of basic functionality and feasibility with our users (patients), although limitations did emerge during our prototyping process. However, we acknowledge these limitations and planned some mitigations for future prototyping plans, such as prototyping with actual patients, simplifying phone set-up, add clearer recovery indicators and use of clinically validated tools for ROM measurements. The table with complete details are in Appendix E
+
+The table below shows the limitations we encountered during our prototyping phase and the potential mitigations we can consider before continuing. 
+
+| Prototype | Potential Problems/Limitations | Future Mitigations |
+|---|---|---|
+| **P1** | - Different interpretations of results and understanding of future steps to take (from user POV)<br>- Assumption of linear progress being the right progress over time | - Add clearer recovery-status indicators, explanations of expected ranges, and PT-approved guidance on next steps.<br>- Ensure that users are clear about their progress before advancing to the next stage. |
+| **P2** | - Positioning the phone was challenging (unless recorded with assistance).<br>- Some features could be skipped, making it difficult to ensure that users were performing exercises as instructed. | - Simplify phone/device setup.<br>- Add visual positioning guidance.<br>- Integrate movement detection before claiming repetitions are completed. |
+| **P3** | - Difficulty capturing user positioning and accurately identifying ROM if the user is not positioned correctly.<br>- Inaccuracy of physical reference angles.<br>- Lack of live measurements. | - Use a goniometer to establish reference angles.<br>- Upgrade the source code to support live measurements and account for reference points/user positioning. |
+
+
+### 6.2 Project & Prototyping Plan
 
 > Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants, stand-in participants rather than patients or physiotherapists) and of the needs data (Appendices B.1, B.5 and C.5).
 
 [Content]
 
-### 6.3 Project plan
+### 6.3 Timeline of Project Plan
 
 > Detailed and viable, with well-articulated steps and clearly identified milestones, from first prototype and test through to the Semester 2 evaluation against S1–S5.
 
@@ -210,6 +230,8 @@ These findings are early indications, not conclusions. Since our participants ar
 | M2 | [Steps] | [Deliverable] | [Name] | [Week] |
 | M3 | [Steps] | [Deliverable] | [Name] | [Week] |
 | M4 | [Steps] | [Deliverable] | [Name] | [Week] |
+
+In conclusion, xxx
 
 ## 7. Individual Contributions
 
@@ -910,6 +932,32 @@ Problem (Section 1.2) | Root cause | Design question | Spec |
   </tbody>
 </table>
 
+#### D.4 Concept(s) Evaluation
+
+We initially came up with four concepts that addresses the identified barriers to different extents as shown below. The concepts had various features and methods to address the barriers we identified, ranging from phone-based application to wearable implementation.
+
+| Concept Description | Supporting sketches |
+|---|---|
+| Digital Rehab Coach - An application that supports micro-rehab exercises that can be done anywhere and supports patients when transitioning from medical leave to working life. It also allows questions to be answered and steps to take to progress forward with their rehabilitation exercises. PTs can receive feedback from patients & provide input. | <img width="487" height="512" alt="image" src="https://github.com/user-attachments/assets/200a1da7-161c-4aa2-825b-a156ee395e8b" /> |
+| Wearable supported micro-rehab tracking - A digital app guided with wearables that can measure ROM and encourage patients to sustain their exercises in form of ‘short-doses’ that can be done anywhere anytime. The app can track their progress and help set goals to achieve regularly, while providing a forum for patients to refer to for clarifications and sending a ‘time slip’ to PTs during sessions | <img width="512" height="290" alt="image" src="https://github.com/user-attachments/assets/fa93b55d-a79c-4b2c-a7ff-c40fe1ffde82" /> |
+| Camera-based tracking - Digital capture of ROM via phone/electronic device while also providing a goal to achieve and tracking its progress, which PTs are able to view before each session. Brief feedback is provided in terms of rehabilitation progression shown in graphical format | <img width="512" height="469" alt="image" src="https://github.com/user-attachments/assets/762d8221-f175-4c74-a99b-c54325b84158" /> |
+| A gamified application with a sensor wearable that encourages patients to do their exercises & win rewards by earning points, while providing feedback to them (on their form/reps). It also shows their progress over time while giving them checkpoints to assess their pain/tiredness levels. | <img width="350" height="512" alt="image" src="https://github.com/user-attachments/assets/f4a093e7-1f63-47a8-9e4c-934d08e788f9" /> |
+
+However, we realised that these concepts agreed on 4 overlapping benefits: 1) Short exercises that adapt to settings, 2) Objective measurement, 3) Progress the patient can see, 4) Reviewed by physiotherapist. This made us reconsider the features to prioritise when developing our final solution at this initial stage, and whether they can meet the following criteria in the table shown below.
+
+| The features our concepts proposed | Pain | Unmet | Feasible | What we did with it |
+|---|---|---|---|---|
+| An exercise regimen that fits the day | High | High | Medium | Lead feature. The only pain nobody on the market serves |
+| A check on form and twisting | High | Medium | Medium | Already on the market. Our question is the trade-off between accuracy and the set-up burden we put on the patient |
+| Objective range measurement | High | Low | High | Comes with the form check, and ROM measurement is the more mature, lower-complexity half of it |
+| Answers between visits | High | Medium | Low | Technically hard. Fully personalised answers that are also accurate and safe would cost a great deal, so v1 keeps it light and limits the range of questions it answers |
+| A report to the physiotherapist | Medium | Low | Medium | Out of scope for v1. Physiotherapists told us the need is weak and to be useful it would have to sit inside their workflow - meaning EHR integration, which is costly |
+| Points, rewards, leaderboards | Medium | Low | High | The underlying motivation problem is not solved by rewards. Lower the barrier to doing it instead |
+
+Thus, rather than separately developing the four concepts, we decided to converge the key benefits and features into one overarching solution that we decided to move forward with into the prototyping phase. This final solution mainly aims to provide necessary feedback and assistance patients need, aid them with progress tracking, and encourage them to adhere to their exercises by breaking them up and adjusting according to their schedule. The concepts of the final solution are shown below.
+
+| <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/b792d2fe-599d-47bb-8464-0322759b95d6" /> | <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/fa5eae03-2987-4efa-9c2e-494612528277" /> | <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/ae8b8b9b-d7d7-492e-8100-cc5aaae6bde8" /> | <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/390a408d-5c45-4250-8ffe-a32059b93b41" /> | <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/a8981ecc-294c-48f3-b59c-7fcfeb9db459" /> |
+
 [← Back to Section 2](#2-methodology--concept-development) | [↑ Back to contents](#table-of-contents)
 
 ### Appendix E: Test session findings
@@ -941,10 +989,7 @@ These tables set out what Participants A to I said and did. Quotes come from AI 
 | Pain shaped choices, but the score did not guide them | D would pick the exercise that hurt less (D, 06:28), would not push as hard on a painful prescribed exercise, and would tell the physiotherapist (D, 07:26). E said pain "is very subjective" and that it is best to try the exercise with the doctor first (E, 08:16–08:31). E was unsure whether a score meant recovery, overexertion or not having recovered yet (E, 09:13). H rated Exercise A 3 out of 10, wanted to try Exercise B to compare, and would choose exercises that cause less pain (H, 07:06–08:01). D would continue if pain was slight and stop if it was too much, and wanted the app to note where they paused (D, 09:41–09:51). E would stop when their body said so, and expected the app to ask about pain so they could report it to the doctor (E, 07:31–07:50). H would continue at levels up to 3 or 4, pause at 5 or 6, and stop if pain stayed high (H, 11:02–11:32), and wanted the app to say at which level to stop (H, 13:23). Participant I thought it was good that the app asked about pain (I, clip 2, 00:58) | Explain scores using a range set by the physiotherapist, state when to stop, and share pain and pauses with the physiotherapist (S4, S5) |
 
 The following tables document the raw readings as captured from the 9 videos (3 videos each for 50°, 90°, 120°)
-## Reference angle: 50°
-
-<details>
-<summary><strong>right_050_1.mp4</strong> — Trial 1 (76 readings)</summary>
+## Reference angle: 50° (Trial 1)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1025,10 +1070,7 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_050_1.mp4 | right | 50 | 1 | 7.4 | 5.491 | 3 |
 | right_050_1.mp4 | right | 50 | 1 | 7.5 | 5.719 | 3 |
 
-</details>
-
-<details>
-<summary><strong>right_050_2.mp4</strong> — Trial 2 (77 readings)</summary>
+## Reference angle: 50° (Trial 2)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1110,10 +1152,7 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_050_2.mp4 | right | 50 | 2 | 7.5 | 4.381 | 3 |
 | right_050_2.mp4 | right | 50 | 2 | 7.6 | 4.454 | 2 |
 
-</details>
-
-<details>
-<summary><strong>right_050_3.mp4</strong> — Trial 3 (72 readings)</summary>
+## Reference angle: 50° (Trial 3)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1190,12 +1229,7 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_050_3.mp4 | right | 50 | 3 | 7 | 6.441 | 3 |
 | right_050_3.mp4 | right | 50 | 3 | 7.1 | 6.406 | 3 |
 
-</details>
-
-## Reference angle: 90°
-
-<details>
-<summary><strong>right_090_1.mp4</strong> — Trial 1 (69 readings)</summary>
+## Reference angle: 90° (Trial 1)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1269,10 +1303,7 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_090_1.mp4 | right | 90 | 1 | 6.7 | 3.257 | 3 |
 | right_090_1.mp4 | right | 90 | 1 | 6.8 | 2.857 | 2 |
 
-</details>
-
-<details>
-<summary><strong>right_090_2.mp4</strong> — Trial 2 (80 readings)</summary>
+## Reference angle: 90° (Trial 2)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1357,10 +1388,7 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_090_2.mp4 | right | 90 | 2 | 7.8 | 0.81 | 3 |
 | right_090_2.mp4 | right | 90 | 2 | 7.9 | 0.413 | 2 |
 
-</details>
-
-<details>
-<summary><strong>right_090_3.mp4</strong> — Trial 3 (79 readings)</summary>
+## Reference angle: 90° (Trial 3)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1444,12 +1472,7 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_090_3.mp4 | right | 90 | 3 | 7.7 | 0.609 | 3 |
 | right_090_3.mp4 | right | 90 | 3 | 7.8 | 0.769 | 3 |
 
-</details>
-
-## Reference angle: 120°
-
-<details>
-<summary><strong>right_120_1.mp4</strong> — Trial 1 (71 readings)</summary>
+## Reference angle: 120° (Trial 1)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1525,10 +1548,7 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_120_1.mp4 | right | 120 | 1 | 6.9 | 1.05 | 3 |
 | right_120_1.mp4 | right | 120 | 1 | 7 | 1.452 | 3 |
 
-</details>
-
-<details>
-<summary><strong>right_120_2.mp4</strong> — Trial 2 (84 readings)</summary>
+## Reference angle: 120° (Trial 2)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1617,10 +1637,7 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_120_2.mp4 | right | 120 | 2 | 8.2 | 1.303 | 3 |
 | right_120_2.mp4 | right | 120 | 2 | 8.3 | 1.539 | 2 |
 
-</details>
-
-<details>
-<summary><strong>right_120_3.mp4</strong> — Trial 3 (82 readings)</summary>
+## Reference angle: 120° (Trial 3)
 
 | clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1706,6 +1723,8 @@ The following tables document the raw readings as captured from the 9 videos (3 
 | right_120_3.mp4 | right | 120 | 3 | 7.9 | 3.502 | 3 |
 | right_120_3.mp4 | right | 120 | 3 | 8 | 3.292 | 3 |
 | right_120_3.mp4 | right | 120 | 3 | 8.1 | 3.381 | 2 |
+
+
 
 [← Back to Section 5](#5-analysis) | [↑ Back to contents](#table-of-contents)
 
