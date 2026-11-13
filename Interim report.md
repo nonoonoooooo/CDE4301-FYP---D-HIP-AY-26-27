@@ -203,11 +203,7 @@ For P3, videos of the member was taken and uploaded to the laptop to run through
 
 > Detailed discussion: each problem, what caused it, and what was done about it.
 
-A few key limitations exist: Inaccuracy of reference points & angle (subjective user measurement), no live feedback based on direct video recording which does not fully align with S1, limited measurement based on positioning of user (i.e. user has to be accurately positioned facing sideways to camera for measurement to read). We plan to keep these limitations in mind in future iterations of this prototype.
-
-For our overall analysis, all 3 prototypes demonstrated a level of basic functionality and feasibility with our users (patients), although limitations did emerge during our prototyping process. However, we acknowledge these limitations and planned some mitigations for future prototyping plans, such as prototyping with actual patients, simplifying phone set-up, add clearer recovery indicators and use of clinically validated tools for ROM measurements. The table with complete details are in Appendix E
-
-The table below shows the limitations we encountered during our prototyping phase and the potential mitigations we can consider before continuing. 
+For our overall analysis, all 3 prototypes demonstrated a level of basic functionality and feasibility with our users (patients), although limitations did emerge during our prototyping process. However, we acknowledge these limitations and planned some mitigations for future prototyping plans as shown in the table below. 
 
 | Prototype | Potential Problems/Limitations | Future Mitigations |
 |---|---|---|
@@ -220,20 +216,40 @@ The table below shows the limitations we encountered during our prototyping phas
 
 > Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants, stand-in participants rather than patients or physiotherapists) and of the needs data (Appendices B.1, B.5 and C.5).
 
-[Content]
+
 
 ### 6.3 Timeline of Project Plan
 
 > Detailed and viable, with well-articulated steps and clearly identified milestones, from first prototype and test through to the Semester 2 evaluation against S1–S5.
 
-| Milestone | Steps | Deliverable | Owner | Week |
-|---|---|---|---|---|
-| M1 | [Steps] | [Deliverable] | [Name] | [Week] |
-| M2 | [Steps] | [Deliverable] | [Name] | [Week] |
-| M3 | [Steps] | [Deliverable] | [Name] | [Week] |
-| M4 | [Steps] | [Deliverable] | [Name] | [Week] |
 
-In conclusion, xxx
+| Activity / Prototype | Estimated Timeline | Resources Required |
+|---|---|---|
+| **Adaptive micro-rehabilitation scheduling** (Generate short exercise sessions based on patients' availability, location and PT-prescribed plans) | Nov–Dec 2026 (Weeks 1–6) | App prototype, sample exercise prescriptions, scheduling algorithm, developers, PT consultation, patient input |
+| **Camera-based or sensor-based movement tracking** (Assess ROM measurement accuracy under different camera positions, lighting and movements) | Nov–Dec 2026 (Weeks 1–7) | Smartphone, tripod, MediaPipe/OpenCV or other open-source tools, goniometer, 5–10 healthy volunteers |
+| **Real-time corrective exercise feedback** (Detect technique errors and provide actionable visual/audio corrections) | Dec 2026–Feb 2027 (Weeks 5–13) | Pose-estimation software, exercise videos, developers, 1–2 PTs to define and evaluate technique errors |
+| **Patient usability and progress tracking** (Assess exercise-session setup, navigation and interpretation of rehabilitation progress) | Dec 2026–Jan 2027 (Weeks 5–10) | Figma/web prototypes, smartphones, 5–8 participants, questionnaires and task-based testing |
+| **Clinician-approved reassurance and safety guidance** (Develop rehabilitation-phase-specific guidance and symptom escalation rules) | Dec 2026–Feb 2027 (Weeks 7–13) | PTs/clinicians, postoperative rehabilitation protocols, symptom scenarios and rule-based prototype |
+| **Patient progress summary for PTs** (Consolidate ROM, adherence and patient-reported outcomes into a concise report) | Jan–Feb 2027 (Weeks 10–14) | Dashboard mock-up, simulated patient data, developers, 2–3 PTs for review |
+| **System integration** (Combine selected features into one functional prototype) | Feb–Mar 2027 (Weeks 13–18) | Integrated prototype, developers, smartphones and PT consultation |
+| **Integrated usability and technical evaluation** (Test selected functions against S1–S5 where feasible) | Mar 2027 (Weeks 17–20) | Integrated prototype, volunteers or approved patient participants, PTs/clinicians, evaluation protocols |
+
+
+### Proposed Gantt Chart (Nov 2026 – Mar 2027)
+
+| Activity / Prototype | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Adaptive micro-rehabilitation scheduling | █ W1–4 | █ W5–6 | | | |
+| Camera/sensor-based movement tracking | █ W1–4 | █ W5–7 | | | |
+| Real-time corrective exercise feedback | | █ W5–8 | █ W9–12 | █ W13 | |
+| Patient usability and progress tracking | | █ W5–8 | █ W9–10 | | |
+| Clinician-approved reassurance and safety guidance | | █ W7–8 | █ W9–12 | █ W13 | |
+| Patient progress summary for PTs | | | █ W10–12 | █ W13–14 | |
+| System integration | | | | █ W13–16 | █ W17–18 |
+| Integrated usability and technical evaluation | | | | | █ W17–20 |
+
+
+In conclusion, we have identified four key barriers during our project investigation: (1) time constraints, (2) uncertainty about exercise technique, (3) difficulty assessing recovery progress, and (4) pain-related concerns. Based on these barriers, we generated some concepts and screened them based on feasibility and technical complexity, which resulted in our final solution focusing on feedback provision, progress tracking,  micro-rehab gamification. Then, we conducted initial prototyping on the former two features and yielded results that demonstrated preliminary feasibility in progress visualisation, exercise guidance, phone-based ROM tracking, although we noted some limitations with the methods we tested. In our next step, we hope to reiterate and further refine our prototypes to develop a more clinically meaningful and suitable home rehabilitation solution.
 
 ## 7. Individual Contributions
 
@@ -958,7 +974,7 @@ However, we realised that these concepts agreed on 4 overlapping benefits: 1) Sh
 
 Thus, rather than separately developing the four concepts, we decided to converge the key benefits and features into one overarching solution that we decided to move forward with into the prototyping phase. This final solution mainly aims to provide necessary feedback and assistance patients need, aid them with progress tracking, and encourage them to adhere to their exercises by breaking them up and adjusting according to their schedule. The concepts of the final solution are shown below.
 
-| <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/b792d2fe-599d-47bb-8464-0322759b95d6" /> | <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/fa5eae03-2987-4efa-9c2e-494612528277" /> | <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/ae8b8b9b-d7d7-492e-8100-cc5aaae6bde8" /> | <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/390a408d-5c45-4250-8ffe-a32059b93b41" /> | <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/a8981ecc-294c-48f3-b59c-7fcfeb9db459" /> |
+<img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/b792d2fe-599d-47bb-8464-0322759b95d6" /> <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/fa5eae03-2987-4efa-9c2e-494612528277" /> <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/ae8b8b9b-d7d7-492e-8100-cc5aaae6bde8" /> <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/390a408d-5c45-4250-8ffe-a32059b93b41" /> <img width="236" height="512" alt="image" src="https://github.com/user-attachments/assets/a8981ecc-294c-48f3-b59c-7fcfeb9db459" /> 
 
 [← Back to Section 2](#2-methodology--concept-development) | [↑ Back to contents](#table-of-contents)
 
