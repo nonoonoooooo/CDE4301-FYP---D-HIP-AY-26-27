@@ -68,50 +68,38 @@ ReMotion's novelty lies in supporting the shoulder after RCR in a way that fits 
 
 ## 2. Methodology / Concept Development
 
-### 2.1 Identified Barriers and Design Questions
+### 2.1 Design Questions and Ideation
 
-Based on the rehabilitation barriers identified through stakeholder interviews and patient surveys (Section 1.2), the underlying contributing factors were translated into “How Might We” design questions to guide our subsequent concept generation.
+Based on the rehabilitation barriers identified through stakeholder interviews and patient surveys (Section 1.2), the underlying contributing factors were translated into “How Might We” design questions to guide our subsequent concept generation (Appendix D.1). The generated concepts were then organised using the Approach–Concept–Embodiment (ACE) framework, as they progress from broader strategies to specific concepts and potential implementations. An additional problem of 'PT (physiotherapy) time' was added as we believe that our solution should not add additional workload for PT to adopt it. The main approaches across the five identified problem areas are summarised below, with the complete ACE framework provided in [Appendix D.2](#d1-overall-ace-framework-for-concept-generation).
 
-Problem (Section 1.2) | Root cause | Design question | Spec |
-|---|---|---|---|
-| Lack of time and discipline | Work and daily commitments compete with rehabilitation. Patients may lose motivation once they feel sufficiently recovered and this may lead to low adoption rate. | How might we help patients incorporate prescribed rehabilitation exercises into their daily routines and sustain engagement throughout recovery? | S3 |
-| Uncertainty about technique | Patients receive limited feedback between PT appointments and PTs are only able to correct these exercises during the sessions themselves. | How might we enable patients to recognise and correct improper exercise techniques independently during the home rehabilitation phase? | S1 |
-| Misjudging progress | Patients have limited access to objective information on their progress unless requested and may mistake reduced pain or improved function for complete recovery. | How might we help patients understand their rehabilitation progress and potentially recognise when further improvement is needed? | S2 |
-| Pain and fear of movement | Patients sometimes do not understand that the pain/discomfort during exercise is to be expected or whether the pain they feel requires them to seek professional advice | How might we help patients handle uncertainty about exercise-related pain and potentially continue rehabilitation safely within prescribed limits? | S5 |
-| PT time and visibility between visits | Home rehabilitation is largely self-managed, where PTs mostly rely on patient-reported responses and in-person reassessment.| How might we provide physiotherapists with relevant, actionable information about patients' home rehabilitation while minimising additional workload? | S4 |
-
-### 2.2 Ideation
-
-Guided by the design questions identified in Section 2.1, concepts were generated, with the resulting ideas being organised using the Approach–Concept–Embodiment (ACE) framework, as they progress from broader strategies to specific concepts and potential implementations. The main approaches across the five identified problem areas are summarised below, with the complete ACE framework provided in [Appendix D.1](#d1-overall-ace-framework-for-concept-generation).
-
-| Main Problem | Main Approaches explored |
+| Main Problem / Identified barriers | Main Approaches explored |
 |---|---|
-| Uncertainty about technique | Movement tracking and feedback, Assisted movement, Self-guided learning |
-| Misjudging progress | Progress visualisation, Scoring System, Regular reviews |
-| Lack of time and discipline | Rewards and incentives, Social support, Gamification, Integration into daily routines |
+| Uncertainty about technique | Movement tracking and feedback provision, Assisted movement, Self-guided learning |
+| Misjudging progress | (Rehab) Progress visualisation, Scoring System, Regular reviews |
+| Lack of time and discipline | Rewards and incentives, Social support, Gamification (micro-rehab), Integration into daily routines |
 | Pain and fear of movement | Patient pain scoring, Pain detection, Answering patients' questions |
 | PT time and visibility between visits | Automated ROM documentation, Recorded note-taking of patients |
 
-### 2.3 Concept selection
+### 2.2 Concept Screening
 
-An initial screening was conducted to narrow the broad range of generated concepts according to their anticipated development and implementation feasibility. Concepts were classified as 'Easy', 'Feasible', 'Challenging' or 'Out of Scope'. 'Easy' concepts for instance demonstrate already established technology that is relatively simple to recreate, while 'Feasible' ones may require slightly more resources or technology to develop but can be achieved. 'Challenging' concepts require vastly more resources or knowledge to validate and develop, while those under 'Out of scope' do not directly address the problems or lack feasibility. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in [Appendix D.2](#d2-overall-concept-screening-categorisation).
+An initial screening was conducted to narrow the broad range of generated ideas according to their anticipated development and implementation feasibility. They were classified based on their feasibility and complexity to build such concepts. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in [Appendix D.3](#d2-overall-concept-screening-categorisation). 'Out-of-scope' ideas were not considered for further prototyping development.
 
-| Screening category | Summarised concepts |
+| Screening category | Summarised Ideas |
 |---|---|
 | Easy | Pre-recorded exercise videos, patient progress/evaluation graphs, goal setting and reminders, channel for feedback and support, micro-rehab exercises |
 | Feasible | Camera-based movement tracking, wearable motion sensors, automated progress summaries, gamified incentives, AI-based prescriber (for PT) |
 | Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab, Auto-recorded PT sessions |
 | Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
 
-Following preliminary screening, three key concepts were shortlisted for further evaluation: Feedback Provision, Gamification (with Micro-Rehab Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods. Their suitability was then assessed against the design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below.
+Based on the feasibility and accessibility of the ideas we generated, we narrowed them down to form a solution that aims to address all our identified barriers. The key concepts we further evaluated were Feedback Provision, Gamification (with Micro-Rehab Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods, such as wearable or camera-based ROM tracking. Their suitability was then assessed against the design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below.
 
-| Design specification / Needs criteria | Feedback Provision | Gamification (with Micro-Rehab Exercises) | Rehabilitation Progress Tracking |
+| Design specification (Identified barriers) | Feedback Provision | Gamification (with Micro-Rehab Exercises) | Rehabilitation Progress Tracking |
 |---|:---:|:---:|:---:|
-| Feedback on exercise technique (to see if they are doing it right) | 2 | 1 | 1 |
-| Clear and understandable progress visibility for patients | 1 | 1 | 2 |
-| Seamless integration into patients' schedule (no additional time needed) | 0 | 2 | 1 |
-| Reduced PT time on (documentation) workload | 1 | 0 | 1 |
-| Proper guidance (managing pain) | 2 | 0 | 0 |
+| Feedback on exercise technique (address uncertainty of technique) | 2 | 1 | 1 |
+| Clear and understandable progress visibility for patients (address misjugding of progress) | 1 | 1 | 2 |
+| Seamless integration into patients' schedule (address lack of time & discipline) | 0 | 2 | 1 |
+| Proper guidance (address pain & fear of movement) | 2 | 0 | 0 |
+| Reduced PT time on documentation workload  (additional consideration)| 1 | 0 | 1 |
 | **Average Score** | **1.2** | **0.8** | **1.0** |
 
 Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion.
@@ -153,7 +141,7 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 |---|---|---|---|---|
 | P1 | Task-based walkthrough | 9 stand-in participants (5 planned) | What participants say each version means and what they would do next | At least 4 of 5 correctly state whether the patient is on track (provisional; S2) |
 | P2 | Task-based walkthrough | 8 stand-in participants (5 planned) | Steps completed unaided; where participants hesitate; time taken | Set-up under 2 minutes (provisional; S3) |
-| P3 | Technical measurement | 2 team members | Difference between measured and reference angle, in degrees | Mean error within 10° (proposed) |
+| P3 | Technical measurement | 1 team member | Difference between measured and reference angle, in degrees | Mean error within 10° (proposed) |
 
 ### 4.2 Interim tests: P1–P3
 
@@ -164,7 +152,7 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 
 The facilitator stepped in when a participant needed help. All sessions and comments were audio-recorded and transcribed ([Appendix E](#appendix-e-test-session-findings) summarises them).
 
-**P3.** Each team member raised their arm to reference angles of 30°, 60°, 90°, 120° and 150°, three times each, filmed from the side and then from about 45°. We calculated the mean error for each angle and camera position. Only team members were filmed, and the movements were simple arm raises by uninjured people.
+**P3.** The team member raised their arm to reference angles of 50°, 90°, 120° (three times each), filmed with the team member facing sideways to the camera and doing a right-arm shoulder flexion movement. All results are documented and summarised as shown in Appendix E.
 
 ## 5. Analysis
 
@@ -181,6 +169,9 @@ We tested P1 and P2 with nine participants. Five key findings emerged, and [Appe
 **Pain (S5).** The pain score alone did not guide participants: they were unsure what a score meant or when to stop, and tended to favour the less painful exercise. They wanted the app to say when to stop and to note pauses, which the prototype does not do. The design should explain pain scores using a range set by the physiotherapist, and share pain and pauses with the physiotherapist.
 
 **Set-up (S3).** Set-up was observed with only two participants: one took about 3 minutes, over the 2-minute target, and the other skipped it because the exercise ran regardless. This matches the positioning hassle reported with a previous system ([Appendix A.5](#a5-use-in-singapore-from-interviews)), and could add a burden when time is already the most reported barrier ([Appendix B, Theme 1](#b4-findings-by-theme)). The lack of a live view probably added to the time taken, so this is a warning, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
+
+**Ability to track their readings (S1).**  
+
 
 ### 5.2 Methods and validity
 
@@ -479,7 +470,17 @@ Other things respondents found helpful were YouTube videos on their condition an
 
 ### Appendix D: Concept Generation & Screening
 
-#### D.1 Overall ACE Framework for concept generation
+#### D.1 'How might we' Design questions & identified barriers
+
+Problem (Section 1.2) | Root cause | Design question | Spec |
+|---|---|---|---|
+| Lack of time and discipline | Work and daily commitments compete with rehabilitation. Patients may lose motivation once they feel sufficiently recovered and this may lead to low adoption rate. | How might we help patients incorporate prescribed rehabilitation exercises into their daily routines and sustain engagement throughout recovery? | S3 |
+| Uncertainty about technique | Patients receive limited feedback between PT appointments and PTs are only able to correct these exercises during the sessions themselves. | How might we enable patients to recognise and correct improper exercise techniques independently during the home rehabilitation phase? | S1 |
+| Misjudging progress | Patients have limited access to objective information on their progress unless requested and may mistake reduced pain or improved function for complete recovery. | How might we help patients understand their rehabilitation progress and potentially recognise when further improvement is needed? | S2 |
+| Pain and fear of movement | Patients sometimes do not understand that the pain/discomfort during exercise is to be expected or whether the pain they feel requires them to seek professional advice | How might we help patients handle uncertainty about exercise-related pain and potentially continue rehabilitation safely within prescribed limits? | S5 |
+| PT time and visibility between visits | Home rehabilitation is largely self-managed, where PTs mostly rely on patient-reported responses and in-person reassessment.| How might we provide physiotherapists with relevant, actionable information about patients' home rehabilitation while minimising additional workload? | S4 |
+
+#### D.2 Overall ACE Framework for concept generation
 
 <table>
   <thead>
@@ -721,7 +722,16 @@ Other things respondents found helpful were YouTube videos on their condition an
   </tbody>
 </table>
 
-#### D.2 Overall Concept screening categorisation
+#### D.3 Overall Concept screening categorisation
+
+'Easy' concepts for instance demonstrate already established technology that is relatively simple to recreate, while 'Feasible' ones may require slightly more resources or technology to develop but can be achieved. 'Challenging' concepts require vastly more resources or knowledge to validate and develop, while those under 'Out of scope' do not directly address the problems or lack feasibility. The two tables below show both the summarised and complete version of our concept screening based on this criteria.
+
+| Screening category | Summarised concepts |
+|---|---|
+| Easy | Pre-recorded exercise videos, patient progress/evaluation graphs, goal setting and reminders, channel for feedback and support, micro-rehab exercises |
+| Feasible | Camera-based movement tracking, wearable motion sensors, automated progress summaries, gamified incentives, AI-based prescriber (for PT) |
+| Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab, Auto-recorded PT sessions |
+| Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
 
 <table>
   <thead>
@@ -928,6 +938,773 @@ These tables set out what Participants A to I said and did. Quotes come from AI 
 | Set-up was either slow or skipped | A took about 3 minutes to get into frame, from about 04:02 to 07:06, over the 2-minute target. A placed the phone on the floor (A, 04:25–05:12), noticed that the camera could zoom out (A, 06:02), and had a photo fall outside the lines (A, 06:23) before getting it right (A, 07:06). B did not set up the phone and went straight to the exercise, which ran whether or not the phone was in position (B, 00:35–00:55). D, E and H were asked to imagine that set-up was done (D, 05:06; E, 03:04; H, 05:23). Participant I had no live camera view and relied on the guide lines for the head and hips (I, clip 2, 00:23; 01:34) | Simplify phone placement, show a live preview, and check framing before the exercise starts (S3) |
 | Pain shaped choices, but the score did not guide them | D would pick the exercise that hurt less (D, 06:28), would not push as hard on a painful prescribed exercise, and would tell the physiotherapist (D, 07:26). E said pain "is very subjective" and that it is best to try the exercise with the doctor first (E, 08:16–08:31). E was unsure whether a score meant recovery, overexertion or not having recovered yet (E, 09:13). H rated Exercise A 3 out of 10, wanted to try Exercise B to compare, and would choose exercises that cause less pain (H, 07:06–08:01). D would continue if pain was slight and stop if it was too much, and wanted the app to note where they paused (D, 09:41–09:51). E would stop when their body said so, and expected the app to ask about pain so they could report it to the doctor (E, 07:31–07:50). H would continue at levels up to 3 or 4, pause at 5 or 6, and stop if pain stayed high (H, 11:02–11:32), and wanted the app to say at which level to stop (H, 13:23). Participant I thought it was good that the app asked about pain (I, clip 2, 00:58) | Explain scores using a range set by the physiotherapist, state when to stop, and share pain and pauses with the physiotherapist (S4, S5) |
 
+The following tables document the raw readings as captured from the 9 videos (3 videos each for 50°, 90°, 120°)
+## Reference angle: 50°
+
+<details>
+<summary><strong>right_050_1.mp4</strong> — Trial 1 (76 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_050_1.mp4 | right | 50 | 1 | 0 | 5.214 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.1 | 4.699 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.2 | 4.431 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.3 | 4.409 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.4 | 3.64 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.5 | 3.714 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.6 | 4.17 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.7 | 4.727 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.8 | 5.17 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 0.9 | 5.479 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1 | 6.605 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.1 | 6.929 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.2 | 6.921 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.3 | 7.076 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.4 | 7.344 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.5 | 9.16 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.6 | 11.304 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.7 | 13.946 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.8 | 18.854 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 1.9 | 21.508 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2 | 25.296 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.1 | 26.634 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.2 | 28.916 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.3 | 31.268 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.4 | 33.98 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.5 | 37.179 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.6 | 38.761 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.7 | 40.668 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.8 | 42.181 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 2.9 | 45.13 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3 | 47.833 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.1 | 49.764 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.2 | 51.586 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.3 | 52.914 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.4 | 52.732 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.5 | 52.446 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.6 | 52.05 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.7 | 51.7 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.8 | 51.751 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 3.9 | 51.819 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4 | 51.746 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.1 | 51.103 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.2 | 50.353 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.3 | 50.421 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.4 | 50.606 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.5 | 50.748 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.6 | 50.651 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.7 | 50.747 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.8 | 50.368 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 4.9 | 49.5 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5 | 48.49 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.1 | 46.649 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.2 | 44.758 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.3 | 40.387 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.4 | 37.11 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.5 | 31.857 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.6 | 28.995 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.7 | 23.874 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.8 | 22.391 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 5.9 | 18.702 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6 | 14.302 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.1 | 9.748 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.2 | 7.489 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.3 | 6.098 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.4 | 5.228 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.5 | 5.682 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.6 | 5.506 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.7 | 5.689 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.8 | 6.019 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 6.9 | 6.15 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 7 | 5.89 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 7.1 | 5.917 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 7.2 | 6.15 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 7.3 | 5.506 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 7.4 | 5.491 | 3 |
+| right_050_1.mp4 | right | 50 | 1 | 7.5 | 5.719 | 3 |
+
+</details>
+
+<details>
+<summary><strong>right_050_2.mp4</strong> — Trial 2 (77 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_050_2.mp4 | right | 50 | 2 | 0 | 6.001 | 4 |
+| right_050_2.mp4 | right | 50 | 2 | 0.1 | 4.979 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 0.2 | 5.879 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 0.3 | 5.834 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 0.4 | 5.306 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 0.5 | 5.524 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 0.6 | 6.024 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 0.7 | 5.871 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 0.8 | 5.676 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 0.9 | 5.395 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1 | 5.339 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.1 | 6.684 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.2 | 7.852 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.3 | 10.819 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.4 | 16.714 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.5 | 21.289 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.6 | 24.245 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.7 | 29.159 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.8 | 33.654 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 1.9 | 36.487 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2 | 40.618 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.1 | 41.766 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.2 | 45.094 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.3 | 47.358 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.4 | 48.94 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.5 | 50.04 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.6 | 51.783 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.7 | 51.751 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.8 | 51.328 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 2.9 | 51.043 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3 | 51.034 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.1 | 51.186 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.2 | 50.779 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.3 | 50.735 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.4 | 49.301 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.5 | 48.66 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.6 | 48.325 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.7 | 48.25 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.8 | 48.067 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 3.9 | 48.022 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4 | 48.262 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.1 | 49.057 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.2 | 49.571 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.3 | 49.644 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.4 | 49.347 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.5 | 49.787 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.6 | 48.43 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.7 | 47.667 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.8 | 45.847 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 4.9 | 43.748 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5 | 40.957 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.1 | 37.723 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.2 | 35.025 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.3 | 31.376 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.4 | 29.53 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.5 | 26.64 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.6 | 24.407 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.7 | 21.169 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.8 | 17.695 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 5.9 | 13.563 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6 | 9.924 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.1 | 8.883 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.2 | 7.144 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.3 | 6.373 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.4 | 5.187 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.5 | 5.048 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.6 | 4.123 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.7 | 4.077 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.8 | 3.721 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 6.9 | 3.184 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 7 | 3.591 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 7.1 | 3.664 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 7.2 | 3.546 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 7.3 | 4.055 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 7.4 | 4.313 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 7.5 | 4.381 | 3 |
+| right_050_2.mp4 | right | 50 | 2 | 7.6 | 4.454 | 2 |
+
+</details>
+
+<details>
+<summary><strong>right_050_3.mp4</strong> — Trial 3 (72 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_050_3.mp4 | right | 50 | 3 | 0 | 5.126 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.1 | 6.086 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.2 | 6.06 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.3 | 5.39 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.4 | 5.577 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.5 | 6.721 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.6 | 6.515 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.7 | 7.054 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.8 | 7.119 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 0.9 | 8.671 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1 | 10.952 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.1 | 15.106 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.2 | 19.008 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.3 | 21.543 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.4 | 23.857 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.5 | 29.307 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.6 | 33.185 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.7 | 36.072 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.8 | 39.642 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 1.9 | 40.709 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2 | 43.924 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.1 | 45.374 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.2 | 46.798 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.3 | 48.06 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.4 | 49.039 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.5 | 49.811 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.6 | 50.304 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.7 | 50.442 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.8 | 50.403 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 2.9 | 50.364 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3 | 50.273 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.1 | 50.122 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.2 | 49.953 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.3 | 49.708 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.4 | 49.461 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.5 | 48.717 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.6 | 48.539 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.7 | 48.34 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.8 | 48.447 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 3.9 | 48.727 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4 | 49.125 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.1 | 49.04 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.2 | 49.09 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.3 | 48.72 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.4 | 47.817 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.5 | 46.495 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.6 | 45.747 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.7 | 43.876 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.8 | 41.385 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 4.9 | 36.385 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5 | 33.682 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.1 | 30.294 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.2 | 26.273 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.3 | 24.141 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.4 | 19.972 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.5 | 14.898 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.6 | 11.019 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.7 | 10.163 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.8 | 7.862 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 5.9 | 5.935 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6 | 5.654 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.1 | 5.561 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.2 | 5.374 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.3 | 5.22 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.4 | 4.683 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.5 | 4.492 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.6 | 4.748 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.7 | 5.709 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.8 | 7.107 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 6.9 | 6.978 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 7 | 6.441 | 3 |
+| right_050_3.mp4 | right | 50 | 3 | 7.1 | 6.406 | 3 |
+
+</details>
+
+## Reference angle: 90°
+
+<details>
+<summary><strong>right_090_1.mp4</strong> — Trial 1 (69 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_090_1.mp4 | right | 90 | 1 | 0 | 2.598 | 4 |
+| right_090_1.mp4 | right | 90 | 1 | 0.1 | 3.772 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 0.2 | 4.765 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 0.3 | 4.055 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 0.4 | 4.455 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 0.5 | 4.47 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 0.6 | 3.496 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 0.7 | 0.692 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 0.8 | 0.73 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 0.9 | 0.765 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1 | 1.079 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.1 | 6.318 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.2 | 14.747 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.3 | 17.988 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.4 | 29.504 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.5 | 35.997 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.6 | 42.742 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.7 | 46.375 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.8 | 56.223 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 1.9 | 66.497 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2 | 70.572 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.1 | 76.836 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.2 | 79.492 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.3 | 77.285 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.4 | 78.018 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.5 | 81.473 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.6 | 83.235 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.7 | 84.94 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.8 | 85.332 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 2.9 | 86.983 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3 | 87.98 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.1 | 88.791 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.2 | 88.964 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.3 | 88.105 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.4 | 88.118 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.5 | 87.809 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.6 | 86.928 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.7 | 87.13 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.8 | 87.101 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 3.9 | 87.028 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4 | 87.119 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.1 | 86.996 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.2 | 87.203 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.3 | 88.18 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.4 | 86.405 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.5 | 80.642 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.6 | 77.465 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.7 | 71.959 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.8 | 65.918 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 4.9 | 58.52 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5 | 49.618 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.1 | 42.852 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.2 | 36.004 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.3 | 29.033 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.4 | 22.399 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.5 | 15.84 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.6 | 8.793 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.7 | 1.736 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.8 | 0.15 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 5.9 | 0.313 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6 | 0.647 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6.1 | 0.286 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6.2 | 0.78 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6.3 | 2.928 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6.4 | 2.833 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6.5 | 2.254 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6.6 | 2.33 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6.7 | 3.257 | 3 |
+| right_090_1.mp4 | right | 90 | 1 | 6.8 | 2.857 | 2 |
+
+</details>
+
+<details>
+<summary><strong>right_090_2.mp4</strong> — Trial 2 (80 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_090_2.mp4 | right | 90 | 2 | 0 | 1.978 | 4 |
+| right_090_2.mp4 | right | 90 | 2 | 0.1 | 2.52 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 0.2 | 2.755 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 0.3 | 1.829 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 0.4 | 1.69 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 0.5 | 1.864 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 0.6 | 1.906 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 0.7 | 1.605 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 0.8 | 0.975 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 0.9 | 0.702 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1 | 0.636 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.1 | 0.68 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.2 | 0.091 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.3 | 0.982 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.4 | 1.479 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.5 | 0.322 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.6 | 1.433 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.7 | 3.005 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.8 | 5.931 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 1.9 | 8.878 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2 | 19.749 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.1 | 24.946 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.2 | 28.105 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.3 | 35.654 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.4 | 44.323 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.5 | 55.353 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.6 | 63.487 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.7 | 68.415 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.8 | 72.278 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 2.9 | 76.366 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3 | 79.051 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.1 | 79.062 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.2 | 81.901 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.3 | 84.298 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.4 | 86.449 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.5 | 87.649 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.6 | 88.752 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.7 | 88.804 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.8 | 88.571 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 3.9 | 88.892 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4 | 88.902 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.1 | 88.453 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.2 | 86.84 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.3 | 87.365 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.4 | 88.119 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.5 | 88.328 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.6 | 88.441 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.7 | 88.36 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.8 | 88.471 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 4.9 | 88.304 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5 | 86.129 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.1 | 82.16 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.2 | 78.718 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.3 | 74.344 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.4 | 68.922 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.5 | 62.676 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.6 | 54.776 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.7 | 47.081 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.8 | 40.03 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 5.9 | 33.056 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6 | 28.09 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.1 | 21.691 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.2 | 17.307 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.3 | 13.183 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.4 | 9.833 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.5 | 7.632 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.6 | 5.127 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.7 | 1.688 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.8 | 0.675 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 6.9 | 1.797 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7 | 2.058 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.1 | 1.761 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.2 | 1.745 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.3 | 1.159 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.4 | 0.398 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.5 | 0.649 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.6 | 0.239 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.7 | 0.591 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.8 | 0.81 | 3 |
+| right_090_2.mp4 | right | 90 | 2 | 7.9 | 0.413 | 2 |
+
+</details>
+
+<details>
+<summary><strong>right_090_3.mp4</strong> — Trial 3 (79 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_090_3.mp4 | right | 90 | 3 | 0 | 2.746 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.1 | 4.375 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.2 | 3.927 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.3 | 3.8 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.4 | 3.528 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.5 | 3.341 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.6 | 3.386 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.7 | 3.299 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.8 | 3.159 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 0.9 | 1.991 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1 | 1.116 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.1 | 1.383 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.2 | 1.413 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.3 | 3.032 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.4 | 6.433 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.5 | 9.935 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.6 | 16.323 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.7 | 27.159 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.8 | 34.392 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 1.9 | 40.188 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2 | 46.857 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.1 | 54.756 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.2 | 60.271 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.3 | 65.039 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.4 | 68.869 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.5 | 72.935 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.6 | 74.655 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.7 | 76.692 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.8 | 80.077 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 2.9 | 84.633 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3 | 87.398 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.1 | 87.15 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.2 | 87.926 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.3 | 87.915 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.4 | 88.568 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.5 | 88.46 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.6 | 88.642 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.7 | 89.212 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.8 | 89.403 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 3.9 | 89.608 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4 | 89.318 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.1 | 89.274 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.2 | 89.452 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.3 | 89.866 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.4 | 90.427 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.5 | 91.177 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.6 | 90.981 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.7 | 91.229 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.8 | 91.919 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 4.9 | 92.682 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5 | 92.695 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.1 | 90.959 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.2 | 86.909 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.3 | 79.378 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.4 | 77.575 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.5 | 69.843 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.6 | 62.853 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.7 | 51.642 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.8 | 42.469 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 5.9 | 33.508 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6 | 25.818 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.1 | 19.652 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.2 | 14.782 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.3 | 9.705 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.4 | 6.769 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.5 | 2.713 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.6 | 1.992 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.7 | 0.31 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.8 | 1.3 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 6.9 | 0.76 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7 | 1.373 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7.1 | 1.366 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7.2 | 1.436 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7.3 | 1.659 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7.4 | 1.276 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7.5 | 0.969 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7.6 | 0.903 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7.7 | 0.609 | 3 |
+| right_090_3.mp4 | right | 90 | 3 | 7.8 | 0.769 | 3 |
+
+</details>
+
+## Reference angle: 120°
+
+<details>
+<summary><strong>right_120_1.mp4</strong> — Trial 1 (71 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_120_1.mp4 | right | 120 | 1 | 0 | 1.338 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.1 | 0.35 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.2 | 0.859 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.3 | 1.517 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.4 | 1.733 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.5 | 1.88 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.6 | 1.796 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.7 | 1.455 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.8 | 1.167 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 0.9 | 0.487 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1 | 0.079 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.1 | 0.427 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.2 | 0.032 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.3 | 0.929 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.4 | 4.072 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.5 | 7.244 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.6 | 16.092 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.7 | 28.367 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.8 | 39.913 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 1.9 | 51.788 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2 | 63.718 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.1 | 73.308 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.2 | 81.456 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.3 | 89.293 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.4 | 96.772 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.5 | 104.508 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.6 | 107.866 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.7 | 112.942 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.8 | 117.628 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 2.9 | 118.157 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3 | 119.607 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.1 | 119.857 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.2 | 118.847 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.3 | 119.292 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.4 | 119.494 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.5 | 120.732 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.6 | 121.605 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.7 | 122.06 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.8 | 121.503 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 3.9 | 122.308 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4 | 124.278 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.1 | 125.109 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.2 | 123.568 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.3 | 120.673 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.4 | 113.113 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.5 | 107.779 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.6 | 99.993 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.7 | 93.647 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.8 | 86.401 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 4.9 | 77.052 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5 | 66.451 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.1 | 55.759 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.2 | 47.971 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.3 | 39.756 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.4 | 33.275 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.5 | 28.867 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.6 | 23.156 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.7 | 19.712 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.8 | 12.67 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 5.9 | 8.557 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6 | 6.37 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.1 | 2.655 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.2 | 0.78 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.3 | 0.392 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.4 | 2.362 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.5 | 3.08 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.6 | 3.543 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.7 | 2.759 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.8 | 1.296 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 6.9 | 1.05 | 3 |
+| right_120_1.mp4 | right | 120 | 1 | 7 | 1.452 | 3 |
+
+</details>
+
+<details>
+<summary><strong>right_120_2.mp4</strong> — Trial 2 (84 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_120_2.mp4 | right | 120 | 2 | 0 | 1.353 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.1 | 3.762 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.2 | 3.55 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.3 | 3.64 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.4 | 3.664 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.5 | 3.907 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.6 | 4.198 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.7 | 4.381 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.8 | 3.91 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 0.9 | 3.818 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1 | 4.423 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.1 | 3.488 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.2 | 3.175 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.3 | 3.199 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.4 | 3.113 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.5 | 3.815 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.6 | 3.408 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.7 | 1.018 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.8 | 2.927 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 1.9 | 6.012 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2 | 12.409 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.1 | 17.005 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.2 | 25.19 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.3 | 31.412 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.4 | 43.487 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.5 | 55.023 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.6 | 64.481 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.7 | 73.297 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.8 | 79.706 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 2.9 | 86.857 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3 | 93.762 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.1 | 99.317 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.2 | 103.825 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.3 | 106.233 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.4 | 109.829 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.5 | 113.081 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.6 | 114.705 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.7 | 117.093 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.8 | 118.148 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 3.9 | 119.065 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4 | 119.394 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.1 | 119.152 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.2 | 118.794 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.3 | 120 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.4 | 119.635 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.5 | 119.374 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.6 | 118.906 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.7 | 119.353 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.8 | 118.675 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 4.9 | 117.719 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5 | 113.71 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.1 | 111.56 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.2 | 108.598 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.3 | 104.765 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.4 | 100.936 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.5 | 95.724 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.6 | 90.406 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.7 | 81.104 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.8 | 75.456 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 5.9 | 67.416 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6 | 58.039 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.1 | 49.009 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.2 | 33.957 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.3 | 30.649 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.4 | 27.516 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.5 | 21.206 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.6 | 15.263 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.7 | 10.423 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.8 | 9.191 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 6.9 | 7.062 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7 | 4.878 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.1 | 2.203 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.2 | 1.343 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.3 | 0.584 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.4 | 0.924 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.5 | 1.154 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.6 | 1.067 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.7 | 1.202 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.8 | 1.219 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 7.9 | 0.743 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 8 | 1.146 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 8.1 | 1.407 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 8.2 | 1.303 | 3 |
+| right_120_2.mp4 | right | 120 | 2 | 8.3 | 1.539 | 2 |
+
+</details>
+
+<details>
+<summary><strong>right_120_3.mp4</strong> — Trial 3 (82 readings)</summary>
+
+| clip | arm | reference_deg | trial | time_s | median_angle_deg | frames_in_bin |
+| --- | --- | --- | --- | --- | --- | --- |
+| right_120_3.mp4 | right | 120 | 3 | 0 | 0.262 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.1 | 1.672 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.2 | 1.348 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.3 | 1.067 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.4 | 0.653 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.5 | 0.596 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.6 | 0.707 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.7 | 1.406 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.8 | 1.812 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 0.9 | 1.374 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1 | 0.441 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.1 | 1.071 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.2 | 2.947 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.3 | 5.646 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.4 | 7.759 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.5 | 10.377 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.6 | 13.77 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.7 | 18.592 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.8 | 24.66 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 1.9 | 27.744 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2 | 33.992 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.1 | 43.666 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.2 | 52.266 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.3 | 60.294 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.4 | 67.001 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.5 | 75.745 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.6 | 79.68 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.7 | 86.824 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.8 | 92.48 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 2.9 | 98.937 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3 | 104.255 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.1 | 109.118 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.2 | 112.583 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.3 | 114.321 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.4 | 116.019 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.5 | 115.732 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.6 | 116.943 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.7 | 117.816 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.8 | 117.91 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 3.9 | 119.085 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4 | 118.517 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.1 | 119.585 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.2 | 120.988 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.3 | 121.872 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.4 | 121.938 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.5 | 121.863 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.6 | 121.788 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.7 | 123.273 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.8 | 122.776 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 4.9 | 118.695 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5 | 115.549 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.1 | 113.024 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.2 | 107.982 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.3 | 105.416 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.4 | 101.989 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.5 | 94.725 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.6 | 90.336 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.7 | 80.711 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.8 | 76.216 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 5.9 | 68.378 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6 | 64.009 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.1 | 55.037 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.2 | 43.82 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.3 | 34.672 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.4 | 28.046 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.5 | 20.711 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.6 | 16.453 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.7 | 10.285 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.8 | 7.332 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 6.9 | 3.403 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7 | 1.222 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.1 | 0.509 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.2 | 2.765 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.3 | 5.853 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.4 | 4.73 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.5 | 3.852 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.6 | 3.515 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.7 | 3.746 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.8 | 3.459 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 7.9 | 3.502 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 8 | 3.292 | 3 |
+| right_120_3.mp4 | right | 120 | 3 | 8.1 | 3.381 | 2 |
+
 [← Back to Section 5](#5-analysis) | [↑ Back to contents](#table-of-contents)
 
 ### Appendix F: Semester 2 prototypes
@@ -951,3 +1728,4 @@ These prototypes need patients or clinicians, so they are planned for Semester 2
 **Note:** PoC - Proof of Concept, PoP - Proof of Principle
 
 [← Back to Section 3](#3-fabrication-of-prototypes) | [↑ Back to contents](#table-of-contents)
+
