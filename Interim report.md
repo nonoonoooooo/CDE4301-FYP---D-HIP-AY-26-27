@@ -173,9 +173,11 @@ We tested P1 and P2 with nine participants. Five key findings emerged, and [Appe
 
 For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking, which closely aligns to S1. The table below a sample (from trial 3) of how the readings are visualised in a graphical format.
 
-| Graph for 50°  | <img width="512" height="203" alt="image" src="https://github.com/user-attachments/assets/fedb4fbc-d6ae-4569-addd-40b48fa374ca" /> |
-| Graph for 90° | <img width="512" height="250" alt="image" src="https://github.com/user-attachments/assets/d0d4f257-6059-454e-a47e-36e1d195fa74" /> |
-| Graph for 120° | <img width="512" height="226" alt="image" src="https://github.com/user-attachments/assets/5f0ba9da-8ddb-4fd6-add2-cd91176d035b" /> |
+| Reference Angle | Graph |
+|---|---|
+| 50°  | <img width="512" height="203" alt="image" src="https://github.com/user-attachments/assets/fedb4fbc-d6ae-4569-addd-40b48fa374ca" /> |
+| 90° | <img width="512" height="250" alt="image" src="https://github.com/user-attachments/assets/d0d4f257-6059-454e-a47e-36e1d195fa74" /> |
+| 120° | <img width="512" height="226" alt="image" src="https://github.com/user-attachments/assets/5f0ba9da-8ddb-4fd6-add2-cd91176d035b" /> |
 
 The table shows the average measurements compared against the respective reference angles, which also shows relatively consistent measurements across the 3 trials for each angle.
 
