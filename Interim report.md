@@ -65,47 +65,50 @@ ReMotion's novelty lies in supporting the shoulder after RCR in a way that fits 
 | S2 | The solution shows patients how they are progressing, so that at least 4 of 5 test participants can correctly say whether they are on track. | Patients stop once they feel "good enough" ([Appendix B, Theme 3](#b4-findings-by-theme)); seeing progress was the most wanted support (5/6; [Appendix C](#appendix-c-patient-survey)). |
 | S3 | The solution fits into patients' schedules, taking no more time than their currently prescribed exercises, with set-up taking under 2 minutes. | Time was the most reported barrier; physiotherapists improve adherence by fitting exercises into routines ([Appendix B, Theme 1](#b4-findings-by-theme); [Appendix C](#appendix-c-patient-survey)). |
 | S4 | The solution reduces the time physiotherapists spend reviewing patients' progress, with a between-visit summary they can review in under 2 minutes. | Physiotherapists see adherence only at the next visit and said a between-visit summary would save time ([Appendix B, Theme 6](#b4-findings-by-theme)). |
-| S5 | The solution tells patients which pain is acceptable and when to progress, and never prompts movement beyond the range permitted for their rehabilitation phase. | Fear of pain was raised by 7/10 physiotherapists ([Appendix B, Theme 4](#b4-findings-by-theme)), and 4/6 survey respondents wanted to feel safe ([Appendix C](#appendix-c-patient-survey)). |
+
+> TO remove? | S5 | The solution tells patients which pain is acceptable and when to progress, and never prompts movement beyond the range permitted for their rehabilitation phase. | Fear of pain was raised by 7/10 physiotherapists ([Appendix B, Theme 4](#b4-findings-by-theme)), and 4/6 survey respondents wanted to feel safe ([Appendix C](#appendix-c-patient-survey)). |
+
+We decided to remove S5 as the PTs told us that the need is weak, and for solution to be useful, it would have to fit inside their workflow (e.g. EHR integration which is costly).
 
 ## 2. Methodology / Concept Development
 
 ### 2.1 Design Questions and Ideation
 
-Based on the rehabilitation barriers identified through stakeholder interviews and patient surveys (Section 1.2), the underlying contributing factors were translated into “How Might We” design questions to guide our subsequent concept generation (Appendix D.1). The generated concepts were then organised using the Approach–Concept–Embodiment (ACE) framework, as they progress from broader strategies to specific ideas and potential implementations. For instance, under the 'Movement tracking' and 'Self-guided learning' approaches, we can potentially develop a camera-based sensor to track movements or a community forum or online resource library for patients to seek clarifications. An additional problem of 'PT (physiotherapy) time' was added as we believe that our solution should not add additional workload for PT to adopt it. The main approaches across the five identified problem areas are summarised below, with the complete ACE framework provided in [Appendix D.2](#d1-overall-ace-framework-for-concept-generation).
+Based on the rehabilitation barriers identified through stakeholder interviews and patient surveys (Section 1.2), the underlying contributing factors were translated into “How Might We” design questions to guide our subsequent concept generation (Appendix D.1). The generated concepts were then organised using the Approach–Concept–Embodiment (ACE) framework, as they progress from broader strategies to specific ideas and potential implementations. For instance, under the 'Movement tracking' and 'Self-guided learning' approaches, we can potentially develop a camera-based sensor to track movements or a community forum or online resource library for patients to seek clarifications. The main approaches across the four identified problem areas are summarised below, with the complete ACE framework provided in [Appendix D.2](#d1-overall-ace-framework-for-concept-generation).
 
 | Main Problem / Identified barriers | Main Approaches explored | Sample Ideas |
 |---|---|
 | Uncertainty about technique | Movement tracking, Feedback provision, Assisted movement, Self-guided learning | VR/Wearables/Camera-based sensors, User-controlled exoskeleton, pre-recorded exercise videos |
 | Misjudging progress | (Rehab) Progress visualisation, Scoring System, Regular reviews | Graphical visualisation markers, Telerehab remote evaluation, monthly reviews by PT |
-| Lack of time and discipline | Rewards and incentives, Social support, Gamification (micro-rehab), Integration into daily routines | Vouchers, group PT sessions, online communities |
+| Lack of time and discipline | Rewards and incentives, Social support, Gamification, Micro-rehab exercises, Integration into daily routines | Vouchers, group PT sessions, online communities |
 | Pain and fear of movement | Patient pain scoring, Pain detection, Answering patients' questions | Personal survey/questionnaire, AI-based companion |
-| PT time on workload | Automated ROM documentation, Recorded note-taking of patients | Conversational AI input, Audio ambient scribe |
 
-### 2.2 Concept Screening
+### 2.2 Concept Screening & Selection
 
 A preliminary screening was conducted to narrow the broad range of generated ideas according to their anticipated development and implementation feasibility. They were classified based on their potential feasibility and complexity when developing their prototypes. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in [Appendix D.3](#d2-overall-concept-screening-categorisation). 'Out-of-scope' ideas were not considered for further prototyping development, while we focused on 'Easy' and 'Feasible' ideas to build our prototype.
 
 | Screening category | Summarised Ideas |
 |---|---|
 | Easy | Pre-recorded exercise videos, patient progress/evaluation graphs, goal setting and reminders, channel for feedback and support, micro-rehab exercises |
-| Feasible | Camera-based movement tracking, wearable motion sensors, automated progress summaries, gamified incentives, AI-based prescriber (for PT) |
-| Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab, Auto-recorded PT sessions |
+| Feasible | Camera-based movement tracking, wearable motion sensors, automated progress summaries, gamified incentives |
+| Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab |
 | Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
 
-After further screening and discussion, we narrowed down the ideas and approaches to form a final overarching solution at this stage, that aims to embody the following concepts as implemented features within the solution: Feedback Provision, Gamification (with Micro-Rehab Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods, such as wearable or camera-based ROM tracking. Their suitability was then assessed against the design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below. Further evaluation on our concepts and final solution can be found in Appendix D.4
+Following preliminary screening, the shortlisted approaches and ideas were combined into four initial solution concepts: a digital rehabilitation coach, micro-rehab-based wearable, camera-based ROM tracking and gamified rehabilitation (Appendix D.4). They were evaluated against S1–S5 and substantial overlap was identified across the concepts, particularly in exercise flexibility, objective movement assessment, progress tracking and physiotherapist review. Rather than developing four separate solutions, we therefore converged their complementary features into one integrated 'ReMotion' concept with further prioritisation based on stakeholder needs, unmet market gaps and technical feasibility.
 
-| Design specification (Identified barriers) | Feedback Provision | Gamification (with Micro-Rehab Exercises) | Rehabilitation Progress Tracking |
+The features include: Feedback Provision, Micro-Rehab Exercises, and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods, such as wearable or camera-based ROM tracking. Their suitability was then assessed against the design specifications (S1–S4) using a needs-criteria evaluation matrix as shown below. Further evaluation on our final solution can be found in Appendix D.4
+
+| Design specification (Identified barriers) | Feedback Provision | Micro-Rehab Exercises | Rehabilitation Progress Tracking |
 |---|:---:|:---:|:---:|
-| Feedback on exercise technique (address uncertainty of technique) | 2 | 1 | 1 |
-| Clear and understandable progress visibility for patients (address misjugding of progress) | 1 | 1 | 2 |
-| Seamless integration into patients' schedule (address lack of time & discipline) | 0 | 2 | 1 |
-| Proper guidance (address pain & fear of movement) | 2 | 0 | 0 |
-| Reduced PT time on documentation workload  (additional consideration)| 1 | 0 | 1 |
-| **Average Score** | **1.2** | **0.8** | **1.0** |
+| S1 (address uncertainty of technique) | 2 | 1 | 1 |
+| S2 (address misjugding of progress) | 1 | 1 | 2 |
+| S3 (address lack of time & discipline) | 0 | 2 | 1 |
+| S4 (address pain & fear of movement) | 2 | 0 | 0 |
+| **Average Score** | **1.25** | **1.0** | **1.0** |
 
 Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion.
 
-Based on the needs-criteria evaluation, 'Feedback Provision' showed the strongest alignment with our design specifications, particularly in providing exercise technique feedback and guiding rehabilitation. 'Rehabilitation Progress Tracking' was also identified as a promising complementary concept, allowing patients to better understand their recovery and providing relevant information for physiotherapists. Although 'Gamification' scored lower overall, it can potentially encourage adherence through integration of micro-rehab exercises into patients' daily routines. Therefore, feedback provision and progress tracking were initially prioritised for further development and prototyping, with gamification considered as a possible supporting feature for future prototyping plans. These concepts will undergo initial prototyping to assess their technical feasibility and usability before refining them further.
+Based on the needs-criteria evaluation, 'Feedback Provision' showed the strongest alignment with our design specifications, particularly in providing exercise technique feedback and guiding rehabilitation. 'Rehabilitation Progress Tracking' was also identified as a promising complementary concept, allowing patients to better understand their recovery and providing relevant information for physiotherapists. Although 'Micro-Rehab exercises' scored similar to 'Progress tracking', it requires clinical validation with PT/clinicians to implement micro-rehab exercises into patients' daily routines, which we plan for future prototyping phases. Therefore, feedback provision and progress tracking were initially prioritised for further development and prototyping to assess their technical feasibility and usability before refining them further.
 
 
 ## 3. Fabrication of Prototypes
@@ -154,7 +157,7 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 
 The facilitator stepped in when a participant needed help. All sessions and comments were audio-recorded and transcribed ([Appendix E](#appendix-e-test-session-findings) summarises them).
 
-**P3.** The team member raised their arm to reference angles of 50°, 90°, 120° (three times each) and were filmed with the member facing sideways to the camera, doing a right-arm shoulder flexion movement. All results are documented and summarised as shown in Appendix E.
+**P3.** For P3, one healthy team member performed right-arm shoulder flexion towards three manually established reference angles (50°, 90° and 120°), with three trials per angle. Each movement was recorded from a side-view camera, with the arm held at the target position for approximately three seconds before lowering. The videos were processed using the adapted MediaPipe-based script, and measurements during the stationary holding phase were extracted to obtain a representative angle for each trial. These were subsequently compared against the corresponding reference angles to evaluate preliminary measurement agreement. All results are documented in Appendix E.
 
 ## 5. Analysis
 
@@ -172,7 +175,7 @@ We tested P1 and P2 with nine participants. Five key findings emerged, and [Appe
 
 **Set-up (S3).** Set-up was observed with only two participants: one took about 3 minutes, over the 2-minute target, and the other skipped it because the exercise ran regardless. This matches the positioning hassle reported with a previous system ([Appendix A.5](#a5-use-in-singapore-from-interviews)), and could add a burden when time is already the most reported barrier ([Appendix B, Theme 1](#b4-findings-by-theme)). The lack of a live view probably added to the time taken, so this is a warning, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
 
-For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking which aligns with S2 to an extent, as progress of exercises can be visualised and known. The table below a sample (from trial 3) of how the readings are visualised in a graphical format.
+For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking which aligns with S2 to an extent, as progress of exercises can be visualised and known. The table below a sample (from trial 3) of how the readings are visualised in a graphical format. The graphs showed increasing angles during arm elevation, relatively stable measurements during the holding phase, and decreasing angles when lowering.
 
 | Reference Angle | Graph |
 |---|---|
@@ -180,7 +183,7 @@ For P3, it was observed that the opensource code (from MediaPipe library) was ge
 | 90° | <img width="512" height="250" alt="image" src="https://github.com/user-attachments/assets/d0d4f257-6059-454e-a47e-36e1d195fa74" /> |
 | 120° | <img width="512" height="226" alt="image" src="https://github.com/user-attachments/assets/5f0ba9da-8ddb-4fd6-add2-cd91176d035b" /> |
 
-The table shows the average measurements compared against the respective reference angles (up to 3 d.p.). The collated readings were estimated from when the time the user holds up their hands to when they lower their hand over the 'hold phase' as shown in the graphs above. The readings generally showed consistency across trials.
+The table shows the average measurements compared against the respective reference angles (up to 3 d.p.). The collated readings were estimated from the holding phase as observed from the graphs and were shown to be relatively consistent. 
 
 | Reference angle/° | Trial 1/° | Trial 2/° | Trial 3/° | Mean Angle/° | Mean Absolute Error/° |
 |---|---|---|---|---|---|
@@ -192,17 +195,21 @@ The table shows the average measurements compared against the respective referen
 
 For P1 and P2, the sessions were audio-recorded and transcribed by an AI tool. We grouped each participant's comments and actions into findings, compared the participants (Appendix E), and compared the findings with our interviews where relevant (Section 5.1). Durations were estimated from recording timestamps. These findings are early indications, not conclusions. Since our participants are not patients, the sessions cannot show whether patients find either prototype useful.
 
-For P3, videos of the member was taken and uploaded to the laptop to run through the opensource code. Prior to that, reference angles were estimated by measuring arm movement using protractor and ruler. However, it should be noted that the measurements were compared against a protractor reference without proper established accuracy.
+For P3, videos of the member was taken and uploaded to the laptop to run through the opensource code. Prior to that, reference angles were estimated by measuring arm movement using protractor and ruler. However, it should be noted that the resulting measurements were compared against a protractor reference without established clinical accuracy and still lacks ability to detect incorrect forms.
 
 ## 6. Discussion of Problems and Project Plan
 
 > **~400 words.** What are the problems you faced or current shortcomings identified in your work? How do you plan to resolve them?
->
+> Detailed discussion: each problem, what caused it, and what was done about it. (any problems we faced and resolved them?)
 > Rubric A6 (Exceptional): detailed discussion of how problems were resolved; major shortcomings clearly identified with sound, well-justified proposals; detailed, viable plan with well-articulated steps and clearly identified milestones.
 
-### 6.1 Limitations & Future mitigations
+### 6.1 Problems & Potential approaches
 
-> Detailed discussion: each problem, what caused it, and what was done about it. (any problems we faced and resolved them?)
+> Add for any problems encountered for P1/2?
+
+When prototyping P3, the original source code had to be adapted to introduce introduce 0.1-second measurement intervals to reduce continuous frame-by-frame readings that generated excessive data. Raw readings were only obtained in CSV format and thus, data had to be manually translated into graphical representation for better visualisation. In order to ensure script was compatible and suitable for prototyping, preliminary testing was done (with arm movement of 90°) to verify the outputs obtained.
+
+### 6.2 Limitations & Future mitigations
 
 For our overall analysis, all 3 prototypes demonstrated a level of basic functionality and feasibility with our user (participants), although limitations did emerge during our prototyping process. Only a small group of users were tested on which may not be representative of our target population. However, we acknowledge these limitations and planned some mitigations for future prototyping plans as shown in the table below. 
 
@@ -212,12 +219,12 @@ For our overall analysis, all 3 prototypes demonstrated a level of basic functio
 | **P2** | - Positioning the phone was challenging (unless recorded with assistance).<br>- Some features could be skipped, making it difficult to ensure that users were performing exercises as instructed. | - Simplify phone/device setup.<br>- Add visual positioning guidance.<br>- Integrate movement detection before claiming repetitions are completed. |
 | **P3** | - Difficulty capturing user positioning and accurately identifying ROM if the user is not positioned correctly.<br>- Inaccuracy of physical reference angles.<br>- Lack of live measurements.<br>- an uninjured person, side-on view only.<br>- no lighting, clothing or distance variation.<br>- no PT input/assessment | - Use a goniometer to establish reference angles.<br>- Upgrade the source code to support live measurements and account for reference points/user positioning.<br>- Consider testing in other conditions.<br>- Consult with PT on assessment |
 
-### 6.2 Project Prototyping Plan & Timeline
+### 6.3 Project Prototyping Plan & Timeline
 
 > Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants, stand-in participants rather than patients or physiotherapists) and of the needs data (Appendices B.1, B.5 and C.5).
 > Detailed and viable, with well-articulated steps and clearly identified milestones, from first prototype and test through to the Semester 2 evaluation against S1–S5.
 
-The following table shows a brief overview of our project prototyping timeline alongside the resources potentially required for each phase. 
+Building upon the findings from P1–P3, subsequent development will prioritise adaptive micro-rehabilitation scheduling and corrective exercise feedback, supported by ROM measurement and progress tracking. Initial activities will focus on validating clinical requirements and technical feasibility, followed by parallel feature development, integration and iterative testing. Progression between development phases will depend on the ability of each component to satisfy relevant design specifications, with further refinement guided by physiotherapist and user feedback. The proposed timeline and resources are summarised below. 
 
 | Activity / Prototype | Resources Required | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
 |---|---|:---:|:---:|:---:|:---:|:---:|
@@ -233,7 +240,7 @@ The following table shows a brief overview of our project prototyping timeline a
 **Legend:** █ = Planned activity period; W = Project week.
 
 ## 7. Conclusion
-In conclusion, we have identified four key barriers during our project investigation: (1) time constraints, (2) uncertainty about exercise technique, (3) difficulty assessing recovery progress, and (4) pain-related concerns. Based on these barriers, we generated some concepts and screened them based on feasibility and technical complexity, which resulted in our final solution focusing on feedback provision, progress tracking,  micro-rehab gamification. Then, we conducted initial prototyping on the former two features and yielded results that demonstrated preliminary feasibility in progress visualisation, exercise guidance, phone-based ROM tracking, although we noted some limitations with the methods we tested. In our next step, we hope to reiterate and further refine our prototypes to develop a more clinically meaningful and suitable home rehabilitation solution.
+In conclusion, we have identified four key barriers during our project investigation: (1) time constraints, (2) uncertainty about exercise technique, (3) difficulty assessing recovery progress, and (4) pain-related concerns. Based on these barriers, we generated some concepts and screened them based on feasibility and technical complexity, which resulted in our final solution focusing on feedback provision, progress tracking,  micro-rehab exercises. Then, we conducted initial prototyping on the former two features and yielded results that demonstrated preliminary feasibility in progress visualisation, exercise guidance, phone-based ROM tracking, although we noted some limitations with the methods we tested. In our next step, we hope to reiterate and further refine our prototypes to develop a more clinically meaningful and suitable home rehabilitation solution.
 
 ## 8. Individual Contributions
 
