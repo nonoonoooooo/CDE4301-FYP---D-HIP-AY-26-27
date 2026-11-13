@@ -143,7 +143,7 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 |---|---|---|---|---|
 | P1 | Task-based walkthrough | 9 stand-in participants (5 planned) | What participants say each version means and what they would do next | At least 4 of 5 correctly state whether the patient is on track (provisional; S2) |
 | P2 | Task-based walkthrough | 8 stand-in participants (5 planned) | Steps completed unaided; where participants hesitate; time taken | Set-up under 2 minutes (provisional; S3) |
-| P3 | Technical measurement | 1 team member | Difference between measured and reference angle, in degrees | Mean error within 10° (proposed) |
+| P3 | Technical measurement | 1 team member | Difference between measured and reference angle, in degrees | Mean error within 5°-10° (Backed by interviews with PT) |
 
 ### 4.2 Interim tests: P1–P3
 
@@ -172,7 +172,7 @@ We tested P1 and P2 with nine participants. Five key findings emerged, and [Appe
 
 **Set-up (S3).** Set-up was observed with only two participants: one took about 3 minutes, over the 2-minute target, and the other skipped it because the exercise ran regardless. This matches the positioning hassle reported with a previous system ([Appendix A.5](#a5-use-in-singapore-from-interviews)), and could add a burden when time is already the most reported barrier ([Appendix B, Theme 1](#b4-findings-by-theme)). The lack of a live view probably added to the time taken, so this is a warning, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
 
-For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking, which closely aligns to S1. The table below a sample (from trial 3) of how the readings are visualised in a graphical format.
+For P3, it was observed that the opensource code (from MediaPipe library) was general able to provide relatively precise & consistent in analysing measurements from videos. Thus, it is able to conduct form tracking which aligns with S2 to an extent, as based off this mechanism, progress of exercises can be visualised and known. The table below a sample (from trial 3) of how the readings are visualised in a graphical format.
 
 | Reference Angle | Graph |
 |---|---|
@@ -180,19 +180,19 @@ For P3, it was observed that the opensource code (from MediaPipe library) was ge
 | 90° | <img width="512" height="250" alt="image" src="https://github.com/user-attachments/assets/d0d4f257-6059-454e-a47e-36e1d195fa74" /> |
 | 120° | <img width="512" height="226" alt="image" src="https://github.com/user-attachments/assets/5f0ba9da-8ddb-4fd6-add2-cd91176d035b" /> |
 
-The table shows the average measurements compared against the respective reference angles, which also shows relatively consistent measurements across the 3 trials for each angle.
+The table shows the average measurements compared against the respective reference angles (up to 3 d.p.). The collated readings were estimated from when the time the user holds up their hands to when they lower their hand over the 'hold phase' as shown in the graphs above. The readings generally showed consistency across trials.
 
-| Reference angle/° | Trial 1/° | Trial 2/° | Trial 3/° | Mean Angle/° |
-|---|---|---|---|---|
-| **50** | 51.211 | 49.808 | 49.452 | **50.157** |
-| **90** | 87.675 | 88.283 | 90.547 | **88.835** |
-| **120** | 121.139 | 118.70 | 120.944 | **120.261** |
+| Reference angle/° | Trial 1/° | Trial 2/° | Trial 3/° | Mean Angle/° | Mean Absolute Angle/° |
+|---|---|---|---|---|---|
+| **50** | 51.211 | 49.808 | 49.452 | **50.157** | 0.65 |
+| **90** | 87.675 | 88.283 | 90.547 | **88.835** | 1.53 |
+| **120** | 121.139 | 118.70 | 120.944 | **120.261** | 1.13 |
 
 ### 5.2 Methods and validity
 
 For P1 and P2, the sessions were audio-recorded and transcribed by an AI tool. We grouped each participant's comments and actions into findings, compared the participants (Appendix E), and compared the findings with our interviews where relevant (Section 5.1). Durations were estimated from recording timestamps. These findings are early indications, not conclusions. Since our participants are not patients, the sessions cannot show whether patients find either prototype useful.
 
-For P3, videos of the member was taken and uploaded to the laptop to run through the opensource code. Prior to that, reference angles were estimated by measuring arm movement using protractor and ruler.
+For P3, videos of the member was taken and uploaded to the laptop to run through the opensource code. Prior to that, reference angles were estimated by measuring arm movement using protractor and ruler. However, it should be noted that the measurements were compared against a protractor reference without proper established accuracy.
 
 ## 6. Discussion of Problems and Project Plan
 
@@ -202,15 +202,15 @@ For P3, videos of the member was taken and uploaded to the laptop to run through
 
 ### 6.1 Limitations & Future mitigations
 
-> Detailed discussion: each problem, what caused it, and what was done about it.
+> Detailed discussion: each problem, what caused it, and what was done about it. (any problems we faced and resolved them?)
 
-For our overall analysis, all 3 prototypes demonstrated a level of basic functionality and feasibility with our users (patients), although limitations did emerge during our prototyping process. However, we acknowledge these limitations and planned some mitigations for future prototyping plans as shown in the table below. 
+For our overall analysis, all 3 prototypes demonstrated a level of basic functionality and feasibility with our user (participants), although limitations did emerge during our prototyping process. Only a small group of users were tested on which may not be representative of our target population. However, we acknowledge these limitations and planned some mitigations for future prototyping plans as shown in the table below. 
 
 | Prototype | Potential Problems/Limitations | Future Mitigations |
 |---|---|---|
-| **P1** | - Different interpretations of results and understanding of future steps to take (from user POV)<br>- Assumption of linear progress being the right progress over time | - Add clearer recovery-status indicators, explanations of expected ranges, and PT-approved guidance on next steps.<br>- Ensure that users are clear about their progress before advancing to the next stage. |
+| **P1** | - Different interpretations of results and understanding of future steps to take (from user POV)<br>- Assumption of linear progress being the right progress over time.<br>- User responses assessed via audio recordings | - Add clearer recovery-status indicators, explanations of expected ranges, and PT-approved guidance on next steps.<br>- Ensure that users are clear about their progress before advancing to the next stage.<br>- In-person testing (with patients ideally) |
 | **P2** | - Positioning the phone was challenging (unless recorded with assistance).<br>- Some features could be skipped, making it difficult to ensure that users were performing exercises as instructed. | - Simplify phone/device setup.<br>- Add visual positioning guidance.<br>- Integrate movement detection before claiming repetitions are completed. |
-| **P3** | - Difficulty capturing user positioning and accurately identifying ROM if the user is not positioned correctly.<br>- Inaccuracy of physical reference angles.<br>- Lack of live measurements. | - Use a goniometer to establish reference angles.<br>- Upgrade the source code to support live measurements and account for reference points/user positioning. |
+| **P3** | - Difficulty capturing user positioning and accurately identifying ROM if the user is not positioned correctly.<br>- Inaccuracy of physical reference angles.<br>- Lack of live measurements.<br>- an uninjured person, side-on view only.<br>- no lighting, clothing or distance variation.<br>- no PT input/assessment | - Use a goniometer to establish reference angles.<br>- Upgrade the source code to support live measurements and account for reference points/user positioning.<br>- Consider testing in other conditions.<br>- Consult with PT on assessment |
 
 ### 6.2 Project Prototyping Plan & Timeline
 
