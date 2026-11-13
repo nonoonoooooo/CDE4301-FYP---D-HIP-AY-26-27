@@ -70,19 +70,19 @@ ReMotion's novelty lies in supporting the shoulder after RCR in a way that fits 
 
 ### 2.1 Design Questions and Ideation
 
-Based on the rehabilitation barriers identified through stakeholder interviews and patient surveys (Section 1.2), the underlying contributing factors were translated into “How Might We” design questions to guide our subsequent concept generation (Appendix D.1). The generated concepts were then organised using the Approach–Concept–Embodiment (ACE) framework, as they progress from broader strategies to specific concepts and potential implementations. An additional problem of 'PT (physiotherapy) time' was added as we believe that our solution should not add additional workload for PT to adopt it. The main approaches across the five identified problem areas are summarised below, with the complete ACE framework provided in [Appendix D.2](#d1-overall-ace-framework-for-concept-generation).
+Based on the rehabilitation barriers identified through stakeholder interviews and patient surveys (Section 1.2), the underlying contributing factors were translated into “How Might We” design questions to guide our subsequent concept generation (Appendix D.1). The generated concepts were then organised using the Approach–Concept–Embodiment (ACE) framework, as they progress from broader strategies to specific ideas and potential implementations. For instance, under the 'Movement tracking' and 'Self-guided learning' approaches, we can potentially develop a camera-based sensor to track movements or a community forum or online resource library for patients to seek clarifications. An additional problem of 'PT (physiotherapy) time' was added as we believe that our solution should not add additional workload for PT to adopt it. The main approaches across the five identified problem areas are summarised below, with the complete ACE framework provided in [Appendix D.2](#d1-overall-ace-framework-for-concept-generation).
 
-| Main Problem / Identified barriers | Main Approaches explored |
+| Main Problem / Identified barriers | Main Approaches explored | Sample Ideas |
 |---|---|
-| Uncertainty about technique | Movement tracking and feedback provision, Assisted movement, Self-guided learning |
-| Misjudging progress | (Rehab) Progress visualisation, Scoring System, Regular reviews |
-| Lack of time and discipline | Rewards and incentives, Social support, Gamification (micro-rehab), Integration into daily routines |
-| Pain and fear of movement | Patient pain scoring, Pain detection, Answering patients' questions |
-| PT time and visibility between visits | Automated ROM documentation, Recorded note-taking of patients |
+| Uncertainty about technique | Movement tracking, Feedback provision, Assisted movement, Self-guided learning | VR/Wearables/Camera-based sensors, User-controlled exoskeleton, pre-recorded exercise videos |
+| Misjudging progress | (Rehab) Progress visualisation, Scoring System, Regular reviews | Graphical visualisation markers, Telerehab remote evaluation, monthly reviews by PT |
+| Lack of time and discipline | Rewards and incentives, Social support, Gamification (micro-rehab), Integration into daily routines | Vouchers, group PT sessions, online communities |
+| Pain and fear of movement | Patient pain scoring, Pain detection, Answering patients' questions | Personal survey/questionnaire, AI-based companion |
+| PT time on workload | Automated ROM documentation, Recorded note-taking of patients | Conversational AI input, Audio ambient scribe |
 
 ### 2.2 Concept Screening
 
-An initial screening was conducted to narrow the broad range of generated ideas according to their anticipated development and implementation feasibility. They were classified based on their feasibility and complexity to build such concepts. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in [Appendix D.3](#d2-overall-concept-screening-categorisation). 'Out-of-scope' ideas were not considered for further prototyping development.
+A preliminary screening was conducted to narrow the broad range of generated ideas according to their anticipated development and implementation feasibility. They were classified based on their potential feasibility and complexity when developing their prototypes. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in [Appendix D.3](#d2-overall-concept-screening-categorisation). 'Out-of-scope' ideas were not considered for further prototyping development, while we focused on 'Easy' and 'Feasible' ideas to build our prototype.
 
 | Screening category | Summarised Ideas |
 |---|---|
@@ -91,7 +91,7 @@ An initial screening was conducted to narrow the broad range of generated ideas 
 | Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab, Auto-recorded PT sessions |
 | Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
 
-Based on the feasibility and accessibility of the ideas we generated, we narrowed them down to form a solution that aims to address all our identified barriers. The key concepts we further evaluated were Feedback Provision, Gamification (with Micro-Rehab Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods, such as wearable or camera-based ROM tracking. Their suitability was then assessed against the design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below.
+After further screening and discussion, we narrowed down the ideas and approaches to form a final overarching solution at this stage, that aims to embody the following concepts as implemented features within the solution: Feedback Provision, Gamification (with Micro-Rehab Exercises), and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods, such as wearable or camera-based ROM tracking. Their suitability was then assessed against the design specifications (S1–S5) using a needs-criteria evaluation matrix as shown below.
 
 | Design specification (Identified barriers) | Feedback Provision | Gamification (with Micro-Rehab Exercises) | Rehabilitation Progress Tracking |
 |---|:---:|:---:|:---:|
@@ -104,7 +104,10 @@ Based on the feasibility and accessibility of the ideas we generated, we narrowe
 
 Scoring: 0 = Does not meet criterion; 1 = Meets criterion; 2 = Exceeds criterion.
 
-Based on the needs-criteria evaluation, 'Feedback Provision' showed the strongest alignment with our design specifications, particularly in providing exercise technique feedback and guiding rehabilitation. 'Rehabilitation Progress Tracking' was also identified as a promising complementary concept, allowing patients to better understand their recovery and providing relevant information for physiotherapists. Although 'Gamification' scored lower overall, it can potentially encourage adherence through integration of micro-rehab exercises into patients' daily routines. Therefore, feedback provision and progress tracking were initially prioritised for further development and prototyping, with gamification considered as a possible supporting feature. These concepts will undergo initial prototyping to assess their technical feasibility and usability before refining them further.
+Based on the needs-criteria evaluation, 'Feedback Provision' showed the strongest alignment with our design specifications, particularly in providing exercise technique feedback and guiding rehabilitation. 'Rehabilitation Progress Tracking' was also identified as a promising complementary concept, allowing patients to better understand their recovery and providing relevant information for physiotherapists. Although 'Gamification' scored lower overall, it can potentially encourage adherence through integration of micro-rehab exercises into patients' daily routines. Therefore, feedback provision and progress tracking were initially prioritised for further development and prototyping, with gamification considered as a possible supporting feature for future prototyping plans. These concepts will undergo initial prototyping to assess their technical feasibility and usability before refining them further.
+
+<img width="490" height="512" alt="image" src="https://github.com/user-attachments/assets/8bfb4a3d-0ab6-4b0c-8ded-25d09dc3ddff" />
+
 
 ## 3. Fabrication of Prototypes
 
@@ -649,7 +652,6 @@ Problem (Section 1.2) | Root cause | Design question | Spec |
     <tr><td>Snap surroundings → AI suggests rehab exercises using nearby objects; new environment, new routine each time</td></tr>
   </tbody>
 </table>
-
 
 <table>
   <thead>
