@@ -206,7 +206,7 @@ For our overall analysis, all 3 prototypes demonstrated a level of basic functio
 
 ### 6.3 Project Prototyping Plan & Timeline
 
-Building upon the findings from P1–P3, subsequent development will prioritise adaptive micro-rehabilitation scheduling and corrective exercise feedback, supported by ROM measurement and progress tracking. Initial activities will focus on validating clinical requirements and technical feasibility, followed by parallel feature development, integration and iterative testing. Progression between development phases will depend on the ability of each component to satisfy relevant design specifications, with further refinement guided by physiotherapist and user feedback. The proposed timeline and resources are summarised below with full table in Appendix F.
+Building upon the findings from P1–P3, subsequent development will prioritise adaptive micro-rehabilitation scheduling and corrective exercise feedback, supported by ROM measurement and progress tracking. Further activities are reflected in proposed timeline summarised below, with full table in Appendix F.
 
 | Activity / Prototype | Sample Resources Required | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
 |---|---|:---:|:---:|:---:|:---:|:---:|
