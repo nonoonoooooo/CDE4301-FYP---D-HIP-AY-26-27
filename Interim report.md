@@ -195,13 +195,9 @@ For P3, videos of the member was taken and uploaded to the laptop to run through
 
 ## 6. Discussion of Problems and Project Plan
 
-> **~400 words.** What are the problems you faced or current shortcomings identified in your work? How do you plan to resolve them?
-> Detailed discussion: each problem, what caused it, and what was done about it. (any problems we faced and resolved them?)
-> Rubric A6 (Exceptional): detailed discussion of how problems were resolved; major shortcomings clearly identified with sound, well-justified proposals; detailed, viable plan with well-articulated steps and clearly identified milestones.
-
 ### 6.1 Problems & Potential approaches
 
-> Add for any problems encountered for P1/2?
+When testing P2, the platform used to publish the prototype did not allow a live camera view, so participants checked their framing with a still photo instead. Because the exercise also played whether or not the phone was in position, set-up could be skipped, and set-up time was measured for only one participant (about 3 minutes). The S3 target of under 2 minutes therefore remains untested. In Semester 2, P2 will be hosted on a page that allows camera access, such as GitHub Pages, and the exercise will not start until framing is confirmed.
 
 When prototyping P3, the original source code had to be adapted to introduce introduce 0.1-second measurement intervals to reduce continuous frame-by-frame readings that generated excessive data. Raw readings were only obtained in CSV format and thus, data had to be manually translated into graphical representation for better visualisation. In order to ensure script was compatible and suitable for prototyping, preliminary testing was done (with arm movement of 90°) to verify the outputs obtained.
 
@@ -216,9 +212,6 @@ For our overall analysis, all 3 prototypes demonstrated a level of basic functio
 | **P3** | - Difficulty capturing user positioning and accurately identifying ROM if the user is not positioned correctly.<br>- Inaccuracy of physical reference angles.<br>- Lack of live measurements.<br>- an uninjured person, side-on view only.<br>- no lighting, clothing or distance variation.<br>- no PT input/assessment | - Use a goniometer to establish reference angles.<br>- Upgrade the source code to support live measurements and account for reference points/user positioning.<br>- Consider testing in other conditions.<br>- Consult with PT on assessment |
 
 ### 6.3 Project Prototyping Plan & Timeline
-
-> Clearly identified, with sound and well-justified proposals. Include the limits of the prototypes and tests so far (e.g. low fidelity, few participants, stand-in participants rather than patients or physiotherapists) and of the needs data (Appendices B.1, B.5 and C.5).
-> Detailed and viable, with well-articulated steps and clearly identified milestones, from first prototype and test through to the Semester 2 evaluation against S1–S5.
 
 Building upon the findings from P1–P3, subsequent development will prioritise adaptive micro-rehabilitation scheduling and corrective exercise feedback, supported by ROM measurement and progress tracking. Initial activities will focus on validating clinical requirements and technical feasibility, followed by parallel feature development, integration and iterative testing. Progression between development phases will depend on the ability of each component to satisfy relevant design specifications, with further refinement guided by physiotherapist and user feedback. The proposed timeline and resources are summarised below. 
 
