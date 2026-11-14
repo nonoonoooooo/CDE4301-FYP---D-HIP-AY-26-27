@@ -90,14 +90,14 @@ A preliminary screening was conducted to narrow the broad range of generated ide
 | Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab |
 | Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
 
-Following preliminary screening, the shortlisted approaches and ideas were combined into four initial solution concepts: a digital rehabilitation coach, micro-rehab-based wearable, camera-based ROM tracking and gamified rehabilitation (Appendix D.4). They were evaluated against S1–S5 and substantial overlap was identified across the concepts, particularly in exercise flexibility, objective movement assessment, progress tracking and physiotherapist review. Rather than developing four separate solutions, we therefore converged their complementary features into one integrated 'ReMotion' concept with further prioritisation based on stakeholder needs, unmet market gaps and technical feasibility.
+Following preliminary screening, the shortlisted approaches and ideas were combined into four initial solution concepts: a digital rehabilitation coach, micro-rehab-based wearable, camera-based ROM tracking and gamified rehabilitation (Appendix D.4). They were evaluated against S1–S4 and substantial overlap was identified across the concepts, particularly in exercise flexibility, objective movement assessment, progress tracking and physiotherapist review. Rather than developing four separate solutions, we therefore converged their complementary features into one integrated 'ReMotion' concept with further prioritisation based on stakeholder needs, unmet market gaps and technical feasibility. We amended our final solution based on feedback from interim presentation.
 
 The features include: Feedback Provision, Micro-Rehab Exercises, and Rehabilitation Progress Tracking. These concepts were prioritised for their potential to address the rehabilitation barriers identified through preliminary research, stakeholder interviews and observations of PT sessions. They also offer opportunities to support independent home rehabilitation without requiring continuous physiotherapist supervision and unlike more resource-intensive approaches such as robotic assistance or AI-based rehabilitation companions, these concepts could be explored through relatively accessible prototyping methods, such as wearable or camera-based ROM tracking. Their suitability was then assessed against the design specifications (S1–S4) using a needs-criteria evaluation matrix as shown below. Further evaluation on our final solution can be found in Appendix D.4
 
 | Design specification (Identified barriers) | Feedback Provision | Micro-Rehab Exercises | Rehabilitation Progress Tracking |
 |---|:---:|:---:|:---:|
 | S1 (address uncertainty of technique) | 2 | 1 | 1 |
-| S2 (address misjugding of progress) | 1 | 1 | 2 |
+| S2 (address misjudging of progress) | 1 | 1 | 2 |
 | S3 (address lack of time & discipline) | 0 | 2 | 1 |
 | S4 (address pain & fear of movement) | 2 | 0 | 0 |
 | **Average Score** | **1.25** | **1.0** | **1.0** |
@@ -132,7 +132,7 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 
 - **P1, progress tracker** ([source](prototypes/p1_progress_tracker/index.html)). A one-screen mock-up plotting a fictional patient's shoulder range of motion against an expected recovery band, linked to a personal goal such as reaching a high shelf. Three versions show a patient who is ahead, on track, and feeling well but behind, the last recreating the point around three months when patients stop ([Appendix B, Theme 3](#b4-findings-by-theme)). They are labelled only as Screens 1–3, so the labels do not give away the answer. The recovery band is illustrative, not clinical data, because this test is about whether the chart can be read.
 - **P2, exercise session flow** ([source](prototypes/p2_session_flow/index.html)). A clickable mock-up of one session: choosing the exercise, seeing instructions, setting up the phone, doing the repetitions, reporting pain and viewing the result. Two placeholder exercises use animated figures, and each animation cycle counts as one repetition. The published link uses a test photo to check framing, because the platform does not allow a live camera view.
-- **P3, camera tracking test** ([source](prototypes/p3_camera_tracking/measure_angle.py)). A Python script that analysed phone video with MediaPipe Pose, an open-source pose-estimation tool that locates body landmarks in video (Bazarevsky et al., 2020). For each clip, it calculated the shoulder angle from the shoulder, elbow and hip landmarks, took the median across frames to reduce the effect of wobble, and reported the mean error against the reference angle. Team members raised an arm to reference angles marked with a protractor on a wall chart.
+- **P3, camera tracking test** ([source](prototypes/p3_camera_tracking/measure_angle.py)). A Python script that analysed phone video with MediaPipe Pose, an open-source pose-estimation tool that locates body landmarks in video (Bazarevsky et al., 2020). For each clip, it calculated the shoulder angle from the shoulder, elbow and hip landmarks, took measurements across frames during holding phase and reported the mean error against the reference angle. Team members raised an arm to reference angles marked with a protractor on a wall chart.
 
 ## 4. Testing
 
@@ -153,7 +153,7 @@ The prototypes are in the [prototypes](prototypes) folder of this repository, an
 
 The facilitator stepped in when a participant needed help. All sessions and comments were audio-recorded and transcribed ([Appendix E](#appendix-e-test-session-findings) summarises them).
 
-**P3.** For P3, one healthy team member performed right-arm shoulder flexion towards three manually established reference angles (50°, 90° and 120°), with three trials per angle. Each movement was recorded from a side-view camera, with the arm held at the target position for approximately three seconds before lowering. The videos were processed using the adapted MediaPipe-based script, and measurements during the stationary holding phase were extracted to obtain a representative angle for each trial. These were subsequently compared against the corresponding reference angles to evaluate preliminary measurement agreement. All results are documented in Appendix E.
+**P3.** For P3, one healthy team member performed right-arm shoulder flexion towards three manually established reference angles (50°, 90° and 120°), with three trials per angle. Each movement was recorded from a side-view camera, with the arm held at the target position for approximately three seconds before lowering. The videos were processed using the adapted MediaPipe-based script, and measurements during the holding phase were extracted to obtain a representative angle for each trial. These were subsequently compared against the corresponding reference angles to evaluate preliminary measurement agreement. All results are documented in Appendix E.
 
 ## 5. Analysis
 
@@ -171,7 +171,7 @@ We tested P1 and P2 with nine participants. Five key findings emerged, and [Appe
 
 **Set-up (S3).** Set-up was observed with only two participants: one took about 3 minutes, over the 2-minute target, and the other skipped it because the exercise ran regardless. This matches the positioning hassle reported with a previous system ([Appendix A.5](#a5-use-in-singapore-from-interviews)), and could add a burden when time is already the most reported barrier ([Appendix B, Theme 1](#b4-findings-by-theme)). The lack of a live view probably added to the time taken, so this is a warning, not a measure of a finished design. The design should simplify phone placement, show a live preview, and check framing before the exercise starts.
 
-For P3, it was observed that the opensource code (from MediaPipe library) was generally able to provide relatively precise & consistent measurements from videos. Thus, it is able to measure ROM which aligns with S2 to an extent, as progress of exercises can be visualised and known. The table below a sample (from trial 3) of how the readings are visualised in a graphical format. The graphs showed increasing angles during arm elevation, relatively stable measurements during the holding phase, and decreasing angles when lowering.
+For P3, it was observed that the opensource code (from MediaPipe library) was generally able to provide relatively precise & consistent measurements from videos. Thus, it is able to measure ROM angles which aligns with S1 to an extent. The table below a sample (from trial 3) of how the readings are visualised in a graphical format. The graphs showed increasing angles during arm elevation, relatively stable measurements during the holding phase, and decreasing angles when lowering.
 
 | Reference Angle | Graph |
 |---|---|
@@ -179,13 +179,13 @@ For P3, it was observed that the opensource code (from MediaPipe library) was ge
 | 90° | <img width="512" height="250" alt="image" src="https://github.com/user-attachments/assets/d0d4f257-6059-454e-a47e-36e1d195fa74" /> |
 | 120° | <img width="512" height="226" alt="image" src="https://github.com/user-attachments/assets/5f0ba9da-8ddb-4fd6-add2-cd91176d035b" /> |
 
-The table shows the average measurements compared against the respective reference angles (up to 3 d.p.). The collated readings were estimated from the holding phase as observed from the graphs and were shown to be relatively consistent. 
+The table shows the average measurements compared against the respective reference angles (up to 3 d.p.). The collated readings were estimated from the holding phase from the raw data and were shown to be relatively consistent. Errors are small relative to our proposed 5–10° threshold.
 
-| Reference angle/° | Trial 1/° | Trial 2/° | Trial 3/° | Mean Angle/° | Mean Absolute Error/° |
-|---|---|---|---|---|---|
-| **50** | 51.211 | 49.808 | 49.452 | **50.157** | 0.65 |
-| **90** | 87.675 | 88.283 | 90.547 | **88.835** | 1.53 |
-| **120** | 121.139 | 118.70 | 120.944 | **120.261** | 1.13 |
+| Reference angle/° | Trial 1/° | Trial 2/° | Trial 3/° | Mean Angle/° | Error for each trial/° | Mean Absolute Error/° |
+|---|---|---|---|---|---|---|
+| **50** | 51.211 | 49.808 | 49.452 | **50.157** | +1.21, −0.19, −0.55 | 0.65 |
+| **90** | 87.675 | 88.283 | 90.547 | **88.835** | −2.33, −1.72, +0.55 | 1.53 |
+| **120** | 121.139 | 118.70 | 120.944 | **120.261** | +1.14, −1.30, +0.94 | 1.13 |
 
 ### 5.2 Methods and validity
 
@@ -199,7 +199,7 @@ For P3, videos of the member was taken and uploaded to the laptop to run through
 
 When testing P2, the platform used to publish the prototype did not allow a live camera view, so participants checked their framing with a still photo instead. Because the exercise also played whether or not the phone was in position, set-up could be skipped, and set-up time was measured for only one participant (about 3 minutes). The S3 target of under 2 minutes therefore remains untested. In Semester 2, P2 will be hosted on a page that allows camera access, such as GitHub Pages, and the exercise will not start until framing is confirmed.
 
-When prototyping P3, the original source code had to be adapted to introduce introduce 0.1-second measurement intervals to reduce continuous frame-by-frame readings that generated excessive data. Raw readings were only obtained in CSV format and thus, data had to be manually translated into graphical representation for better visualisation. In order to ensure script was compatible and suitable for prototyping, preliminary testing was done (with arm movement of 90°) to verify the outputs obtained.
+When prototyping P3, the original source code had to be adapted to introduce 0.1-second measurement intervals to reduce continuous frame-by-frame readings that generated excessive data. Raw readings were only obtained in CSV format and thus, data had to be manually translated into graphical representation for better visualisation. In order to ensure script was compatible and suitable for prototyping, preliminary testing was done (with arm movement of 90°) to verify the outputs obtained.
 
 ### 6.2 Limitations & Future mitigations
 
@@ -229,7 +229,7 @@ Building upon the findings from P1–P3, subsequent development will prioritise 
 **Legend:** █ = Planned activity period; W = Project week.
 
 ## 7. Conclusion
-In conclusion, we have identified four key barriers during our project investigation: (1) time constraints, (2) uncertainty about exercise technique, (3) difficulty assessing recovery progress, and (4) pain-related concerns. Based on these barriers, we generated some concepts and screened them based on feasibility and technical complexity, which resulted in our final solution focusing on feedback provision, progress tracking,  micro-rehab exercises. Then, we conducted initial prototyping on the former two features and yielded results that demonstrated preliminary feasibility in progress visualisation, exercise guidance, phone-based ROM tracking, although we noted some limitations with the methods we tested. In our next step, we hope to reiterate and further refine our prototypes to develop a more clinically meaningful and suitable home rehabilitation solution.
+In conclusion, we have identified four key barriers during our project investigation: (1) time constraints, (2) uncertainty about exercise technique, (3) difficulty assessing recovery progress, and (4) pain-related concerns. Based on these barriers, we generated some concepts and screened them based on feasibility and technical complexity, which resulted in our final solution focusing on feedback provision, progress tracking,  micro-rehab exercises. Then, we conducted initial prototyping on the former two features and yielded results that demonstrated basic functionality in progress visualisation, exercise guidance, phone-based ROM tracking, although we noted some limitations with the methods we tested. In our next step, we hope to reiterate and further refine our prototypes to develop a more clinically meaningful and suitable home rehabilitation solution.
 
 ## 8. Individual Contributions
 
