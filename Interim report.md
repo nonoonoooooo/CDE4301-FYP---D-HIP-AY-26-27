@@ -81,14 +81,7 @@ Based on the rehabilitation barriers identified through stakeholder interviews a
 
 ### 2.2 Concept Screening & Selection
 
-A preliminary screening was conducted to narrow the broad range of generated ideas according to their anticipated development and implementation feasibility. They were classified based on their potential feasibility and complexity when developing their prototypes. The table below summarises the concepts that were categorised accordingly, with the complete screening results provided in [Appendix D.3](#d2-overall-concept-screening-categorisation). 'Out-of-scope' ideas were not considered for further prototyping development, while we focused on 'Easy' and 'Feasible' ideas to build our prototype.
-
-| Screening category | Summarised Ideas |
-|---|---|
-| Easy | Pre-recorded exercise videos, patient progress/evaluation graphs, goal setting and reminders, channel for feedback and support, micro-rehab exercises |
-| Feasible | Camera-based movement tracking, wearable motion sensors, automated progress summaries, gamified incentives |
-| Challenging | AI rehabilitation companion, robotic exoskeleton, AI-suggested exercises integrated into daily activities, group physiotherapy sessions, Tele-rehab |
-| Out of scope | Pain detection, Walk-in PT clinic, patient self-reflections, scanning device to track Range of Motion |
+A preliminary screening was conducted to narrow the broad range of generated ideas according to their anticipated development and implementation feasibility. They were classified based on their potential feasibility and complexity when developing their prototypes, for categories 'Easy', 'Feasible', 'Challenging', 'Out-of-scope'. The table with complete screening results are provided in [Appendix D.3](#d2-overall-concept-screening-categorisation). 'Out-of-scope' ideas were not considered for further prototyping development, while we focused on 'Easy' and 'Feasible' ideas to build our prototype. 
 
 Following preliminary screening, the shortlisted approaches and ideas were combined into four initial solution concepts: a digital rehabilitation coach, micro-rehab-based wearable, camera-based ROM tracking and gamified rehabilitation (Appendix D.4). They were evaluated against S1–S4 and substantial overlap was identified across the concepts, particularly in exercise flexibility, objective movement assessment, progress tracking and physiotherapist review. Rather than developing four separate solutions, we therefore converged their complementary features into one integrated 'ReMotion' concept with further prioritisation based on stakeholder needs, unmet market gaps and technical feasibility. We amended our final solution based on feedback from interim presentation.
 
@@ -213,23 +206,22 @@ For our overall analysis, all 3 prototypes demonstrated a level of basic functio
 
 ### 6.3 Project Prototyping Plan & Timeline
 
-Building upon the findings from P1–P3, subsequent development will prioritise adaptive micro-rehabilitation scheduling and corrective exercise feedback, supported by ROM measurement and progress tracking. Initial activities will focus on validating clinical requirements and technical feasibility, followed by parallel feature development, integration and iterative testing. Progression between development phases will depend on the ability of each component to satisfy relevant design specifications, with further refinement guided by physiotherapist and user feedback. The proposed timeline and resources are summarised below. 
+Building upon the findings from P1–P3, subsequent development will prioritise adaptive micro-rehabilitation scheduling and corrective exercise feedback, supported by ROM measurement and progress tracking. Initial activities will focus on validating clinical requirements and technical feasibility, followed by parallel feature development, integration and iterative testing. Progression between development phases will depend on the ability of each component to satisfy relevant design specifications, with further refinement guided by physiotherapist and user feedback. The proposed timeline and resources are summarised below with full table in Appendix F.
 
-| Activity / Prototype | Resources Required | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
+| Activity / Prototype | Sample Resources Required | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
 |---|---|:---:|:---:|:---:|:---:|:---:|
-| **Adaptive micro-rehabilitation scheduling** — Generate short exercise sessions based on patients' availability, location and PT-prescribed plans. | App prototype, sample exercise prescriptions, scheduling algorithm, developers, PT consultation, patient input | █ W1–4 | █ W5–6 | | | |
-| **Camera/sensor-based movement tracking** — Assess ROM measurement accuracy under different camera positions, lighting and movements, and compare it with sensor-baseed (IMU) measurement. | Smartphone, tripod, MediaPipe/OpenCV or other open-source tools, goniometer, IMU, 5–10 healthy volunteers | █ W1–4 | █ W5–7 | | | |
-| **Real-time corrective exercise feedback** — Detect technique errors and provide actionable visual/audio corrections. | Pose-estimation software, exercise videos, developers, 1–2 PTs to define and evaluate technique errors | | █ W5–8 | █ W9–12 | █ W13 | |
-| **Patient usability and progress tracking** — Assess exercise-session setup, navigation and interpretation of rehabilitation progress. | Figma/web prototypes, smartphones, 5–8 participants, questionnaires, task-based testing | | █ W5–8 | █ W9–10 | | |
-| **Clinician-approved reassurance and safety guidance** — Develop rehabilitation-phase-specific guidance and symptom escalation rules. | PTs/clinicians, postoperative rehabilitation protocols, symptom scenarios, rule-based prototype | | █ W7–8 | █ W9–12 | █ W13 | |
-| **Patient progress summary for PTs** — Consolidate ROM, adherence and patient-reported outcomes into a concise report. | Dashboard mock-up, simulated patient data, developers, 2–3 PTs for review | | | █ W10–12 | █ W13–14 | |
-| **System integration** — Combine selected features into one functional prototype. | Integrated prototype, developers, smartphones, PT consultation | | | | █ W13–16 | █ W17–18 |
-| **Integrated usability and technical evaluation** — Test selected functions against S1–S5 where feasible. | Integrated prototype, volunteers or approved patient participants, PTs/clinicians, evaluation protocols | | | | | █ W17–20 |
+| **Adaptive micro-rehabilitation scheduling**  | App prototype, sample exercise prescriptions, PT consultation, | █ W1–4 | █ W5–6 | | | |
+| **Camera/sensor-based movement tracking**  | Smartphone, MediaPipe/OpenCV tools, goniometer, IMU | █ W1–4 | █ W5–7 | | | |
+| **Real-time corrective exercise feedback**  | Pose-estimation software, PTs to define and evaluate technique errors | | █ W5–8 | █ W9–12 | █ W13 | |
+| **Patient usability and progress tracking**  | Figma/web prototypes, participants, questionnaires | | █ W5–8 | █ W9–10 | | |
+| **Clinician-approved reassurance and safety guidance**  | PTs/clinicians, rehabilitation protocols, symptom scenarios | | █ W7–8 | █ W9–12 | █ W13 | |
+| **System integration** | Tools for integration, feedback from stakeholders | | | | █ W13–16 | █ W17–18 |
+| **Integrated usability and technical evaluation** | Integrated prototype, final evaluation  | | | | | █ W17–20 |
 
 **Legend:** █ = Planned activity period; W = Project week.
 
 ## 7. Conclusion
-In conclusion, we have identified four key barriers during our project investigation: (1) time constraints, (2) uncertainty about exercise technique, (3) difficulty assessing recovery progress, and (4) pain-related concerns. Based on these barriers, we generated some concepts and screened them based on feasibility and technical complexity, which resulted in our final solution focusing on feedback provision, progress tracking,  micro-rehab exercises. Then, we conducted initial prototyping on the former two features and yielded results that demonstrated basic functionality in progress visualisation, exercise guidance, phone-based ROM tracking, although we noted some limitations with the methods we tested. In our next step, we hope to reiterate and further refine our prototypes to develop a more clinically meaningful and suitable home rehabilitation solution.
+In conclusion, we have identified four key barriers during our project investigation: (1) time constraints, (2) uncertainty about exercise technique, (3) difficulty assessing recovery progress, and (4) pain-related concerns. Based on these barriers, we generated some concepts, screened them, and built and tested initial prototypes for final solution, which yielded results that demonstrated basic functionality in progress visualisation, exercise guidance, phone-based ROM tracking. In our next step, we hope to reiterate and further refine our prototypes to develop a more clinically meaningful and suitable home rehabilitation solution.
 
 ## 8. Individual Contributions
 
@@ -319,7 +311,7 @@ We identified 17 existing solutions through searches of company websites, news r
 | Feedback on technique (S1) | Sensor- and camera-based systems (Rebee Health, ATLAS, Kinexcs, Sword Health, Hinge Health, UINCARE Home+) | Digital exercise platforms give no technique feedback. Most sensor systems target general MSK care or the knee, and in Singapore their use is limited by out-of-pocket cost and set-up effort |
 | Seeing progress (S2) | Most direct competitors track ROM or strength | Tracking is described mainly as clinician dashboards. ATLAS gives patients feedback on progress towards their rehabilitation goals, but none of the solutions reviewed describes showing patients their progress against the expected post-RCR trajectory |
 | Fitting into schedules (S3) | Exercise reminders (Medbridge, Physitrack) | None describes adapting the programme to patients' daily routines |
-| Saving physiotherapists' time (S4) | PhysioBuddy (reducing admin), Medbridge (EMR integration), ARTICARES H-Man (automatic reports) | Local data-protection rules limit what overseas platforms can share with clinicians |
+| Saving physiotherapists' time (S5) | PhysioBuddy (reducing admin), Medbridge (EMR integration), ARTICARES H-Man (automatic reports) | Local data-protection rules limit what overseas platforms can share with clinicians |
 | Designed for post-RCR | Rebee Health (among other conditions), ANAPA, UINCARE Home+, Breg ARC Dynamic | ANAPA and UINCARE Home+ remain at research stage; Breg ARC Dynamic covers the passive phase only |
 | Guidance on pain | Sword Health, Hinge Health (general MSK pain management), KineQuantum (fear of movement) | No solution reviewed offers RCR-specific guidance on acceptable pain and when to progress |
 
@@ -500,8 +492,8 @@ Problem (Section 1.2) | Root cause | Design question | Spec |
 | Lack of time and discipline | Work and daily commitments compete with rehabilitation. Patients may lose motivation once they feel sufficiently recovered and this may lead to low adoption rate. | How might we help patients incorporate prescribed rehabilitation exercises into their daily routines and sustain engagement throughout recovery? | S3 |
 | Uncertainty about technique | Patients receive limited feedback between PT appointments and PTs are only able to correct these exercises during the sessions themselves. | How might we enable patients to recognise and correct improper exercise techniques independently during the home rehabilitation phase? | S1 |
 | Misjudging progress | Patients have limited access to objective information on their progress unless requested and may mistake reduced pain or improved function for complete recovery. | How might we help patients understand their rehabilitation progress and potentially recognise when further improvement is needed? | S2 |
-| Pain and fear of movement | Patients sometimes do not understand that the pain/discomfort during exercise is to be expected or whether the pain they feel requires them to seek professional advice | How might we help patients handle uncertainty about exercise-related pain and potentially continue rehabilitation safely within prescribed limits? | S5 |
-| PT time and visibility between visits | Home rehabilitation is largely self-managed, where PTs mostly rely on patient-reported responses and in-person reassessment.| How might we provide physiotherapists with relevant, actionable information about patients' home rehabilitation while minimising additional workload? | S4 |
+| Pain and fear of movement | Patients sometimes do not understand that the pain/discomfort during exercise is to be expected or whether the pain they feel requires them to seek professional advice | How might we help patients handle uncertainty about exercise-related pain and potentially continue rehabilitation safely within prescribed limits? | S4 |
+| PT time and visibility between visits | Home rehabilitation is largely self-managed, where PTs mostly rely on patient-reported responses and in-person reassessment.| How might we provide physiotherapists with relevant, actionable information about patients' home rehabilitation while minimising additional workload? | S5 |
 
 #### D.2 Overall ACE Framework for concept generation
 
@@ -1743,9 +1735,23 @@ These prototypes need patients or clinicians, so they are planned for Semester 2
 | How should a patient's question travel from being asked to receiving a trustworthy answer? | Question-answering service | P7 | PoP | S5 |
 | How accurately can AI answer common post-RCR questions, and what combination of AI and clinician review keeps answers safe? | Question-answering service | P7 | PoP | S5 |
 | Under what conditions would clinicians answer questions, and how does a forum compare with private messaging? | Question-answering service | P7 | PoC | S5 |
-| What information do physiotherapists need, how long does a review take, and what do they do with it? | Physiotherapist summary | P8 | PoC | S4 |
+| What information do physiotherapists need, how long does a review take, and what do they do with it? | Physiotherapist summary | P8 | PoC | S5 |
 
 **Note:** PoC - Proof of Concept, PoP - Proof of Principle
+
+Full prototype plan timeline as shown below.
+
+| Activity / Prototype | Resources Required | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| **Adaptive micro-rehabilitation scheduling** — Generate short exercise sessions based on patients' availability, location and PT-prescribed plans. | App prototype, sample exercise prescriptions, scheduling algorithm, developers, PT consultation, patient input | █ W1–4 | █ W5–6 | | | |
+| **Camera/sensor-based movement tracking** — Assess ROM measurement accuracy under different camera positions, lighting and movements, and compare it with sensor-baseed (IMU) measurement. | Smartphone, tripod, MediaPipe/OpenCV or other open-source tools, goniometer, IMU, 5–10 healthy volunteers | █ W1–4 | █ W5–7 | | | |
+| **Real-time corrective exercise feedback** — Detect technique errors and provide actionable visual/audio corrections. | Pose-estimation software, exercise videos, developers, 1–2 PTs to define and evaluate technique errors | | █ W5–8 | █ W9–12 | █ W13 | |
+| **Patient usability and progress tracking** — Assess exercise-session setup, navigation and interpretation of rehabilitation progress. | Figma/web prototypes, smartphones, 5–8 participants, questionnaires, task-based testing | | █ W5–8 | █ W9–10 | | |
+| **Clinician-approved reassurance and safety guidance** — Develop rehabilitation-phase-specific guidance and symptom escalation rules. | PTs/clinicians, postoperative rehabilitation protocols, symptom scenarios, rule-based prototype | | █ W7–8 | █ W9–12 | █ W13 | |
+| **System integration** — Combine selected features into one functional prototype. | Integrated prototype, developers, smartphones, PT consultation | | | | █ W13–16 | █ W17–18 |
+| **Integrated usability and technical evaluation** — Test selected functions against S1–S4 where feasible. | Integrated prototype, volunteers or approved patient participants, PTs/clinicians, evaluation protocols | | | | | █ W17–20 |
+
+**Legend:** █ = Planned activity period; W = Project week.
 
 [← Back to Section 3](#3-fabrication-of-prototypes) | [↑ Back to contents](#table-of-contents)
 
