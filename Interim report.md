@@ -218,7 +218,7 @@ Building upon the findings from P1–P3, subsequent development will prioritise 
 | Activity / Prototype | Resources Required | Nov 2026 (W1–4) | Dec 2026 (W5–8) | Jan 2027 (W9–12) | Feb 2027 (W13–16) | Mar 2027 (W17–20) |
 |---|---|:---:|:---:|:---:|:---:|:---:|
 | **Adaptive micro-rehabilitation scheduling** — Generate short exercise sessions based on patients' availability, location and PT-prescribed plans. | App prototype, sample exercise prescriptions, scheduling algorithm, developers, PT consultation, patient input | █ W1–4 | █ W5–6 | | | |
-| **Camera/sensor-based movement tracking** — Assess ROM measurement accuracy under different camera positions, lighting and movements. | Smartphone, tripod, MediaPipe/OpenCV or other open-source tools, goniometer, 5–10 healthy volunteers | █ W1–4 | █ W5–7 | | | |
+| **Camera/sensor-based movement tracking** — Assess ROM measurement accuracy under different camera positions, lighting and movements, and compare it with sensor-baseed (IMU) measurement. | Smartphone, tripod, MediaPipe/OpenCV or other open-source tools, goniometer, IMU, 5–10 healthy volunteers | █ W1–4 | █ W5–7 | | | |
 | **Real-time corrective exercise feedback** — Detect technique errors and provide actionable visual/audio corrections. | Pose-estimation software, exercise videos, developers, 1–2 PTs to define and evaluate technique errors | | █ W5–8 | █ W9–12 | █ W13 | |
 | **Patient usability and progress tracking** — Assess exercise-session setup, navigation and interpretation of rehabilitation progress. | Figma/web prototypes, smartphones, 5–8 participants, questionnaires, task-based testing | | █ W5–8 | █ W9–10 | | |
 | **Clinician-approved reassurance and safety guidance** — Develop rehabilitation-phase-specific guidance and symptom escalation rules. | PTs/clinicians, postoperative rehabilitation protocols, symptom scenarios, rule-based prototype | | █ W7–8 | █ W9–12 | █ W13 | |
@@ -235,7 +235,7 @@ In conclusion, we have identified four key barriers during our project investiga
 
 | Team member | Contribution |
 |---|---|
-| Raghavi | Wrote Sections 2, 6 and 8 and the P3 parts of Sections 4 and 5; tested prototype P3  |
+| Raghavi | Wrote Sections 2, 6 and 7 and the P3 parts of Sections 4 and 5; tested prototype P3  |
 | Phyllis | Wrote Sections 1 and 3 and the P1 and P2 parts of Sections 4 and 5; built prototypes P1 and P2 and ran their test sessions |
 
 ## References
